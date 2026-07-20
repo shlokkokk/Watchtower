@@ -153,8 +153,6 @@ export default function App() {
 
       {/* Top Header Navigation */}
       <Header
-        username={username}
-        onUsernameChange={(newUser) => handleLiveRefresh(newUser)}
         onRefresh={() => handleLiveRefresh(username)}
         isRefreshing={isRefreshing}
         rateLimit={rateLimit}
@@ -200,6 +198,8 @@ export default function App() {
 
             {/* Filter & Sort Controls */}
             <FilterControls
+              username={username}
+              onUsernameChange={(newUser) => handleLiveRefresh(newUser)}
               searchQuery={searchQuery}
               onSearchChange={setSearchQuery}
               selectedLanguage={selectedLanguage}

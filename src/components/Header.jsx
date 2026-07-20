@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Radar, RefreshCw, Bell, Rocket, ShieldCheck, FileText, UserCheck } from 'lucide-react';
+import React from 'react';
+import { Radar, RefreshCw, Bell, Rocket, ShieldCheck, FileText } from 'lucide-react';
 
 export function Header({
-  username,
-  onUsernameChange,
   onRefresh,
   isRefreshing,
   rateLimit,
@@ -13,15 +11,6 @@ export function Header({
   onOpenLaunches,
   onOpenTodo,
 }) {
-  const [inputUser, setInputUser] = useState(username);
-
-  const handleUserSubmit = (e) => {
-    e.preventDefault();
-    if (inputUser.trim() && inputUser !== username) {
-      onUsernameChange(inputUser.trim());
-    }
-  };
-
   const rateLimitPercent = rateLimit ? Math.round((rateLimit.remaining / rateLimit.limit) * 100) : 100;
 
   return (
@@ -51,26 +40,6 @@ export function Header({
             </p>
           </div>
 
-          {/* Divider */}
-          <div className="hidden md:block w-px h-6 bg-slate-800 shrink-0" />
-
-          {/* User Input Switcher */}
-          <form onSubmit={handleUserSubmit} className="hidden md:flex items-center gap-2 bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-1.5 focus-within:border-cyan-500/60 transition-all h-8">
-            <UserCheck className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-            <input
-              type="text"
-              value={inputUser}
-              onChange={(e) => setInputUser(e.target.value)}
-              placeholder="GitHub username..."
-              className="bg-transparent text-xs font-mono text-cyan-300 placeholder-slate-500 focus:outline-none w-28 lg:w-36"
-            />
-            <button
-              type="submit"
-              className="text-[10px] font-mono font-bold bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 px-2 py-0.5 rounded-md transition-all border border-cyan-500/30 whitespace-nowrap"
-            >
-              Inspect
-            </button>
-          </form>
         </div>
 
         {/* Right — All actions in one fixed-height row, no wrap */}

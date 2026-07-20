@@ -1,7 +1,9 @@
-import React from 'react';
-import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers, ChevronDown } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers, ChevronDown, Crosshair, CornerDownRight } from 'lucide-react';
 
 export function FilterControls({
+  username,
+  onUsernameChange,
   searchQuery,
   onSearchChange,
   selectedLanguage,
@@ -14,6 +16,17 @@ export function FilterControls({
   viewMode,
   onViewModeChange,
 }) {
+  const [inputUser, setInputUser] = useState(username);
+  const [isEditingTarget, setIsEditingTarget] = useState(false);
+
+  const handleTargetSubmit = (e) => {
+    e.preventDefault();
+    if (inputUser.trim() && inputUser.trim() !== username) {
+      onUsernameChange(inputUser.trim());
+    }
+    setIsEditingTarget(false);
+  };
+
   const statusOptions = [
     { id: 'ALL', label: 'All Repos', icon: Layers },
     { id: 'TRENDING', label: 'Trending', icon: Flame },
@@ -25,6 +38,59 @@ export function FilterControls({
 
   return (
     <div className="bg-slate-900/60 backdrop-blur-md border border-slate-800 rounded-2xl p-4 mb-6 space-y-4">
+
+      {/* Target Bar — Inspecting @username */}
+      <div className="flex items-center gap-3 pb-3.5 border-b border-slate-800/60">
+        <div className="flex items-center gap-2 text-xs font-mono text-slate-500 shrink-0">
+          <Crosshair className="w-3.5 h-3.5 text-cyan-500" />
+          <span className="uppercase tracking-widest text-[10px]">Inspecting</span>
+        </div>
+
+        {isEditingTarget ? (
+          <form onSubmit={handleTargetSubmit} className="flex items-center gap-2 flex-1 max-w-xs">
+            <div className="flex items-center gap-2 bg-slate-950 border border-cyan-500/60 rounded-xl px-3 py-1.5 flex-1 focus-within:border-cyan-400 transition-all">
+              <span className="text-cyan-500 font-mono text-xs">@</span>
+              <input
+                autoFocus
+                type="text"
+                value={inputUser}
+                onChange={(e) => setInputUser(e.target.value)}
+                onBlur={() => { if (!inputUser.trim()) setIsEditingTarget(false); }}
+                placeholder="github username..."
+                className="bg-transparent text-xs font-mono text-cyan-300 placeholder-slate-500 focus:outline-none flex-1"
+              />
+            </div>
+            <button
+              type="submit"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 font-mono text-xs font-bold border border-cyan-500/40 transition-all whitespace-nowrap"
+            >
+              <CornerDownRight className="w-3 h-3" />
+              Inspect
+            </button>
+            <button
+              type="button"
+              onClick={() => { setInputUser(username); setIsEditingTarget(false); }}
+              className="text-slate-500 hover:text-slate-300 font-mono text-xs transition-colors px-2"
+            >
+              ✕
+            </button>
+          </form>
+        ) : (
+          <button
+            onClick={() => { setInputUser(username); setIsEditingTarget(true); }}
+            className="flex items-center gap-2 group"
+            title="Click to inspect a different GitHub user"
+          >
+            <span className="font-mono text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
+              @{username}
+            </span>
+            <span className="text-[10px] font-mono text-slate-600 group-hover:text-cyan-500 transition-colors border border-slate-800 group-hover:border-cyan-500/40 rounded-md px-1.5 py-0.5">
+              switch
+            </span>
+          </button>
+        )}
+      </div>
+
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         
         {/* Search Bar */}
