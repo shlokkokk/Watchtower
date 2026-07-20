@@ -41,15 +41,15 @@ export function FilterControls({
 
       {/* Target Bar — Inspecting @username */}
       <div className="flex items-center gap-3 pb-3.5 border-b border-slate-800/60">
-        <div className="flex items-center gap-2 text-xs font-mono text-slate-500 shrink-0">
-          <Crosshair className="w-3.5 h-3.5 text-cyan-500" />
-          <span className="uppercase tracking-widest text-[10px]">Inspecting</span>
+        <div className="flex items-center gap-2 text-xs font-mono text-slate-400 shrink-0">
+          <Crosshair className="w-3.5 h-3.5 text-cyan-400" />
+          <span className="uppercase tracking-widest text-[10px] text-slate-400">Inspecting</span>
         </div>
 
         {isEditingTarget ? (
           <form onSubmit={handleTargetSubmit} className="flex items-center gap-2 flex-1 max-w-xs">
             <div className="flex items-center gap-2 bg-slate-950 border border-cyan-500/60 rounded-xl px-3 py-1.5 flex-1 focus-within:border-cyan-400 transition-all">
-              <span className="text-cyan-500 font-mono text-xs">@</span>
+              <span className="text-cyan-400 font-mono text-xs font-bold">@</span>
               <input
                 autoFocus
                 type="text"
@@ -70,7 +70,7 @@ export function FilterControls({
             <button
               type="button"
               onClick={() => { setInputUser(username); setIsEditingTarget(false); }}
-              className="text-slate-500 hover:text-slate-300 font-mono text-xs transition-colors px-2"
+              className="text-slate-400 hover:text-slate-200 font-mono text-xs transition-colors px-2"
             >
               ✕
             </button>
@@ -78,18 +78,19 @@ export function FilterControls({
         ) : (
           <button
             onClick={() => { setInputUser(username); setIsEditingTarget(true); }}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-2.5 group"
             title="Click to inspect a different GitHub user"
           >
             <span className="font-mono text-sm font-bold text-white group-hover:text-cyan-300 transition-colors">
               @{username}
             </span>
-            <span className="text-[10px] font-mono text-slate-600 group-hover:text-cyan-500 transition-colors border border-slate-800 group-hover:border-cyan-500/40 rounded-md px-1.5 py-0.5">
+            <span className="text-[10px] font-mono font-semibold text-cyan-400 border border-cyan-500/50 bg-cyan-500/10 group-hover:bg-cyan-500/20 group-hover:border-cyan-400 rounded-md px-2 py-0.5 transition-all">
               switch
             </span>
           </button>
         )}
       </div>
+
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         
