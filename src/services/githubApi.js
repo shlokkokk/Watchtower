@@ -1,11 +1,16 @@
 // Browser GitHub API Client with Rate-Limit tracking and fallback support
 
-export let currentRateLimit = {
-  limit: 60,
-  remaining: 60,
-  reset: null,
-  isAuthenticated: false,
-};
+export function getInitialRateLimit(token = '') {
+  const hasToken = Boolean(token);
+  return {
+    limit: hasToken ? 5000 : 60,
+    remaining: hasToken ? 5000 : 60,
+    reset: null,
+    isAuthenticated: hasToken,
+  };
+}
+
+export let currentRateLimit = getInitialRateLimit();
 
 export async function fetchLivePortfolio(username, token = '') {
   const headers = {

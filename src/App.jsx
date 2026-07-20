@@ -10,7 +10,7 @@ import { AnalyticsCharts } from './components/AnalyticsCharts';
 import { NotificationModal } from './components/NotificationModal';
 import { SettingsModal } from './components/SettingsModal';
 import { TodoModal } from './components/TodoModal';
-import { fetchLivePortfolio, currentRateLimit } from './services/githubApi';
+import { fetchLivePortfolio, currentRateLimit, getInitialRateLimit } from './services/githubApi';
 import { filterAndSortRepos } from './services/metrics';
 import { AlertCircle, RefreshCw, Layers } from 'lucide-react';
 
@@ -27,7 +27,7 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [rateLimit, setRateLimit] = useState(currentRateLimit);
+  const [rateLimit, setRateLimit] = useState(() => getInitialRateLimit(localStorage.getItem('wt_pat') || import.meta.env.VITE_GH_PAT || ''));
 
   // Filters & Sorting
   const [searchQuery, setSearchQuery] = useState('');
@@ -73,9 +73,18 @@ export default function App() {
         console.warn('Fallback snapshot error:', err);
       } finally {
         setIsLoading(false);
+        // Auto live refresh from GitHub API on mount
+        handleLiveRefresh(username);
       }
     }
     loadInitialData();
+
+    // Auto-refresh every 5 minutes in background
+    const intervalId = setInterval(() => {
+      handleLiveRefresh(username);
+    }, 5 * 60 * 1000);
+
+    return () => clearInterval(intervalId);
   }, []);
 
   // Live Refresh Trigger
