@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { X, Bell, Send, CheckCircle2, AlertTriangle, ShieldCheck, Star, Flame, Skull } from 'lucide-react';
 import { testDiscordWebhook, testTelegramWebhook } from '../services/notificationService';
 
-export function NotificationModal({ onClose, discordUrl, onSaveDiscordUrl }) {
+export function NotificationModal({ onClose, discordUrl, onSaveDiscordUrl, topRepoName = 'Watchtower' }) {
   const [urlInput, setUrlInput] = useState(discordUrl || '');
   const [telegramToken, setTelegramToken] = useState('');
   const [telegramChatId, setTelegramChatId] = useState('');
@@ -13,7 +13,7 @@ export function NotificationModal({ onClose, discordUrl, onSaveDiscordUrl }) {
   const handleTestDiscord = async () => {
     setIsLoading(true);
     setStatusMsg(null);
-    const result = await testDiscordWebhook(urlInput, 'ShellStack', 50);
+    const result = await testDiscordWebhook(urlInput, topRepoName, 50);
     setIsLoading(false);
     setStatusMsg(result);
     if (result.success) {
@@ -24,7 +24,7 @@ export function NotificationModal({ onClose, discordUrl, onSaveDiscordUrl }) {
   const handleTestTelegram = async () => {
     setIsLoading(true);
     setStatusMsg(null);
-    const result = await testTelegramWebhook(telegramToken, telegramChatId);
+    const result = await testTelegramWebhook(telegramToken, telegramChatId, topRepoName);
     setIsLoading(false);
     setStatusMsg(result);
   };
@@ -143,11 +143,19 @@ export function NotificationModal({ onClose, discordUrl, onSaveDiscordUrl }) {
           <p className="text-white font-mono font-bold">Automatic Alert Trigger Thresholds:</p>
           <div className="flex items-center gap-2">
             <Star className="w-4 h-4 text-cyan-400 shrink-0" />
-            <span><strong className="text-cyan-300 font-mono">Milestone Alert:</strong> Fires when any repo crosses 10, 25, 50, 100, or 250 stars.</span>
+            <span><strong className="text-cyan-300 font-mono">Star Gain Alert:</strong> Fires whenever any repo receives +1 or +2 new stargazers.</span>
           </div>
           <div className="flex items-center gap-2">
-            <Flame className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span><strong className="text-emerald-300 font-mono">Trending Flag:</strong> Fires when daily views &gt; 50 or 24h stars &gt; 3x baseline.</span>
+            <ShieldCheck className="w-4 h-4 text-purple-400 shrink-0" />
+            <span><strong className="text-purple-300 font-mono">Milestone Alert:</strong> Fires when any repo crosses 10, 25, 50, 100, or 250 stars.</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+            <span><strong className="text-emerald-300 font-mono">Code Fork Alert:</strong> Fires when a developer clones & forked your repository.</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Flame className="w-4 h-4 text-amber-400 shrink-0" />
+            <span><strong className="text-amber-300 font-mono">Trending Flag:</strong> Fires when daily views &gt; 50 or 24h stars &gt; 3x baseline.</span>
           </div>
           <div className="flex items-center gap-2">
             <Skull className="w-4 h-4 text-red-400 shrink-0" />
