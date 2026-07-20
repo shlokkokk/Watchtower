@@ -75,8 +75,11 @@ export function Header({
         <div className="flex items-center flex-wrap gap-2.5 w-full md:w-auto justify-end">
           
           {/* Rate Limit Meter */}
-          <div className="hidden lg:flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-1.5 font-mono text-xs">
-            <span className="text-slate-400 text-[11px]">Quota:</span>
+          <div
+            className="hidden lg:flex items-center gap-2.5 bg-slate-900/90 border border-slate-800 rounded-xl px-3 py-1.5 font-mono text-xs cursor-help"
+            title={`${rateLimit?.remaining ?? 5000} API requests remaining out of ${rateLimit?.limit ?? 5000} this hour`}
+          >
+            <span className="text-slate-400 text-[11px]">Quota Left:</span>
             <div className="w-16 h-2 bg-slate-800 rounded-full overflow-hidden">
               <div
                 className={`h-full transition-all ${
@@ -86,7 +89,7 @@ export function Header({
               />
             </div>
             <span className={hasPAT ? 'text-cyan-400 font-bold text-[11px]' : 'text-slate-300 text-[11px]'}>
-              {rateLimit ? `${rateLimit.remaining}/${rateLimit.limit}` : '60/60'}
+              {rateLimit ? `${rateLimit.remaining}/${rateLimit.limit}` : '5000/5000'}
             </span>
           </div>
 
