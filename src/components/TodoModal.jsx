@@ -4,7 +4,8 @@ import { X, FileText, CheckSquare, Key, Bell, Shield, Terminal } from 'lucide-re
 export function TodoModal({ onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
-      <div className="bg-[#0f172a] border border-amber-500/40 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-amber-500/10 p-6 md:p-8 space-y-6">
+      <div className="bg-[#0f172a] border border-amber-500/40 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-hidden shadow-2xl shadow-amber-500/10 flex flex-col">
+        <div className="p-6 md:p-8 overflow-y-auto space-y-6">
         
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-slate-800">
@@ -76,6 +77,7 @@ export function TodoModal({ onClose }) {
           </div>
         </div>
 
+        </div>
       </div>
     </div>
   );

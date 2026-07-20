@@ -90,20 +90,21 @@ export function FilterControls({
       <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/60">
         
         {/* Status Pills with Lucide Icons */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full">
+        <div className="flex items-center gap-2 overflow-x-auto py-1 px-1 max-w-full">
           {statusOptions.map((opt) => {
             const IconComp = opt.icon;
+            const isSelected = selectedStatus === opt.id;
             return (
               <button
                 key={opt.id}
                 onClick={() => onStatusChange(opt.id)}
-                className={`flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-mono transition-all whitespace-nowrap ${
-                  selectedStatus === opt.id
-                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 shadow-neon-cyan'
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono transition-all whitespace-nowrap ${
+                  isSelected
+                    ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/50 font-bold'
                     : 'bg-slate-950 border border-slate-800/80 text-slate-400 hover:text-slate-200 hover:bg-slate-900'
                 }`}
               >
-                <IconComp className="w-3.5 h-3.5" />
+                <IconComp className={`w-3.5 h-3.5 ${isSelected ? 'text-cyan-400' : 'text-slate-400'}`} />
                 <span>{opt.label}</span>
               </button>
             );
