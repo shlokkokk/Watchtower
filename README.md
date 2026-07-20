@@ -76,7 +76,7 @@ Notifications delivered to **Discord** (rich embeds) and/or **Telegram** (Markdo
 │   scripts/track.js                                          │
 │   ├── Fetch all repos dynamically (GH_PAT)                  │
 │   ├── Pull traffic: referrers, views, clones                │
-│   ├── Compute velocity, health score, derived flags          │
+│   ├── Compute velocity, health score, derived flags         │
 │   ├── Diff against history.json                             │
 │   ├── Write snapshot.json + append history.json             │
 │   ├── Commit & push to repo                                 │
