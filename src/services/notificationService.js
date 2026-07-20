@@ -1,6 +1,6 @@
 // Webhook Dispatcher for Discord and Telegram (Browser & Node friendly)
 
-export async function testDiscordWebhook(webhookUrl, repoName = 'ShellStack', milestone = 50) {
+export async function testDiscordWebhook(webhookUrl, repoName = 'Portfolio Repo', milestone = 50) {
   if (!webhookUrl) {
     return { success: false, message: 'Please enter a valid Discord Webhook URL first.' };
   }
@@ -44,12 +44,12 @@ export async function testDiscordWebhook(webhookUrl, repoName = 'ShellStack', mi
   }
 }
 
-export async function testTelegramWebhook(botToken, chatId) {
+export async function testTelegramWebhook(botToken, chatId, repoName = 'Portfolio Repo') {
   if (!botToken || !chatId) {
     return { success: false, message: 'Please provide both Telegram Bot Token and Chat ID.' };
   }
 
-  const text = `*WATCHTOWER ALERT*\n\nYour Telegram bot integration is active!\n\n*Repo:* ShellStack\n*Stars:* 34\n*Status:* Trending on Dev.to`;
+  const text = `*WATCHTOWER ALERT*\n\nYour Telegram bot integration is active!\n\n*Repo:* ${repoName}\n*Status:* Integration Connected Successfully`;
 
   try {
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
