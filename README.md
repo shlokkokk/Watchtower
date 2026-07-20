@@ -13,7 +13,7 @@
   A self-updating portfolio command center that tracks your entire GitHub ecosystem dynamically, discovers traffic referrers, calculates star velocity, detects trending/inactive repos, and dispatches real-time alerts to Discord & Telegram.
 </p>
 
-[Live Demo](#-quick-start) • [Core Principles](#-architecture--data-pipeline) • [Features](#-key-features) • [Deployment](#-cloud-deployment-github-actions--vercel)
+[Key Features](#-key-features) • [Architecture](#-architecture--data-pipeline) • [Quick Start](#-quick-start) • [Cloud Deployment](#-cloud-deployment-github-actions--vercel) • [Tech Stack](#-tech-stack)
 
 </div>
 
@@ -28,6 +28,7 @@
 ### 2. Traffic Analytics & Referrer Attribution
 - **Top Referral Channels**: Analyzes top incoming traffic sources (`dev.to`, `news.ycombinator.com`, `t.co`, `reddit.com`, `google.com`) with view and unique visitor breakdowns.
 - **Clones & Popular Paths**: Tracks 14-day rolling clone counts and top page hits (e.g. `README.md` vs source files).
+- **Gradient Sparklines**: Visualizes 7-day view trends with custom SVG gradient fills for active traffic repositories.
 
 ### 3. Derived Portfolio Intelligence
 - **Star Velocity (24h / 7d)**: Measures current growth rate rather than static star totals.
@@ -37,19 +38,21 @@
 - **Dead Repo Radar**: Identifies inactive repositories (0 views, 0 activity in 30+ days) so candidates can be archived or revived.
 
 ### 4. Launch Attribution & ROI Studio
-- **Launch Logger**: Log posts on **Show HN**, **Dev.to**, **Reddit**, **ProductHunt**, and **Twitter/X**.
+- **Multi-Platform Launch Logger**: Log post events on **Show HN**, **Dev.to**, **Reddit**, **ProductHunt**, **Twitter/X**, **Substack**, **LinkedIn**, **Discord**, or any custom platform channel.
 - **Platform ROI Matrix**: Computes average stars and views delivered per channel to systematically determine your highest-converting distribution channels.
 
 ### 5. 24/7 Autonomous Webhook Alert Engine
 - **Discord & Telegram Integration**: Automated cloud scan via GitHub Actions dispatching contextual embeds:
-  - **Star Gain Alert**: `Star Gain Alert — Oculus (+2 stars)`
-  - **Code Fork Alert**: `New Code Fork — ShellStack (+1 fork)`
-  - **Milestone Alert**: `Milestone Reached — Oculus (25 stars)`
-  - **Trending Alert**: `Trending Alert — ShellStack`
+  - **Star Gain Alert**: `Star Gain Alert — Watchtower (+1 star)`
+  - **Code Fork Alert**: `New Code Fork — Watchtower (+1 fork)`
+  - **Milestone Alert**: `Milestone Reached — Watchtower (25 stars)`
+  - **Trending Alert**: `Trending Alert — Watchtower`
   - **Weekly Review Digest**: Comprehensive Sunday evening recap report.
 
-### 6. Resilient Error Handling & Quota Meter
-- **Quota Protection**: Displays real-time `x-ratelimit-remaining` counter and reset timer.
+### 6. Security, Quota Meter & Auto-Refresh
+- **Quota Protection & Live Meter**: Displays real-time `Quota Left: 4981/5000` counter with PAT status indicator and hover tooltips.
+- **Secret Masking & Privacy**: Masked Webhook URLs and Telegram tokens with Eye toggle in the browser UI.
+- **Automatic Live Refresh**: Auto-fetches live profile data on initial page load and updates continuously in the background every 5 minutes.
 - **Fallback Data Layer**: Gracefully transitions to cached snapshots if unauthenticated or rate-limited so the application **never crashes**.
 
 ---
@@ -72,7 +75,7 @@
           |                             |
           v                             v
 [Discord #alerts & Telegram]    [React Web Dashboard]
- (Instant Notifications)      (Instant 50ms Cache Load + Live API Override)
+ (Instant Notifications)      (Instant Snapshot Load + Auto Background Live API Refresh)
 ```
 
 ---
