@@ -136,7 +136,7 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
               <label className="block text-slate-400 mb-1">Post Title / Description</label>
               <input
                 type="text"
-                placeholder="e.g. Show HN: ShellStack - Terminal UI Toolkit"
+                placeholder="e.g. Show HN: My Open Source Project"
                 value={formData.title}
                 onChange={(e) => setFormData({ ...formData, title: e.target.value })}
                 className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-purple-500"
