@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-07-14T12:00:00Z",
+    "totalStars": 38,
+    "totalForks": 9,
+    "totalViews14d": 420,
+    "portfolioHealthAvg": 72,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-15T12:00:00Z",
+    "totalStars": 41,
+    "totalForks": 10,
+    "totalViews14d": 510,
+    "portfolioHealthAvg": 74,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-16T12:00:00Z",
+    "totalStars": 45,
+    "totalForks": 11,
+    "totalViews14d": 620,
+    "portfolioHealthAvg": 76,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-17T12:00:00Z",
+    "totalStars": 48,
+    "totalForks": 12,
+    "totalViews14d": 780,
+    "portfolioHealthAvg": 78,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-18T12:00:00Z",
+    "totalStars": 52,
+    "totalForks": 13,
+    "totalViews14d": 950,
+    "portfolioHealthAvg": 81,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-19T12:00:00Z",
+    "totalStars": 61,
+    "totalForks": 16,
+    "totalViews14d": 1240,
+    "portfolioHealthAvg": 85,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-20T12:00:00Z",
+    "totalStars": 68,
+    "totalForks": 18,
+    "totalViews14d": 1420,
+    "portfolioHealthAvg": 88,
+    "topRepo": "ShellStack"
+  },
+  {
+    "timestamp": "2026-07-20T15:42:56.905Z",
+    "totalStars": 16,
+    "totalForks": 2,
+    "totalViews14d": 0,
+    "portfolioHealthAvg": 33,
+    "topRepo": "shlokkokk"
+  },
+  {
+    "timestamp": "2026-07-20T15:54:18.878Z",
+    "totalStars": 16,
+    "totalForks": 2,
+    "totalViews14d": 0,
+    "portfolioHealthAvg": 35,
+    "topRepo": "Watchtower"
+  }
+]
