@@ -16,9 +16,9 @@ import { AlertCircle, RefreshCw, Layers } from 'lucide-react';
 
 export default function App() {
   // State
-  const [username, setUsername] = useState(() => localStorage.getItem('wt_username') || 'shlokkokk');
-  const [patToken, setPatToken] = useState(() => localStorage.getItem('wt_pat') || '');
-  const [discordUrl, setDiscordUrl] = useState(() => localStorage.getItem('wt_discord_url') || '');
+  const [username, setUsername] = useState(() => localStorage.getItem('wt_username') || import.meta.env.VITE_DEFAULT_USERNAME || 'shlokkokk');
+  const [patToken, setPatToken] = useState(() => localStorage.getItem('wt_pat') || import.meta.env.VITE_GH_PAT || '');
+  const [discordUrl, setDiscordUrl] = useState(() => localStorage.getItem('wt_discord_url') || import.meta.env.VITE_DISCORD_WEBHOOK_URL || '');
 
   const [snapshotData, setSnapshotData] = useState(null);
   const [launches, setLaunches] = useState([]);
