@@ -106,13 +106,13 @@ export function MetricCards({ summary, username }) {
         <div className="text-3xl font-extrabold font-mono text-white tracking-tight mb-2">
           {totalRepos} <span className="text-xs text-slate-400 font-normal">repos</span>
         </div>
-        <div className="flex items-center gap-2 text-xs font-mono text-slate-400 truncate">
+        <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-400">
           <span className="text-emerald-400 font-bold flex items-center gap-1">
-            <Flame className="w-3 h-3 text-emerald-400" /> {trendingCount} trending
+            <Flame className="w-3 h-3 text-emerald-400 shrink-0" /> {trendingCount} trend
           </span>
-          <span>•</span>
+          <span className="text-slate-600 font-bold">•</span>
           <span className="text-red-400 font-bold flex items-center gap-1">
-            <Skull className="w-3 h-3 text-red-400" /> {deadCount} inactive
+            <Skull className="w-3 h-3 text-red-400 shrink-0" /> {deadCount} dead
           </span>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers } from 'lucide-react';
+import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers, ChevronDown } from 'lucide-react';
 
 export function FilterControls({
   searchQuery,
@@ -43,21 +43,24 @@ export function FilterControls({
         <div className="flex items-center gap-3 w-full md:w-auto justify-between md:justify-end">
           
           {/* Sort Selector */}
-          <div className="flex items-center gap-2 bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 font-mono text-xs text-slate-300">
-            <ArrowUpDown className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Sort:</span>
-            <select
-              value={sortBy}
-              onChange={(e) => onSortChange(e.target.value)}
-              className="bg-transparent text-cyan-300 focus:outline-none cursor-pointer"
-            >
-              <option value="velocity" className="bg-slate-900">Star Velocity (24h)</option>
-              <option value="stars" className="bg-slate-900 font-mono">Total Stars</option>
-              <option value="health" className="bg-slate-900">Health Index</option>
-              <option value="views" className="bg-slate-900">14-Day Views</option>
-              <option value="activity" className="bg-slate-900">Recent Activity</option>
-              <option value="forks" className="bg-slate-900">Forks Count</option>
-            </select>
+          <div className="flex items-center gap-2 bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 font-mono text-xs text-slate-300 relative">
+            <ArrowUpDown className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+            <span className="shrink-0">Sort:</span>
+            <div className="relative flex items-center">
+              <select
+                value={sortBy}
+                onChange={(e) => onSortChange(e.target.value)}
+                className="bg-transparent text-cyan-300 focus:outline-none cursor-pointer appearance-none pr-6 font-mono text-xs"
+              >
+                <option value="velocity" className="bg-slate-900">Star Velocity (24h)</option>
+                <option value="stars" className="bg-slate-900">Total Stars</option>
+                <option value="health" className="bg-slate-900">Health Index</option>
+                <option value="views" className="bg-slate-900">14-Day Views</option>
+                <option value="activity" className="bg-slate-900">Recent Activity</option>
+                <option value="forks" className="bg-slate-900">Forks Count</option>
+              </select>
+              <ChevronDown className="w-3.5 h-3.5 text-cyan-400 absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none stroke-[2.5]" />
+            </div>
           </div>
 
           {/* View Mode Toggle */}
@@ -113,20 +116,23 @@ export function FilterControls({
 
         {/* Language Filter */}
         <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
-          <Filter className="w-3.5 h-3.5 text-cyan-400" />
+          <Filter className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
           <span>Language:</span>
-          <select
-            value={selectedLanguage}
-            onChange={(e) => onLanguageChange(e.target.value)}
-            className="bg-slate-950 border border-slate-800 text-cyan-300 rounded-lg px-2.5 py-1 focus:outline-none"
-          >
-            <option value="ALL">All Languages</option>
-            {availableLanguages.map((lang) => (
-              <option key={lang} value={lang} className="bg-slate-900">
-                {lang}
-              </option>
-            ))}
-          </select>
+          <div className="relative flex items-center">
+            <select
+              value={selectedLanguage}
+              onChange={(e) => onLanguageChange(e.target.value)}
+              className="bg-slate-950 border border-slate-800 text-cyan-300 rounded-lg pl-2.5 pr-7 py-1 appearance-none focus:outline-none cursor-pointer font-mono text-xs"
+            >
+              <option value="ALL">All Languages</option>
+              {availableLanguages.map((lang) => (
+                <option key={lang} value={lang} className="bg-slate-900">
+                  {lang}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="w-3.5 h-3.5 text-cyan-400 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none stroke-[2.5]" />
+          </div>
         </div>
 
       </div>

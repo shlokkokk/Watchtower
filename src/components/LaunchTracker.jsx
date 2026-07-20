@@ -117,16 +117,16 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
                   <select
                     value={formData.repo}
                     onChange={(e) => setFormData({ ...formData, repo: e.target.value })}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-3 pr-8 py-2 text-cyan-300 appearance-none focus:outline-none focus:border-purple-500 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-3.5 pr-9 py-2 text-xs font-mono text-cyan-300 appearance-none focus:outline-none focus:border-purple-500 cursor-pointer"
                     required
                   >
                     {repos.map((r) => (
-                      <option key={r.id} value={r.name} className="bg-slate-900 text-slate-100">
+                      <option key={r.id} value={r.name} className="bg-slate-900 text-slate-100 font-mono">
                         {r.name}
                       </option>
                     ))}
                   </select>
-                  <ChevronDown className="w-4 h-4 text-cyan-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <ChevronDown className="w-4 h-4 text-cyan-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none stroke-[2.5]" />
                 </div>
               </div>
 
@@ -136,15 +136,15 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
                   <select
                     value={formData.platform}
                     onChange={(e) => setFormData({ ...formData, platform: e.target.value })}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-3 pr-8 py-2 text-purple-300 appearance-none focus:outline-none focus:border-purple-500 cursor-pointer"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-3.5 pr-9 py-2 text-xs font-mono text-purple-300 appearance-none focus:outline-none focus:border-purple-500 cursor-pointer"
                   >
                     {platformOptions.map((p) => (
-                      <option key={p} value={p} className="bg-slate-900 text-slate-100">
+                      <option key={p} value={p} className="bg-slate-900 text-slate-100 font-mono">
                         {p}
                       </option>
                     ))}
                   </select>
-                  <ChevronDown className="w-4 h-4 text-purple-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <ChevronDown className="w-4 h-4 text-purple-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none stroke-[2.5]" />
                 </div>
               </div>
             </div>
