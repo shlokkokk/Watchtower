@@ -46,10 +46,10 @@ export async function fetchLivePortfolio(username, token = '') {
     // Transform raw repos into Watchtower schema
     const processedRepos = repos.map(repo => {
       const daysInactive = getDaysInactive(repo.pushed_at);
-      const starVelocity24h = Math.floor(Math.random() * 3); // live placeholder unless diffed
+      const starVelocity24h = 0;
       const forkToStarRatio = repo.stargazers_count > 0 ? Number((repo.forks_count / repo.stargazers_count).toFixed(2)) : 0;
       const isDead = daysInactive >= 30 && repo.stargazers_count < 10;
-      const isTrending = starVelocity24h > 2 || repo.stargazers_count > 30;
+      const isTrending = repo.stargazers_count > 25;
 
       return {
         id: repo.id,
@@ -71,17 +71,12 @@ export async function fetchLivePortfolio(username, token = '') {
         healthScore: calculateHealthScore(repo, daysInactive),
         isTrending,
         isDead,
-        trafficViews14d: repo.stargazers_count * 15 + Math.floor(Math.random() * 50),
-        uniqueVisitors14d: repo.stargazers_count * 8 + Math.floor(Math.random() * 20),
-        trafficClones14d: repo.forks_count * 5,
-        viewTrend: generateMockTrend(repo.stargazers_count),
-        topReferrers: [
-          { referrer: 'github.com', count: Math.floor(repo.stargazers_count * 10), uniques: Math.floor(repo.stargazers_count * 6) },
-          { referrer: 'google.com', count: Math.floor(repo.stargazers_count * 4), uniques: Math.floor(repo.stargazers_count * 3) }
-        ],
-        popularPaths: [
-          { path: '/README.md', title: 'README', count: Math.floor(repo.stargazers_count * 12), uniques: Math.floor(repo.stargazers_count * 7) }
-        ],
+        trafficViews14d: 0,
+        uniqueVisitors14d: 0,
+        trafficClones14d: 0,
+        viewTrend: [0, 0, 0, 0, 0, 0, 0],
+        topReferrers: [],
+        popularPaths: [],
         launchesCount: 0
       };
     });
@@ -89,7 +84,6 @@ export async function fetchLivePortfolio(username, token = '') {
     const totalStars = processedRepos.reduce((a, r) => a + r.stargazers_count, 0);
     const totalForks = processedRepos.reduce((a, r) => a + r.forks_count, 0);
     const totalOpenIssues = processedRepos.reduce((a, r) => a + r.open_issues_count, 0);
-    const totalViews14d = processedRepos.reduce((a, r) => a + r.trafficViews14d, 0);
 
     // Language aggregation
     const langMap = {};
@@ -118,12 +112,12 @@ export async function fetchLivePortfolio(username, token = '') {
         totalStars,
         totalForks,
         totalOpenIssues,
-        totalViews14d,
-        totalClones14d: Math.floor(totalForks * 4),
+        totalViews14d: 0,
+        totalClones14d: 0,
         followerCount: userData.followers || 0,
         portfolioHealthAvg,
-        velocityLeader: processedRepos[0] ? { name: processedRepos[0].name, velocity: processedRepos[0].starVelocity24h } : null,
-        topReferrerOverall: { name: 'github.com', count: Math.floor(totalStars * 10), uniques: Math.floor(totalStars * 6) },
+        velocityLeader: processedRepos[0] ? { name: processedRepos[0].name, velocity: 0 } : null,
+        topReferrerOverall: null,
         trendingCount: processedRepos.filter(r => r.isTrending).length,
         deadCount: processedRepos.filter(r => r.isDead).length
       },
@@ -165,9 +159,4 @@ function calculateHealthScore(repo, daysInactive) {
   if (repo.stargazers_count > 10) score += 15;
   if (repo.forks_count > 2) score += 10;
   return Math.min(100, Math.max(0, score));
-}
-
-function generateMockTrend(stars) {
-  const base = Math.max(5, stars * 3);
-  return Array.from({ length: 7 }, () => Math.floor(base * (0.6 + Math.random() * 0.8)));
 }
