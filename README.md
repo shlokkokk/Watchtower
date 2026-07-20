@@ -5,7 +5,6 @@
 ### High-Performance GitHub Portfolio Intelligence & Autonomous Telemetry Engine
 
 [![GitHub Actions Status](https://img.shields.io/github/actions/workflow/status/shlokkokk/Watchtower/watchtower-cron.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&color=00f0ff)](https://github.com/shlokkokk/Watchtower/actions)
-[![License](https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
@@ -153,9 +152,3 @@ The workflow in `.github/workflows/watchtower-cron.yml` will automatically run e
 - **Frontend**: React 18, Vite 6, Tailwind CSS, Lucide Icons, Recharts, Canvas Confetti.
 - **Backend / Pipeline**: Node.js, Octokit REST API, Native Fetch.
 - **Automation**: GitHub Actions, Cron Workflows.
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for details.
