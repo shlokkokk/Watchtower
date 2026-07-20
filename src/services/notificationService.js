@@ -10,13 +10,13 @@ export async function testDiscordWebhook(webhookUrl, repoName = 'ShellStack', mi
     avatar_url: 'https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/radar.svg',
     embeds: [
       {
-        title: '🎉 Watchtower Test Alert — Milestone Reached!',
-        description: `**[${repoName}](https://github.com)** has officially crossed **${milestone} stars**! ⭐\n\n*This is a live test notification sent directly from your Watchtower Dashboard.*`,
+        title: 'Watchtower Test Alert — Milestone Reached',
+        description: `**[${repoName}](https://github.com)** has officially crossed **${milestone} stars**!\n\n*This is a live test notification sent directly from your Watchtower Dashboard.*`,
         color: 0x00f0ff, // Neon Cyan
         fields: [
-          { name: '🔥 Velocity (24h)', value: '+7 stars', inline: true },
-          { name: '👁️ Views Today', value: '210 views', inline: true },
-          { name: '🔗 Top Referrer', value: 'dev.to', inline: true },
+          { name: 'Velocity (24h)', value: '+7 stars', inline: true },
+          { name: 'Views Today', value: '210 views', inline: true },
+          { name: 'Top Referrer', value: 'dev.to', inline: true },
         ],
         footer: {
           text: 'Watchtower • Portfolio Intelligence',
@@ -49,7 +49,7 @@ export async function testTelegramWebhook(botToken, chatId) {
     return { success: false, message: 'Please provide both Telegram Bot Token and Chat ID.' };
   }
 
-  const text = `🎉 *Watchtower Test Alert*\n\nYour Telegram bot integration is active!\n\n*Repo:* ShellStack\n*Stars:* 34 ⭐\n*Status:* 🔥 Trending on Dev.to`;
+  const text = `*WATCHTOWER ALERT*\n\nYour Telegram bot integration is active!\n\n*Repo:* ShellStack\n*Stars:* 34\n*Status:* Trending on Dev.to`;
 
   try {
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
