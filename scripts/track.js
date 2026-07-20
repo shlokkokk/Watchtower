@@ -16,9 +16,9 @@ if (!fs.existsSync(DATA_DIR)) {
 // Config & Environment Variables
 const USERNAME = process.env.GH_USERNAME || process.env.VITE_DEFAULT_USERNAME || 'shlokkokk';
 const TOKEN = process.env.GH_PAT || process.env.VITE_GH_PAT || process.env.GITHUB_TOKEN || '';
-const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK_URL || '';
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '';
+const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK_URL || process.env.VITE_DISCORD_WEBHOOK_URL || '';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || process.env.VITE_TELEGRAM_BOT_TOKEN || '';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || process.env.VITE_TELEGRAM_CHAT_ID || '';
 const IS_WEEKLY_RUN = process.argv.includes('--weekly');
 
 const octokit = new Octokit({ auth: TOKEN || undefined });
@@ -44,25 +44,20 @@ function saveJson(filepath, data) {
 function computeHealthScore(repo, views24h, velocity24h, daysInactive) {
   let score = 50; // base score
 
-  // Activity points
   if (daysInactive < 7) score += 20;
   else if (daysInactive < 14) score += 10;
   else if (daysInactive > 30) score -= 25;
 
-  // Star ratio
   const forkToStarRatio = repo.stargazers_count > 0 ? (repo.forks_count / repo.stargazers_count) : 0;
   if (forkToStarRatio > 0.2) score += 15;
   else if (forkToStarRatio > 0.1) score += 10;
 
-  // Velocity bonus
   if (velocity24h > 3) score += 15;
   else if (velocity24h > 0) score += 5;
 
-  // Views bonus
   if (views24h > 50) score += 10;
   else if (views24h > 10) score += 5;
 
-  // Issues penalty/bonus
   if (repo.open_issues_count === 0 && repo.stargazers_count > 5) score += 5;
 
   return Math.min(100, Math.max(0, score));
@@ -111,8 +106,8 @@ async function sendTelegramNotification(text) {
 }
 
 async function runTracker() {
-  console.log(`\n📡 [Watchtower Tracker] Running dynamic repository scan for target user: "${USERNAME}"`);
-  console.log(`🔑 Token authentication: ${TOKEN ? 'Active (PAT Scope)' : 'Unauthenticated (Rate limit 60/hr)'}`);
+  console.log(`\n[Watchtower Tracker] Running dynamic repository scan for target user: "${USERNAME}"`);
+  console.log(`Token authentication: ${TOKEN ? 'Active (PAT Scope)' : 'Unauthenticated (Rate limit 60/hr)'}`);
 
   const snapshotPath = path.join(DATA_DIR, 'snapshot.json');
   const historyPath = path.join(DATA_DIR, 'history.json');
@@ -132,10 +127,10 @@ async function runTracker() {
       direction: 'desc',
     });
     allRepos = data.filter(r => !r.fork);
-    console.log(`✅ Discovered ${allRepos.length} public/owned repositories dynamically.`);
+    console.log(`Discovered ${allRepos.length} public/owned repositories dynamically.`);
   } catch (err) {
     if (err.status === 401) {
-      console.warn('⚠️ Token invalid (401). Retrying with public unauthenticated GitHub API...');
+      console.warn('Token invalid (401). Retrying with public unauthenticated GitHub API...');
       try {
         const publicOctokit = new Octokit();
         const { data } = await publicOctokit.repos.listForUser({
@@ -145,20 +140,14 @@ async function runTracker() {
           direction: 'desc',
         });
         allRepos = data.filter(r => !r.fork);
-        console.log(`✅ Discovered ${allRepos.length} public repositories dynamically (Public Mode).`);
+        console.log(`Discovered ${allRepos.length} public repositories dynamically (Public Mode).`);
       } catch (pubErr) {
-        console.error(`❌ Failed to fetch repositories for ${USERNAME}:`, pubErr.message);
-        if (previousSnapshot) {
-          console.log('⚠️ Using previous snapshot due to fetch error.');
-          return;
-        }
+        console.error(`Failed to fetch repositories for ${USERNAME}:`, pubErr.message);
+        if (previousSnapshot) return;
       }
     } else {
-      console.error(`❌ Failed to fetch repositories for ${USERNAME}:`, err.message);
-      if (previousSnapshot) {
-        console.log('⚠️ Using previous snapshot due to fetch error.');
-        return;
-      }
+      console.error(`Failed to fetch repositories for ${USERNAME}:`, err.message);
+      if (previousSnapshot) return;
     }
   }
 
@@ -168,7 +157,7 @@ async function runTracker() {
     const { data: userData } = await octokit.users.getByUsername({ username: USERNAME });
     followerCount = userData.followers || 0;
   } catch (err) {
-    console.warn('⚠️ Could not fetch follower count:', err.message);
+    console.warn('Could not fetch follower count:', err.message);
   }
 
   const prevRepoMap = new Map();
@@ -188,12 +177,18 @@ async function runTracker() {
   const milestonesToAlert = [];
   const trendingToAlert = [];
   const deadReposDetected = [];
+  const starGainsToAlert = [];
+  const forkGainsToAlert = [];
 
   for (const repo of allRepos) {
     const repoName = repo.name;
     const prev = prevRepoMap.get(repoName);
+    
     const prevStars = prev ? prev.stargazers_count : repo.stargazers_count;
     const starDelta = repo.stargazers_count - prevStars;
+
+    const prevForks = prev ? prev.forks_count : repo.forks_count;
+    const forkDelta = repo.forks_count - prevForks;
 
     // Traffic data (Owner only with PAT)
     let viewsData = { count: 0, uniques: 0, views: [] };
@@ -215,7 +210,7 @@ async function runTracker() {
         if (refRes.status === 'fulfilled') referrers = refRes.value.data || [];
         if (pathsRes.status === 'fulfilled') popularPaths = pathsRes.value.data || [];
       } catch (err) {
-        // Non-fatal if missing permission on specific repo
+        // Non-fatal
       }
     }
 
@@ -236,34 +231,78 @@ async function runTracker() {
     });
 
     // Language star breakdown
-    const lang = repo.language || 'Other';
+    const lang = repo.language || 'Code';
     languageStarsMap[lang] = (languageStarsMap[lang] || 0) + repo.stargazers_count;
 
     // Derived Metrics calculation
     const daysInactive = getDaysInactive(repo.pushed_at);
     const starVelocity24h = Math.max(0, starDelta);
     
-    // Sparkline history data from previous snapshots if available
     let viewTrend = prev?.viewTrend || [];
     const latestViewsToday = viewsData.views?.[viewsData.views.length - 1]?.count || 0;
     viewTrend = [...viewTrend.slice(-13), latestViewsToday];
 
-    // Compute Health & Flags
     const healthScore = computeHealthScore(repo, latestViewsToday, starVelocity24h, daysInactive);
     const isDead = daysInactive >= 30 && repo.stargazers_count < 10 && latestViewsToday === 0;
     const isTrending = latestViewsToday > 50 || starVelocity24h >= 3;
     const forkToStarRatio = repo.stargazers_count > 0 ? Number((repo.forks_count / repo.stargazers_count).toFixed(2)) : 0;
+    const topRefName = referrers[0] ? `${referrers[0].referrer} (${referrers[0].count} views)` : 'Direct / Organic';
+
+    // Collect Star Gain Event
+    if (prev && starDelta > 0) {
+      starGainsToAlert.push({
+        repo: repoName,
+        url: repo.html_url,
+        language: lang,
+        delta: starDelta,
+        prevStars,
+        currentStars: repo.stargazers_count,
+        healthScore,
+        topReferrer: topRefName,
+        viewsToday: latestViewsToday,
+      });
+    }
+
+    // Collect Fork Gain Event
+    if (prev && forkDelta > 0) {
+      forkGainsToAlert.push({
+        repo: repoName,
+        url: repo.html_url,
+        language: lang,
+        delta: forkDelta,
+        prevForks,
+        currentForks: repo.forks_count,
+        healthScore,
+        topReferrer: topRefName,
+      });
+    }
 
     // Milestone thresholds checking
     const milestoneSteps = [10, 25, 50, 100, 250, 500, 1000];
     for (const step of milestoneSteps) {
       if (prevStars < step && repo.stargazers_count >= step) {
-        milestonesToAlert.push({ repo: repoName, milestone: step, currentStars: repo.stargazers_count });
+        milestonesToAlert.push({
+          repo: repoName,
+          url: repo.html_url,
+          milestone: step,
+          currentStars: repo.stargazers_count,
+          language: lang,
+          healthScore,
+          topReferrer: topRefName,
+        });
       }
     }
 
     if (isTrending && (!prev || !prev.isTrending)) {
-      trendingToAlert.push({ repo: repoName, velocity: starVelocity24h, views: latestViewsToday });
+      trendingToAlert.push({
+        repo: repoName,
+        url: repo.html_url,
+        velocity: starVelocity24h,
+        views: latestViewsToday,
+        language: lang,
+        healthScore,
+        topReferrer: topRefName,
+      });
     }
 
     if (isDead) {
@@ -353,7 +392,7 @@ async function runTracker() {
 
   // Save current snapshot
   saveJson(snapshotPath, snapshotData);
-  console.log(`💾 Saved updated snapshot to: ${snapshotPath}`);
+  console.log(`Saved updated snapshot to: ${snapshotPath}`);
 
   // Append to history log
   const newHistoryEntry = {
@@ -367,38 +406,91 @@ async function runTracker() {
   const updatedHistory = [...historyLog.slice(-180), newHistoryEntry];
   saveJson(historyPath, updatedHistory);
 
-  // 6. Webhook Alerts Triggering
-  // Milestones
-  for (const m of milestonesToAlert) {
+  // 6. Webhook Alerts Triggering (Rich Embeds for Discord & Rich Markdown for Telegram)
+  
+  // Star Gains
+  for (const s of starGainsToAlert) {
     const embed = {
-      title: `Milestone Crossed!`,
-      description: `**[${m.repo}](https://github.com/${USERNAME}/${m.repo})** just reached **${m.milestone} stars**! (Current: ${m.currentStars} stars)`,
-      color: 0x00f0ff,
+      title: `Star Gain Alert — ${s.repo}`,
+      description: `**[${s.repo}](${s.url})** just received new stargazers!`,
+      color: 0x00f0ff, // Neon Cyan
+      fields: [
+        { name: 'Stars Gained', value: `+${s.delta} star${s.delta > 1 ? 's' : ''} (${s.prevStars} → ${s.currentStars})`, inline: true },
+        { name: 'Language', value: s.language, inline: true },
+        { name: 'Health Index', value: `${s.healthScore}/100`, inline: true },
+        { name: 'Traffic Source', value: s.topReferrer, inline: false },
+      ],
+      footer: { text: 'Watchtower • Portfolio Intelligence' },
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [embed] });
-    await sendTelegramNotification(`Milestone Crossed! \n\nRepo: *${m.repo}*\nReached: *${m.milestone} stars*!`);
+    await sendTelegramNotification(`*STAR GAIN ALERT — ${s.repo}*\n\n*Gained:* +${s.delta} star${s.delta > 1 ? 's' : ''} (${s.prevStars} → ${s.currentStars})\n*Language:* ${s.language}\n*Health Score:* ${s.healthScore}/100\n*Traffic Source:* ${s.topReferrer}\n*URL:* ${s.url}`);
+  }
+
+  // Fork Gains
+  for (const f of forkGainsToAlert) {
+    const embed = {
+      title: `New Code Fork — ${f.repo}`,
+      description: `Someone just cloned and forked **[${f.repo}](${f.url})**!`,
+      color: 0x10b981, // Neon Emerald
+      fields: [
+        { name: 'Forks Count', value: `+${f.delta} fork (${f.prevForks} → ${f.currentForks})`, inline: true },
+        { name: 'Language', value: f.language, inline: true },
+        { name: 'Health Index', value: `${f.healthScore}/100`, inline: true },
+        { name: 'Traffic Source', value: f.topReferrer, inline: false },
+      ],
+      footer: { text: 'Watchtower • Portfolio Intelligence' },
+      timestamp: new Date().toISOString(),
+    };
+    await sendDiscordNotification({ embeds: [embed] });
+    await sendTelegramNotification(`*NEW CODE FORK — ${f.repo}*\n\n*Forks:* +${f.delta} fork (${f.prevForks} → ${f.currentForks})\n*Language:* ${f.language}\n*Health Score:* ${f.healthScore}/100\n*Traffic Source:* ${f.topReferrer}\n*URL:* ${f.url}`);
+  }
+
+  // Milestones
+  for (const m of milestonesToAlert) {
+    const embed = {
+      title: `Milestone Reached — ${m.repo}`,
+      description: `**[${m.repo}](${m.url})** has officially crossed **${m.milestone} stars**!`,
+      color: 0xa855f7, // Neon Purple
+      fields: [
+        { name: 'Total Stars', value: `${m.currentStars} stars`, inline: true },
+        { name: 'Language', value: m.language, inline: true },
+        { name: 'Health Index', value: `${m.healthScore}/100`, inline: true },
+        { name: 'Traffic Source', value: m.topReferrer, inline: false },
+      ],
+      footer: { text: 'Watchtower • Portfolio Intelligence' },
+      timestamp: new Date().toISOString(),
+    };
+    await sendDiscordNotification({ embeds: [embed] });
+    await sendTelegramNotification(`*MILESTONE REACHED — ${m.repo}*\n\n*Stars:* Reached ${m.milestone} stars!\n*Language:* ${m.language}\n*Health Score:* ${m.healthScore}/100\n*Traffic Source:* ${m.topReferrer}\n*URL:* ${m.url}`);
   }
 
   // Trending
   for (const t of trendingToAlert) {
     const embed = {
-      title: `Repo Trending Alert!`,
-      description: `**[${t.repo}](https://github.com/${USERNAME}/${t.repo})** is blowing up! Gained +${t.velocity} stars in 24h with ${t.views} views.`,
-      color: 0x10b981,
+      title: `Trending Alert — ${t.repo}`,
+      description: `**[${t.repo}](${t.url})** activity is spiking above baseline!`,
+      color: 0xf59e0b, // Neon Amber
+      fields: [
+        { name: '24h Velocity', value: `+${t.velocity} stars`, inline: true },
+        { name: 'Views Today', value: `${t.views} views`, inline: true },
+        { name: 'Health Index', value: `${t.healthScore}/100`, inline: true },
+        { name: 'Traffic Source', value: t.topReferrer, inline: false },
+      ],
+      footer: { text: 'Watchtower • Portfolio Intelligence' },
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [embed] });
-    await sendTelegramNotification(`Trending Alert! \n\nRepo: *${t.repo}*\n+${t.velocity} stars in 24h! Views: ${t.views}`);
+    await sendTelegramNotification(`*TRENDING ALERT — ${t.repo}*\n\n*24h Velocity:* +${t.velocity} stars\n*Views Today:* ${t.views} views\n*Health Score:* ${t.healthScore}/100\n*Traffic Source:* ${t.topReferrer}\n*URL:* ${t.url}`);
   }
 
   // Dead Repos
   for (const d of deadReposDetected) {
     if (!previousSnapshot || !prevRepoMap.get(d.repo)?.isDead) {
       const embed = {
-        title: `Inactive Repo Flagged`,
+        title: `Inactive Repo Flagged — ${d.repo}`,
         description: `**${d.repo}** has 0 views and 0 activity in over ${d.daysInactive} days. Candidate to archive or revive!`,
-        color: 0xef4444,
+        color: 0xef4444, // Neon Red
         timestamp: new Date().toISOString(),
       };
       await sendDiscordNotification({ embeds: [embed] });
@@ -409,7 +501,7 @@ async function runTracker() {
   if (IS_WEEKLY_RUN) {
     console.log('Generating Weekly Digest Notification...');
     const topPerformer = [...processedRepos].sort((a, b) => b.starVelocity24h - a.starVelocity24h)[0];
-    const topRef = topReferrersList[0]?.name || 'Direct / None';
+    const topRef = topReferrersList[0]?.name || 'Direct / Organic';
     const weeklyEmbed = {
       title: `Watchtower Weekly Digest — ${USERNAME}`,
       description: `Here is your portfolio performance breakdown for the past week:`,
@@ -425,13 +517,13 @@ async function runTracker() {
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [weeklyEmbed] });
-    await sendTelegramNotification(`Watchtower Weekly Digest\n\nTotal Stars: ${totalStars}\nViews (14d): ${totalViews14d}\nHealth Score: ${portfolioHealthAvg}/100\nTop Performer: ${topPerformer?.name || 'N/A'}`);
+    await sendTelegramNotification(`*WATCHTOWER WEEKLY DIGEST*\n\n*Total Stars:* ${totalStars}\n*Views (14d):* ${totalViews14d}\n*Health Index:* ${portfolioHealthAvg}/100\n*Top Performer:* ${topPerformer?.name || 'N/A'}\n*Top Traffic Source:* ${topRef}`);
   }
 
-  console.log('✨ [Watchtower Tracker] Scanning and update process complete!\n');
+  console.log('[Watchtower Tracker] Scanning and update process complete!\n');
 }
 
 runTracker().catch(err => {
-  console.error('💥 Fatal error in Watchtower Tracker:', err);
+  console.error('[Fatal Error in Watchtower Tracker]', err);
   process.exit(1);
 });
