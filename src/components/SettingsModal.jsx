@@ -1,22 +1,12 @@
-import React, { useState } from 'react';
-import { X, Key, ShieldCheck, Download, FileSpreadsheet, Database, RefreshCw } from 'lucide-react';
+import React from 'react';
+import { X, Key, ShieldCheck, Download, FileSpreadsheet, Database, RefreshCw, Lock } from 'lucide-react';
 import { exportDataAsJSON, exportReposAsCSV } from '../services/metrics';
 
-export function SettingsModal({ onClose, patToken, onSavePAT, snapshotData, rateLimit }) {
-  const [inputToken, setInputToken] = useState(patToken || '');
-  const [savedMsg, setSavedMsg] = useState(false);
-
-  const handleSave = (e) => {
-    e.preventDefault();
-    onSavePAT(inputToken.trim());
-    setSavedMsg(true);
-    setTimeout(() => setSavedMsg(false), 3000);
-  };
-
+export function SettingsModal({ onClose, snapshotData, rateLimit }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
       <div className="bg-[#0f172a] border border-cyan-500/40 rounded-3xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl shadow-cyan-500/10 p-6 md:p-8 space-y-6">
-        
+
         {/* Header */}
         <div className="flex items-center justify-between pb-4 border-b border-slate-800">
           <div className="flex items-center gap-3">
@@ -25,7 +15,7 @@ export function SettingsModal({ onClose, patToken, onSavePAT, snapshotData, rate
             </div>
             <div>
               <h2 className="text-xl font-bold font-mono text-white">Watchtower Settings & Data Export</h2>
-              <p className="text-xs text-slate-400 font-mono">Manage API Token & Export Portfolio Reports</p>
+              <p className="text-xs text-slate-400 font-mono">Server-Authenticated • Export Portfolio Reports</p>
             </div>
           </div>
           <button
@@ -36,62 +26,44 @@ export function SettingsModal({ onClose, patToken, onSavePAT, snapshotData, rate
           </button>
         </div>
 
-        {/* Saved Success Notification */}
-        {savedMsg && (
-          <div className="p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 font-mono text-xs flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Personal Access Token saved to LocalStorage!</span>
+        {/* Server Auth Status */}
+        <div className="bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-5 flex items-start gap-4">
+          <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 shrink-0 mt-0.5">
+            <Lock className="w-5 h-5" />
           </div>
-        )}
-
-        {/* PAT Token Configuration Form */}
-        <form onSubmit={handleSave} className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 space-y-3">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xs font-mono uppercase text-cyan-300 font-bold flex items-center gap-2">
-              <Key className="w-4 h-4 text-cyan-400" /> GitHub Personal Access Token (PAT)
+          <div className="space-y-1">
+            <h3 className="text-sm font-bold font-mono text-emerald-300 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4" /> Server-Side Authentication Active
             </h3>
-            <span className={`text-[10px] font-mono px-2 py-0.5 rounded border ${
-              patToken ? 'bg-emerald-950 text-emerald-400 border-emerald-500/30' : 'bg-amber-950 text-amber-300 border-amber-500/30'
-            }`}>
-              {patToken ? 'Token Saved' : 'Unauthenticated'}
-            </span>
+            <p className="text-xs text-slate-400 font-sans leading-relaxed">
+              Your GitHub PAT, Discord webhook, and Telegram token are stored as <strong className="text-slate-200">server-only environment variables</strong> in Vercel. They are never exposed in the browser bundle or sent to your device. This session is authenticated with a signed HMAC token valid for 7 days.
+            </p>
           </div>
-
-          <p className="text-xs text-slate-400 font-sans leading-relaxed">
-            Enter your GitHub Personal Access Token to unlock 14-day traffic referrers, view/clone analytics, and increase your rate limit from 60 to 5,000 requests/hour.
-          </p>
-
-          <input
-            type="password"
-            placeholder="ghp_your_token_here..."
-            value={inputToken}
-            onChange={(e) => setInputToken(e.target.value)}
-            className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs font-mono text-cyan-300 focus:outline-none focus:border-cyan-500"
-          />
-
-          <button
-            type="submit"
-            className="w-full py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-mono text-xs font-bold transition-all shadow-neon-cyan/20"
-          >
-            Save Token in Browser
-          </button>
-        </form>
+        </div>
 
         {/* Live API Rate Limit Status */}
         <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 font-mono text-xs space-y-2">
           <h3 className="text-xs font-mono uppercase text-slate-300 font-bold flex items-center gap-2">
-            <RefreshCw className="w-4 h-4 text-cyan-400" /> Current API Rate Limit Counter
+            <RefreshCw className="w-4 h-4 text-cyan-400" /> Current API Rate Limit
           </h3>
           <div className="flex items-center justify-between pt-1 text-slate-300">
             <span>Quota Remaining:</span>
-            <span className="font-bold text-cyan-300">{rateLimit ? `${rateLimit.remaining} / ${rateLimit.limit}` : '60 / 60'}</span>
-          </div>
-          <div className="flex items-center justify-between text-slate-300">
-            <span>Authentication Status:</span>
-            <span className={rateLimit?.isAuthenticated ? 'text-emerald-400 font-bold' : 'text-amber-400'}>
-              {rateLimit?.isAuthenticated ? 'Authenticated (5,000 req/hr)' : 'Public (60 req/hr)'}
+            <span className="font-bold text-cyan-300">
+              {rateLimit ? `${rateLimit.remaining} / ${rateLimit.limit}` : '5000 / 5000'}
             </span>
           </div>
+          <div className="flex items-center justify-between text-slate-300">
+            <span>Authentication Mode:</span>
+            <span className={rateLimit?.isAuthenticated !== false ? 'text-emerald-400 font-bold' : 'text-amber-400'}>
+              {rateLimit?.isAuthenticated !== false ? 'Authenticated via Server PAT (5,000 req/hr)' : 'Public API (60 req/hr)'}
+            </span>
+          </div>
+          {rateLimit?.reset && (
+            <div className="flex items-center justify-between text-slate-400">
+              <span>Quota Resets:</span>
+              <span>{new Date(rateLimit.reset).toLocaleTimeString()}</span>
+            </div>
+          )}
         </div>
 
         {/* Data Export Options */}

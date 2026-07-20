@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Radar, RefreshCw, Key, Bell, Rocket, ShieldCheck, ShieldAlert, FileText, UserCheck, Activity } from 'lucide-react';
+import { Radar, RefreshCw, Key, Bell, Rocket, ShieldCheck, FileText, UserCheck, Activity } from 'lucide-react';
 
 export function Header({
   username,
@@ -7,7 +7,7 @@ export function Header({
   onRefresh,
   isRefreshing,
   rateLimit,
-  hasPAT,
+  isServerAuthed,
   onOpenSettings,
   onOpenNotifications,
   onOpenLaunches,
@@ -88,7 +88,7 @@ export function Header({
                 style={{ width: `${rateLimitPercent}%` }}
               />
             </div>
-            <span className={hasPAT ? 'text-cyan-400 font-bold text-[11px]' : 'text-slate-300 text-[11px]'}>
+            <span className={isServerAuthed ? 'text-cyan-400 font-bold text-[11px]' : 'text-slate-300 text-[11px]'}>
               {rateLimit ? `${rateLimit.remaining}/${rateLimit.limit}` : '5000/5000'}
             </span>
           </div>
@@ -96,15 +96,11 @@ export function Header({
           {/* PAT Status Badge */}
           <button
             onClick={onOpenSettings}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono border transition-all ${
-              hasPAT
-                ? 'bg-emerald-950/40 border-emerald-500/40 text-emerald-400 hover:bg-emerald-900/60'
-                : 'bg-amber-950/40 border-amber-500/40 text-amber-300 hover:bg-amber-900/60 shadow-neon-amber'
-            }`}
-            title={hasPAT ? 'PAT Token Active (5,000 req/hr + Traffic)' : 'Unauthenticated (Click to add PAT)'}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-mono border transition-all bg-emerald-950/40 border-emerald-500/40 text-emerald-400 hover:bg-emerald-900/60"
+            title="Server-Authenticated — PAT secured server-side (5,000 req/hr)"
           >
-            {hasPAT ? <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> : <ShieldAlert className="w-3.5 h-3.5 text-amber-400" />}
-            <span className="hidden sm:inline font-medium">{hasPAT ? 'PAT Active' : 'Add PAT'}</span>
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+            <span className="hidden sm:inline font-medium">Secured</span>
           </button>
 
           {/* Launch Studio Button */}

@@ -1,58 +1,87 @@
-// Browser GitHub API Client with Rate-Limit tracking and fallback support
+// Browser GitHub API Client — proxies all calls through /api/github
+// GH_PAT is added server-side and NEVER reaches this file or the browser bundle.
 
-export function getInitialRateLimit(token = '') {
-  const hasToken = Boolean(token);
+const SESSION_KEY = 'wt_session_token';
+
+function getSessionToken() {
+  return localStorage.getItem(SESSION_KEY) || '';
+}
+
+function authHeaders() {
+  const token = getSessionToken();
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
+export function getInitialRateLimit() {
   return {
-    limit: hasToken ? 5000 : 60,
-    remaining: hasToken ? 5000 : 60,
+    limit: 5000,
+    remaining: 5000,
     reset: null,
-    isAuthenticated: hasToken,
+    // Server always uses PAT if configured — we start optimistic
+    isAuthenticated: true,
   };
 }
 
 export let currentRateLimit = getInitialRateLimit();
 
-export async function fetchLivePortfolio(username, token = '') {
-  const headers = {
-    'Accept': 'application/vnd.github.v3+json',
-  };
-  if (token) {
-    headers['Authorization'] = `token ${token}`;
+/**
+ * Makes an authenticated request through the Watchtower GitHub proxy.
+ * @param {string} path - GitHub API path e.g. "/users/shlokkokk"
+ * @param {Record<string,string>} params - Additional query params
+ */
+async function proxyGitHub(path, params = {}) {
+  const qs = new URLSearchParams({ path, ...params }).toString();
+  const res = await fetch(`/api/github?${qs}`, {
+    headers: {
+      ...authHeaders(),
+      'Content-Type': 'application/json',
+    },
+  });
+
+  // Update rate-limit state from proxy-forwarded headers
+  updateRateLimit(res.headers);
+
+  if (res.status === 401) {
+    // Session expired — clear token so PasswordGate re-appears
+    localStorage.removeItem(SESSION_KEY);
+    throw new Error('Session expired. Please log in again.');
   }
 
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    const status = res.status;
+    if (status === 403) {
+      throw new Error('GitHub Rate Limit Exceeded. The server-side PAT quota may be full.');
+    }
+    if (status === 404) {
+      throw new Error(body.message || `GitHub user not found.`);
+    }
+    throw new Error(body.error || body.message || `GitHub API Error (${status})`);
+  }
+
+  return res.json();
+}
+
+export async function fetchLivePortfolio(username) {
   try {
-    // 1. Fetch user profile
-    const userRes = await fetch(`https://api.github.com/users/${username}`, { headers });
-    updateRateLimit(userRes.headers, Boolean(token));
+    // 1. User profile
+    const userData = await proxyGitHub(`/users/${encodeURIComponent(username)}`);
 
-    if (!userRes.ok) {
-      if (userRes.status === 403) {
-        throw new Error(`GitHub Rate Limit Exceeded. ${token ? 'Token limit reached' : 'Add a GitHub PAT in Settings to get 5,000 requests/hr'}.`);
-      }
-      if (userRes.status === 404) {
-        throw new Error(`GitHub user "${username}" was not found.`);
-      }
-      throw new Error(`GitHub API Error (${userRes.status}): ${userRes.statusText}`);
-    }
+    // 2. Repos list
+    const rawRepos = await proxyGitHub(`/users/${encodeURIComponent(username)}/repos`, {
+      per_page: '100',
+      sort: 'pushed',
+      direction: 'desc',
+    });
 
-    const userData = await userRes.json();
-
-    // 2. Fetch repos list
-    const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=pushed&direction=desc`, { headers });
-    updateRateLimit(reposRes.headers, Boolean(token));
-
-    if (!reposRes.ok) {
-      throw new Error(`Failed to fetch repositories for ${username}.`);
-    }
-
-    const rawRepos = await reposRes.json();
-    const repos = rawRepos.filter(r => !r.fork);
+    const repos = Array.isArray(rawRepos) ? rawRepos.filter(r => !r.fork) : [];
 
     // Transform raw repos into Watchtower schema
     const processedRepos = repos.map(repo => {
       const daysInactive = getDaysInactive(repo.pushed_at);
-      const starVelocity24h = 0;
-      const forkToStarRatio = repo.stargazers_count > 0 ? Number((repo.forks_count / repo.stargazers_count).toFixed(2)) : 0;
+      const forkToStarRatio = repo.stargazers_count > 0
+        ? Number((repo.forks_count / repo.stargazers_count).toFixed(2))
+        : 0;
       const isDead = daysInactive >= 30 && repo.stargazers_count < 10;
       const isTrending = repo.stargazers_count > 25;
 
@@ -70,7 +99,7 @@ export async function fetchLivePortfolio(username, token = '') {
         pushed_at: repo.pushed_at,
         updated_at: repo.updated_at,
         created_at: repo.created_at,
-        starVelocity24h,
+        starVelocity24h: 0,
         forkToStarRatio,
         daysInactive,
         healthScore: calculateHealthScore(repo, daysInactive),
@@ -82,7 +111,7 @@ export async function fetchLivePortfolio(username, token = '') {
         viewTrend: [0, 0, 0, 0, 0, 0, 0],
         topReferrers: [],
         popularPaths: [],
-        launchesCount: 0
+        launchesCount: 0,
       };
     });
 
@@ -90,7 +119,6 @@ export async function fetchLivePortfolio(username, token = '') {
     const totalForks = processedRepos.reduce((a, r) => a + r.forks_count, 0);
     const totalOpenIssues = processedRepos.reduce((a, r) => a + r.open_issues_count, 0);
 
-    // Language aggregation
     const langMap = {};
     processedRepos.forEach(r => {
       langMap[r.language] = (langMap[r.language] || 0) + r.stargazers_count;
@@ -100,7 +128,7 @@ export async function fetchLivePortfolio(username, token = '') {
       .map(([language, stars]) => ({
         language,
         stars,
-        percentage: totalStars > 0 ? Number(((stars / totalStars) * 100).toFixed(1)) : 0
+        percentage: totalStars > 0 ? Number(((stars / totalStars) * 100).toFixed(1)) : 0,
       }))
       .sort((a, b) => b.stars - a.stars);
 
@@ -124,37 +152,37 @@ export async function fetchLivePortfolio(username, token = '') {
         velocityLeader: processedRepos[0] ? { name: processedRepos[0].name, velocity: 0 } : null,
         topReferrerOverall: null,
         trendingCount: processedRepos.filter(r => r.isTrending).length,
-        deadCount: processedRepos.filter(r => r.isDead).length
+        deadCount: processedRepos.filter(r => r.isDead).length,
       },
       languageBreakdown,
       repos: processedRepos,
-      rateLimit: { ...currentRateLimit }
+      rateLimit: { ...currentRateLimit },
     };
   } catch (err) {
-    console.error('[GitHub API Live Fetch Error]', err);
+    console.error('[GitHub Proxy Fetch Error]', err);
     throw err;
   }
 }
 
-function updateRateLimit(headers, isAuthenticated) {
+function updateRateLimit(headers) {
   const limit = headers.get('x-ratelimit-limit');
   const remaining = headers.get('x-ratelimit-remaining');
   const reset = headers.get('x-ratelimit-reset');
+  const isAuth = headers.get('x-wt-authenticated') === 'true';
 
   if (limit && remaining) {
     currentRateLimit = {
       limit: parseInt(limit, 10),
       remaining: parseInt(remaining, 10),
       reset: reset ? new Date(parseInt(reset, 10) * 1000) : null,
-      isAuthenticated,
+      isAuthenticated: isAuth,
     };
   }
 }
 
 function getDaysInactive(pushedAt) {
   if (!pushedAt) return 999;
-  const diffTime = Math.abs(new Date() - new Date(pushedAt));
-  return Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  return Math.floor(Math.abs(new Date() - new Date(pushedAt)) / (1000 * 60 * 60 * 24));
 }
 
 function calculateHealthScore(repo, daysInactive) {

@@ -10,24 +10,33 @@ import { AnalyticsCharts } from './components/AnalyticsCharts';
 import { NotificationModal } from './components/NotificationModal';
 import { SettingsModal } from './components/SettingsModal';
 import { TodoModal } from './components/TodoModal';
+import { PasswordGate } from './components/PasswordGate';
 import { fetchLivePortfolio, currentRateLimit, getInitialRateLimit } from './services/githubApi';
 import { filterAndSortRepos } from './services/metrics';
 import { AlertCircle, RefreshCw, Layers } from 'lucide-react';
 
-export default function App() {
-  // State
-  const [username, setUsername] = useState(() => localStorage.getItem('wt_username') || import.meta.env.VITE_DEFAULT_USERNAME || 'shlokkokk');
-  const [patToken, setPatToken] = useState(() => localStorage.getItem('wt_pat') || import.meta.env.VITE_GH_PAT || '');
-  const [discordUrl, setDiscordUrl] = useState(() => localStorage.getItem('wt_discord_url') || import.meta.env.VITE_DISCORD_WEBHOOK_URL || '');
+// SECURITY ARCHITECTURE:
+// All secrets (GH_PAT, DISCORD_WEBHOOK_URL, TELEGRAM_*) live in Vercel server env vars ONLY.
+// The frontend holds only a signed HMAC session token (worthless without SESSION_SECRET).
+// No secret of any kind is ever bundled into the client JS.
+// Only VITE_DEFAULT_USERNAME (a public GitHub username) is allowed as a VITE_ prefixed env var.
 
+export default function App() {
+  // Public username — safe as a VITE_ env var (it's a public GitHub handle)
+  const [username, setUsername] = useState(
+    () => localStorage.getItem('wt_username') || import.meta.env.VITE_DEFAULT_USERNAME || 'shlokkokk'
+  );
+
+  // Data state
   const [snapshotData, setSnapshotData] = useState(null);
   const [launches, setLaunches] = useState([]);
   const [historyLog, setHistoryLog] = useState([]);
 
+  // UI state
   const [isLoading, setIsLoading] = useState(true);
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
-  const [rateLimit, setRateLimit] = useState(() => getInitialRateLimit(localStorage.getItem('wt_pat') || import.meta.env.VITE_GH_PAT || ''));
+  const [rateLimit, setRateLimit] = useState(getInitialRateLimit);
 
   // Filters & Sorting
   const [searchQuery, setSearchQuery] = useState('');
@@ -43,7 +52,7 @@ export default function App() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showTodoModal, setShowTodoModal] = useState(false);
 
-  // Initial Load from JSON Snapshots
+  // Initial Load from JSON Snapshots (fast, no auth needed — public data)
   useEffect(() => {
     async function loadInitialData() {
       setIsLoading(true);
@@ -56,49 +65,40 @@ export default function App() {
         ]);
 
         if (snapRes.status === 'fulfilled' && snapRes.value.ok) {
-          const snapData = await snapRes.value.json();
-          setSnapshotData(snapData);
+          setSnapshotData(await snapRes.value.json());
         }
-
         if (launchRes.status === 'fulfilled' && launchRes.value.ok) {
-          const lData = await launchRes.value.json();
-          setLaunches(lData);
+          setLaunches(await launchRes.value.json());
         }
-
         if (histRes.status === 'fulfilled' && histRes.value.ok) {
-          const hData = await histRes.value.json();
-          setHistoryLog(hData);
+          setHistoryLog(await histRes.value.json());
         }
       } catch (err) {
-        console.warn('Fallback snapshot error:', err);
+        console.warn('Snapshot load error:', err);
       } finally {
         setIsLoading(false);
-        // Auto live refresh from GitHub API on mount
+        // Live refresh via authenticated proxy
         handleLiveRefresh(username);
       }
     }
     loadInitialData();
 
-    // Auto-refresh every 5 minutes in background
-    const intervalId = setInterval(() => {
-      handleLiveRefresh(username);
-    }, 5 * 60 * 1000);
-
+    // Auto-refresh every 5 minutes
+    const intervalId = setInterval(() => handleLiveRefresh(username), 5 * 60 * 1000);
     return () => clearInterval(intervalId);
   }, []);
 
-  // Live Refresh Trigger
+  // Live Refresh — calls /api/github proxy (session token added by githubApi.js automatically)
   const handleLiveRefresh = async (targetUser = username) => {
     setIsRefreshing(true);
     setErrorMessage(null);
     try {
-      const liveData = await fetchLivePortfolio(targetUser, patToken);
+      const liveData = await fetchLivePortfolio(targetUser);
       setSnapshotData(liveData);
       setRateLimit(currentRateLimit);
       setUsername(targetUser);
       localStorage.setItem('wt_username', targetUser);
 
-      // Check if any repo crossed milestone -> trigger celebration!
       const topTrending = liveData.repos.find(r => r.isTrending);
       if (topTrending) {
         confetti({
@@ -109,32 +109,17 @@ export default function App() {
         });
       }
     } catch (err) {
+      // If the proxy returns 401, the session expired — gate will re-appear on next page load
       setErrorMessage(err.message || 'Failed to fetch live GitHub data.');
     } finally {
       setIsRefreshing(false);
     }
   };
 
-  // Save PAT to state & LocalStorage
-  const handleSavePAT = (token) => {
-    setPatToken(token);
-    localStorage.setItem('wt_pat', token);
-    if (token) {
-      handleLiveRefresh(username);
-    }
-  };
-
-  // Save Discord URL
-  const handleSaveDiscordUrl = (url) => {
-    setDiscordUrl(url);
-    localStorage.setItem('wt_discord_url', url);
-  };
-
   // Save New Launch Entry
   const handleSaveLaunch = (newLaunch) => {
     const updated = [newLaunch, ...launches];
     setLaunches(updated);
-    // Persist in localStorage as local fallback
     localStorage.setItem('wt_launches', JSON.stringify(updated));
   };
 
@@ -150,8 +135,9 @@ export default function App() {
   const availableLanguages = Array.from(new Set(repos.map(r => r.language).filter(Boolean)));
 
   return (
+    <PasswordGate>
     <div className="min-h-screen bg-[#080b11] text-slate-100 flex flex-col font-sans">
-      
+
       {/* Top Header Navigation */}
       <Header
         username={username}
@@ -159,7 +145,7 @@ export default function App() {
         onRefresh={() => handleLiveRefresh(username)}
         isRefreshing={isRefreshing}
         rateLimit={rateLimit}
-        hasPAT={Boolean(patToken)}
+        isServerAuthed={true}
         onOpenSettings={() => setShowSettingsModal(true)}
         onOpenNotifications={() => setShowNotificationModal(true)}
         onOpenLaunches={() => setShowLaunchModal(true)}
@@ -168,7 +154,7 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6">
-        
+
         {/* Error Banner */}
         {errorMessage && (
           <div className="mb-6 p-4 rounded-2xl bg-amber-950/60 border border-amber-500/50 text-amber-200 font-mono text-xs flex items-start justify-between gap-4 shadow-neon-amber/20">
@@ -180,10 +166,10 @@ export default function App() {
               </div>
             </div>
             <button
-              onClick={() => setShowSettingsModal(true)}
+              onClick={() => setErrorMessage(null)}
               className="px-3 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30 transition-all shrink-0"
             >
-              Add PAT Token
+              Dismiss
             </button>
           </div>
         )}
@@ -219,7 +205,7 @@ export default function App() {
               repos={filteredRepos}
               viewMode={viewMode}
               onSelectRepo={(repo) => setSelectedRepo(repo)}
-              onAddLaunch={(repoName) => setShowLaunchModal(true)}
+              onAddLaunch={() => setShowLaunchModal(true)}
             />
 
             {/* Analytics Visualizer Charts */}
@@ -240,7 +226,7 @@ export default function App() {
             <Layers className="w-4 h-4 text-cyan-400" />
             <span>Watchtower Portfolio Tracker & Intelligence Command</span>
           </div>
-          <span>Target: <strong className="text-cyan-300">{username}</strong> • 100% Dynamic API & Webhooks</span>
+          <span>Target: <strong className="text-cyan-300">{username}</strong> • Server-Authenticated • Zero Secrets in Bundle</span>
         </div>
       </footer>
 
@@ -266,16 +252,13 @@ export default function App() {
       {showNotificationModal && (
         <NotificationModal
           onClose={() => setShowNotificationModal(false)}
-          discordUrl={discordUrl}
-          onSaveDiscordUrl={handleSaveDiscordUrl}
+          topRepoName={snapshotData?.repos?.[0]?.name || 'Watchtower'}
         />
       )}
 
       {showSettingsModal && (
         <SettingsModal
           onClose={() => setShowSettingsModal(false)}
-          patToken={patToken}
-          onSavePAT={handleSavePAT}
           snapshotData={snapshotData}
           rateLimit={rateLimit}
         />
@@ -286,5 +269,6 @@ export default function App() {
       )}
 
     </div>
+    </PasswordGate>
   );
 }
