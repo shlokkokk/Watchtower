@@ -25,7 +25,8 @@ export function PasswordGate({ children, onSessionToken }) {
   useEffect(() => {
     const stored = localStorage.getItem(SESSION_TOKEN_KEY);
     if (isTokenFormatValid(stored)) {
-      onSessionToken?.(stored);
+      // Resume existing session — App.jsx already checks localStorage on mount
+      // so no need to call onSessionToken here (avoids double live-refresh)
       setIsAuthenticated(true);
     } else {
       localStorage.removeItem(SESSION_TOKEN_KEY);

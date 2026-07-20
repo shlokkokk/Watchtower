@@ -27,6 +27,11 @@ export default function App() {
     () => localStorage.getItem('wt_username') || import.meta.env.VITE_DEFAULT_USERNAME || 'shlokkokk'
   );
 
+  // Session token — set by PasswordGate after login. Used to gate live-refresh.
+  const [sessionReady, setSessionReady] = useState(
+    () => Boolean(localStorage.getItem('wt_session_token'))
+  );
+
   // Data state
   const [snapshotData, setSnapshotData] = useState(null);
   const [launches, setLaunches] = useState([]);
@@ -77,8 +82,11 @@ export default function App() {
         console.warn('Snapshot load error:', err);
       } finally {
         setIsLoading(false);
-        // Live refresh via authenticated proxy
-        handleLiveRefresh(username);
+        // Only live-refresh if a valid session token is already present.
+        // If user is logging in fresh, the PasswordGate onSessionToken callback triggers this instead.
+        if (localStorage.getItem('wt_session_token')) {
+          handleLiveRefresh(username);
+        }
       }
     }
     loadInitialData();
@@ -116,7 +124,12 @@ export default function App() {
     }
   };
 
-  // Save New Launch Entry
+  // Called by PasswordGate when a fresh login succeeds
+  const handleSessionReady = () => {
+    setSessionReady(true);
+    handleLiveRefresh(username);
+  };
+
   const handleSaveLaunch = (newLaunch) => {
     const updated = [newLaunch, ...launches];
     setLaunches(updated);
@@ -135,7 +148,7 @@ export default function App() {
   const availableLanguages = Array.from(new Set(repos.map(r => r.language).filter(Boolean)));
 
   return (
-    <PasswordGate>
+    <PasswordGate onSessionToken={handleSessionReady}>
     <div className="min-h-screen bg-[#080b11] text-slate-100 flex flex-col font-sans">
 
       {/* Top Header Navigation */}
