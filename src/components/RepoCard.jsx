@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, GitFork, AlertCircle, ExternalLink, Zap, Flame, Skull, Activity, ArrowUpRight, BarChart2 } from 'lucide-react';
+import { Star, GitFork, AlertCircle, ExternalLink, Zap, Flame, Skull, Activity, ArrowUpRight, Eye } from 'lucide-react';
 
 export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
   const {
@@ -20,12 +20,16 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
     trafficViews14d = 0,
   } = repo;
 
-  // Render Mini Sparkline (SVG)
+  const hasTrafficData = viewTrend.some(v => v > 0);
+
+  // Render Mini Sparkline with Gradient Fill (SVG)
   const renderSparkline = () => {
-    if (!viewTrend || viewTrend.length === 0) return null;
+    if (!hasTrafficData) return null;
+
     const max = Math.max(...viewTrend, 1);
-    const width = 100;
-    const height = 24;
+    const width = 80;
+    const height = 20;
+    
     const points = viewTrend
       .map((val, idx) => {
         const x = (idx / (viewTrend.length - 1)) * width;
@@ -34,17 +38,28 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
       })
       .join(' ');
 
+    const areaPoints = `0,${height} ${points} ${width},${height}`;
+
     return (
-      <svg className="w-24 h-6 overflow-visible">
-        <polyline
-          fill="none"
-          stroke={isTrending ? '#10b981' : '#00f0ff'}
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          points={points}
-        />
-      </svg>
+      <div className="relative group/spark">
+        <svg className="w-20 h-5 overflow-visible" viewBox={`0 0 ${width} ${height}`}>
+          <defs>
+            <linearGradient id={`grad-${repo.id}`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={isTrending ? '#10b981' : '#00f0ff'} stopOpacity="0.4" />
+              <stop offset="100%" stopColor={isTrending ? '#10b981' : '#00f0ff'} stopOpacity="0.0" />
+            </linearGradient>
+          </defs>
+          <polygon points={areaPoints} fill={`url(#grad-${repo.id})`} />
+          <polyline
+            fill="none"
+            stroke={isTrending ? '#10b981' : '#00f0ff'}
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            points={points}
+          />
+        </svg>
+      </div>
     );
   };
 
@@ -58,46 +73,25 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
           : 'border-slate-800/80 hover:border-cyan-500/50 hover:shadow-neon-cyan/20'
       }`}
     >
-      {/* Top Bar: Language & Badges */}
       <div>
+        {/* Top Header Status Row */}
         <div className="flex items-center justify-between gap-2 mb-3">
-          <span className="text-[11px] font-mono font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-cyan-300 border border-slate-700">
-            {language}
-          </span>
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-950 text-cyan-300 border border-slate-800">
+              {language}
+            </span>
             {isTrending && (
-              <span className="flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 animate-pulse">
+              <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                 <Flame className="w-3 h-3 text-emerald-400" /> Trending
               </span>
             )}
             {isDead && (
-              <span className="flex items-center gap-1 text-[10px] font-mono px-2 py-0.5 rounded-md bg-red-500/20 text-red-300 border border-red-500/30">
-                <Skull className="w-3 h-3 text-red-400" /> Inactive
+              <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-red-950 text-red-400 border border-red-500/30 flex items-center gap-1">
+                <Skull className="w-3 h-3 text-red-400" /> Inactive ({daysInactive}d)
               </span>
             )}
-            <span
-              className={`text-[10px] font-mono px-2 py-0.5 rounded-md border ${
-                healthScore >= 80
-                  ? 'bg-emerald-950/40 text-emerald-400 border-emerald-500/30'
-                  : healthScore >= 60
-                  ? 'bg-cyan-950/40 text-cyan-400 border-cyan-500/30'
-                  : 'bg-amber-950/40 text-amber-300 border-amber-500/30'
-              }`}
-              title="Watchtower Health Index"
-            >
-              Health {healthScore}/100
-            </span>
           </div>
-        </div>
-
-        {/* Title & External Link */}
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h3
-            onClick={() => onSelectRepo(repo)}
-            className="text-lg font-bold font-mono text-white group-hover:text-cyan-300 cursor-pointer transition-colors line-clamp-1"
-          >
-            {name}
-          </h3>
+          
           <a
             href={html_url}
             target="_blank"
@@ -105,19 +99,25 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
             className="text-slate-500 hover:text-cyan-400 p-1 transition-colors"
             title="Open on GitHub"
           >
-            <ArrowUpRight className="w-4 h-4" />
+            <ExternalLink className="w-4 h-4" />
           </a>
         </div>
 
+        {/* Title */}
+        <h3
+          onClick={() => onSelectRepo(repo)}
+          className="text-lg font-bold font-mono text-white group-hover:text-cyan-300 transition-colors cursor-pointer mb-2 truncate"
+        >
+          {name}
+        </h3>
+
         {/* Description */}
-        <p className="text-xs text-slate-400 font-sans line-clamp-2 mb-4 leading-relaxed min-h-[2.25rem]">
-          {description || 'No repository description available.'}
+        <p className="text-xs text-slate-400 font-sans line-clamp-2 leading-relaxed mb-4 min-h-[2.5rem]">
+          {description}
         </p>
       </div>
 
-      {/* Bottom Section: Metrics & Sparkline */}
       <div>
-        
         {/* Referrer Tags */}
         {topReferrers.length > 0 && (
           <div className="flex items-center gap-1.5 flex-wrap mb-4">
@@ -130,12 +130,12 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
           </div>
         )}
 
-        {/* Sparkline & Stats Row */}
+        {/* Stats Row & Inspect Action */}
         <div className="flex items-center justify-between pt-3 border-t border-slate-800/80">
           
           <div className="flex items-center gap-3 text-xs font-mono">
             <span className="flex items-center gap-1 text-amber-300 font-bold">
-              <Star className="w-3.5 h-3.5 fill-amber-400/30" /> {stargazers_count}
+              <Star className="w-3.5 h-3.5 fill-amber-400/30 text-amber-400" /> {stargazers_count}
             </span>
             <span className="flex items-center gap-1 text-slate-400">
               <GitFork className="w-3.5 h-3.5 text-cyan-400" /> {forks_count}
@@ -151,15 +151,15 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
             {renderSparkline()}
             <button
               onClick={() => onSelectRepo(repo)}
-              className="p-1.5 rounded-lg bg-slate-800 hover:bg-cyan-500/20 text-slate-300 hover:text-cyan-300 border border-slate-700 transition-all"
+              className="flex items-center gap-1 text-[11px] font-mono font-bold px-2.5 py-1.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 transition-all hover:scale-105 active:scale-95 shadow-neon-cyan/10"
               title="Inspect Analytics & Referrers"
             >
-              <BarChart2 className="w-3.5 h-3.5" />
+              <span>Inspect</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </div>
 
         </div>
-
       </div>
     </div>
   );
