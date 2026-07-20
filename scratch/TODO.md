@@ -23,7 +23,7 @@ This document contains everything you need to know to get 100% full owner-level 
 ### Option A: Discord Webhook (Recommended — Takes 1 minute)
 1. Open Discord and go to your server settings -> **Integrations** -> **Webhooks**.
 2. Click **New Webhook**.
-3. Name it `Watchtower Sentinel` and select your alert channel (e.g. `#github-alerts`).
+3. Name it `Watchtower Sentinel` and select your alert channel (e.g. `#alerts`).
 4. Click **Copy Webhook URL**.
 
 ### Option B: Telegram Bot
@@ -48,12 +48,10 @@ VITE_GH_PAT=ghp_your_personal_access_token_here
 # Discord Webhook URL (for real-time milestone & trending alerts)
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/your/webhook/url
 
-# Telegram Bot (Optional alternative)
+# Telegram Bot
 TELEGRAM_BOT_TOKEN=your_bot_token_here
 TELEGRAM_CHAT_ID=your_chat_id_here
 ```
-
-*(Note: You can also enter your PAT and Discord Webhook directly inside the Watchtower Web App UI via the **Settings Modal** at any time — it is saved securely in your browser's LocalStorage!)*
 
 ---
 
@@ -61,15 +59,14 @@ TELEGRAM_CHAT_ID=your_chat_id_here
 
 To have GitHub automatically track your portfolio every hour and send alerts even when your computer is off:
 
-1. Push your Watchtower code to a GitHub repository (e.g. `shlokkokk/watchtower`).
+1. Push your Watchtower code to a GitHub repository (e.g. `shlokkokk/Watchtower`).
 2. Go to repository **Settings -> Secrets and variables -> Actions**.
 3. Add the following Repository Secrets:
-   - `GH_PAT`: Your Personal Access Token from Step 1.
-   - `DISCORD_WEBHOOK_URL`: Your Discord Webhook URL from Step 2.
-   - `TELEGRAM_BOT_TOKEN` (Optional): Telegram Token.
-   - `TELEGRAM_CHAT_ID` (Optional): Telegram Chat ID.
-4. Enable Actions in the **Actions** tab of your repository.
-5. The workflow in `.github/workflows/watchtower-cron.yml` will now automatically run every hour!
+   - `GH_PAT`
+   - `DISCORD_WEBHOOK_URL`
+   - `TELEGRAM_BOT_TOKEN`
+   - `TELEGRAM_CHAT_ID`
+4. The workflow in `.github/workflows/watchtower-cron.yml` will now automatically run every hour!
 
 ---
 
@@ -85,10 +82,3 @@ Open `http://localhost:3000` in your browser.
 ```bash
 npm run track
 ```
-This fetches all live repos, computes derived metrics, updates `public/data/snapshot.json` and `history.json`, and dispatches any pending alerts!
-
----
-
-## 💡 Quick Tips & Best Practices
-- **Launch Logger**: When launching a project on **Show HN**, **Dev.to**, **Reddit**, or **Twitter**, log it in the Watchtower UI or add it to `public/data/launches.json` to automatically measure conversion rate and star growth deltas!
-- **Dead Repos**: Use Watchtower's Dead Repo radar to flag projects with 0 views/stars/activity in 30+ days.
