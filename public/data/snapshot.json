@@ -1,18 +1,18 @@
 {
-  "timestamp": "2026-07-21T17:09:20.463Z",
+  "timestamp": "2026-07-21T19:08:10.887Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
-    "totalStars": 17,
+    "totalStars": 19,
     "totalForks": 2,
     "totalOpenIssues": 1,
     "totalViews14d": 165,
     "totalClones14d": 1146,
     "followerCount": 4,
-    "portfolioHealthAvg": 36,
+    "portfolioHealthAvg": 39,
     "velocityLeader": {
       "name": "Watchtower",
-      "velocity": 0
+      "velocity": 1
     },
     "topReferrerOverall": {
       "name": "github.com",
@@ -26,27 +26,27 @@
     {
       "language": "TypeScript",
       "stars": 6,
-      "percentage": 35.3
+      "percentage": 31.6
+    },
+    {
+      "language": "JavaScript",
+      "stars": 4,
+      "percentage": 21.1
     },
     {
       "language": "HTML",
       "stars": 3,
-      "percentage": 17.6
+      "percentage": 15.8
     },
     {
       "language": "Python",
       "stars": 3,
-      "percentage": 17.6
+      "percentage": 15.8
     },
     {
       "language": "Shell",
       "stars": 3,
-      "percentage": 17.6
-    },
-    {
-      "language": "JavaScript",
-      "stars": 2,
-      "percentage": 11.8
+      "percentage": 15.8
     },
     {
       "language": "C++",
@@ -81,22 +81,22 @@
       "uniques": 3
     },
     {
-      "name": "Bing",
-      "count": 2,
-      "uniques": 2
-    },
-    {
       "name": "kagi.com",
       "count": 2,
       "uniques": 2
     },
     {
-      "name": "Yahoo",
+      "name": "Bing",
+      "count": 2,
+      "uniques": 2
+    },
+    {
+      "name": "statics.teams.cdn.office.net",
       "count": 1,
       "uniques": 1
     },
     {
-      "name": "statics.teams.cdn.office.net",
+      "name": "Yahoo",
       "count": 1,
       "uniques": 1
     },
@@ -108,31 +108,154 @@
   ],
   "repos": [
     {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
+      "id": 1201964523,
+      "name": "ShellStack",
+      "full_name": "shlokkokk/ShellStack",
+      "html_url": "https://github.com/shlokkokk/ShellStack",
+      "description": "A consolidated offensive security reference — 280+ tools and 1,000+ commands organized by category for fast execution during pentests and CTFs.",
+      "language": "TypeScript",
+      "stargazers_count": 4,
       "forks_count": 0,
-      "watchers_count": 0,
+      "watchers_count": 4,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-21T16:48:32Z",
-      "updated_at": "2026-07-21T16:49:28Z",
-      "created_at": "2026-07-20T15:49:54Z",
+      "pushed_at": "2026-07-21T17:59:52Z",
+      "updated_at": "2026-07-21T18:01:23Z",
+      "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
       "daysInactive": 0,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-04-27",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
         "avgDailyStars": 0,
         "formattedText": "Steady pace"
+      },
+      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 2,
+        "hnComments": 0
+      },
+      "trafficViews14d": 108,
+      "uniqueVisitors14d": 87,
+      "trafficClones14d": 9,
+      "viewTrend": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        9,
+        9,
+        9,
+        9,
+        0,
+        0,
+        9,
+        9
+      ],
+      "topReferrers": [
+        {
+          "referrer": "news.ycombinator.com",
+          "count": 17,
+          "uniques": 15
+        },
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "referrer": "kagi.com",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "referrer": "statics.teams.cdn.office.net",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/ShellStack",
+          "title": "Overview",
+          "count": 77,
+          "uniques": 64
+        },
+        {
+          "path": "/shlokkokk/ShellStack/issues",
+          "title": "/issues",
+          "count": 3,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/actions",
+          "title": "/actions",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/blob/main/README.md",
+          "title": "/blob/main/README.md",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/blob/main/vercel.json",
+          "title": "/blob/main/vercel.json",
+          "count": 2,
+          "uniques": 2
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "hn-48956440",
+          "date": "2026-07-18",
+          "repo": "ShellStack",
+          "platform": "Show HN",
+          "title": "Show HN: ShellStack – Interactive cybersecurity learning platform with 280 tool",
+          "url": "https://news.ycombinator.com/item?id=48956440",
+          "points": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-21T17:09:21Z",
+      "updated_at": "2026-07-21T18:14:53Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 1,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 75,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": 2,
+        "avgDailyStars": 8.12,
+        "formattedText": "~2 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -152,13 +275,13 @@
         0,
         0,
         0,
-        0,
         8,
         8,
         8,
         8,
         0,
         0,
+        8,
         8
       ],
       "topReferrers": [
@@ -271,25 +394,25 @@
       "html_url": "https://github.com/shlokkokk/shlokkokk",
       "description": null,
       "language": "JavaScript",
-      "stargazers_count": 0,
+      "stargazers_count": 1,
       "forks_count": 0,
-      "watchers_count": 0,
+      "watchers_count": 1,
       "open_issues_count": 0,
       "pushed_at": "2026-07-21T02:40:41Z",
-      "updated_at": "2026-07-20T19:38:44Z",
+      "updated_at": "2026-07-21T18:15:04Z",
       "created_at": "2025-11-16T17:24:43Z",
-      "starVelocity24h": 0,
+      "starVelocity24h": 1,
       "forkToStarRatio": 0,
       "daysInactive": 0,
-      "healthScore": 70,
+      "healthScore": 75,
       "isTrending": false,
       "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
+        "daysToMilestone": 2,
+        "avgDailyStars": 8.12,
+        "formattedText": "~2 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -309,7 +432,7 @@
         7,
         7,
         7,
-        7,
+        0,
         0,
         0,
         0,
@@ -537,7 +660,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -655,7 +778,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 49,
+      "daysInactive": 50,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -765,129 +888,6 @@
       "launches": []
     },
     {
-      "id": 1201964523,
-      "name": "ShellStack",
-      "full_name": "shlokkokk/ShellStack",
-      "html_url": "https://github.com/shlokkokk/ShellStack",
-      "description": "A consolidated offensive security reference — 280+ tools and 1,000+ commands organized by category for fast execution during pentests and CTFs.",
-      "language": "TypeScript",
-      "stargazers_count": 4,
-      "forks_count": 0,
-      "watchers_count": 4,
-      "open_issues_count": 0,
-      "pushed_at": "2026-05-28T21:38:20Z",
-      "updated_at": "2026-07-19T15:51:01Z",
-      "created_at": "2026-04-05T12:09:20Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 53,
-      "healthScore": 25,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-04-27",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 2,
-        "hnComments": 0
-      },
-      "trafficViews14d": 108,
-      "uniqueVisitors14d": 87,
-      "trafficClones14d": 9,
-      "viewTrend": [
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        20,
-        9,
-        9,
-        9,
-        9,
-        0,
-        0,
-        9
-      ],
-      "topReferrers": [
-        {
-          "referrer": "news.ycombinator.com",
-          "count": 17,
-          "uniques": 15
-        },
-        {
-          "referrer": "github.com",
-          "count": 4,
-          "uniques": 2
-        },
-        {
-          "referrer": "kagi.com",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "referrer": "statics.teams.cdn.office.net",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/ShellStack",
-          "title": "Overview",
-          "count": 77,
-          "uniques": 64
-        },
-        {
-          "path": "/shlokkokk/ShellStack/issues",
-          "title": "/issues",
-          "count": 3,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/actions",
-          "title": "/actions",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/blob/main/vercel.json",
-          "title": "/blob/main/vercel.json",
-          "count": 2,
-          "uniques": 2
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "hn-48956440",
-          "date": "2026-07-18",
-          "repo": "ShellStack",
-          "platform": "Show HN",
-          "title": "Show HN: ShellStack – Interactive cybersecurity learning platform with 280 tool",
-          "url": "https://news.ycombinator.com/item?id=48956440",
-          "points": 2,
-          "comments": 0
-        }
-      ]
-    },
-    {
       "id": 1245895665,
       "name": "VitaLink",
       "full_name": "shlokkokk/VitaLink",
@@ -991,13 +991,13 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         1,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1050,7 +1050,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 69,
+      "daysInactive": 70,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1138,13 +1138,13 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         1,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1274,13 +1274,13 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         1,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [],
@@ -1652,7 +1652,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 170,
+      "daysInactive": 171,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1902,7 +1902,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 236,
+      "daysInactive": 237,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
