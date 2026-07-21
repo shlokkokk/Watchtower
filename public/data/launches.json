@@ -8,5 +8,16 @@
     "url": "https://news.ycombinator.com/item?id=48956440",
     "points": 2,
     "comments": 0
+  },
+  {
+    "id": "devto-4172798",
+    "date": "2026-07-18",
+    "repo": "shlokkokk",
+    "platform": "Dev.to",
+    "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
+    "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
+    "views": 0,
+    "reactions": 3,
+    "comments": 4
   }
 ]

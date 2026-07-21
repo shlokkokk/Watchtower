@@ -75,54 +75,72 @@ async function discoverHNLaunches(repos) {
 
 // Discover Dev.to articles by username that link to the repo
 async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
-  let url = 'https://dev.to/api/articles';
+  let articles = [];
   const headers = { 'User-Agent': 'Watchtower/2.0' };
   
   if (devtoApiKey) {
-    url = 'https://dev.to/api/articles/me';
-    headers['api-key'] = devtoApiKey;
-  } else if (devtoUsername) {
-    url = `https://dev.to/api/articles?username=${encodeURIComponent(devtoUsername)}`;
-  } else {
-    return [];
+    try {
+      const res = await fetch('https://dev.to/api/articles/me', { headers: { ...headers, 'api-key': devtoApiKey } });
+      if (res.ok) {
+        articles = await res.json();
+      }
+    } catch (e) {
+      // fallback to username search
+    }
+  }
+  
+  if (!Array.isArray(articles) || articles.length === 0) {
+    const targetUser = devtoUsername || USERNAME;
+    try {
+      const res = await fetch(`https://dev.to/api/articles?username=${encodeURIComponent(targetUser)}`, { headers });
+      if (res.ok) {
+        articles = await res.json();
+      }
+    } catch (e) {
+      console.error('[Watchtower Tracker] Dev.to Discovery Error:', e.message);
+    }
   }
 
-  try {
-    const res = await fetch(url, { headers });
-    if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
-    const articles = await res.json();
-    if (!Array.isArray(articles)) return [];
+  if (!Array.isArray(articles) || articles.length === 0) return [];
+  
+  const discovered = [];
+  for (const art of articles) {
+    // Dev.to list API endpoint does not return body_markdown. Fetch full detail to inspect body text & GitHub links
+    let fullBody = '';
+    try {
+      const detailRes = await fetch(`https://dev.to/api/articles/${art.id}`, { headers });
+      if (detailRes.ok) {
+        const detailData = await detailRes.json();
+        fullBody = detailData.body_markdown || detailData.body_html || '';
+      }
+    } catch (e) {
+      // ignore individual detail fetch error
+    }
+
+    const textToMatch = `${art.title || ''} ${art.description || ''} ${art.url || ''} ${art.canonical_url || ''} ${fullBody}`.toLowerCase();
     
-    const discovered = [];
-    for (const art of articles) {
-      const textToMatch = `${art.title || ''} ${art.description || ''} ${art.url || ''} ${art.canonical_url || ''} ${art.body_markdown || ''}`.toLowerCase();
+    for (const repo of repos) {
+      const repoNameLower = repo.name.toLowerCase();
+      const ownerLower = (repo.owner?.login || USERNAME).toLowerCase();
+      const explicitLinkMatch = textToMatch.includes(`github.com/${ownerLower}/${repoNameLower}`);
+      const githubContextMatch = textToMatch.includes('github.com') && new RegExp(`\\b${repoNameLower.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i').test(textToMatch);
       
-      for (const repo of repos) {
-        const repoNameLower = repo.name.toLowerCase();
-        const ownerLower = (repo.owner?.login || USERNAME).toLowerCase();
-        const explicitLinkMatch = textToMatch.includes(`github.com/${ownerLower}/${repoNameLower}`);
-        const githubContextMatch = textToMatch.includes('github.com') && new RegExp(`\\b${repoNameLower.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i').test(textToMatch);
-        
-        if (explicitLinkMatch || githubContextMatch) {
-          discovered.push({
-            id: `devto-${art.id}`,
-            date: art.published_at ? art.published_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
-            repo: repo.name,
-            platform: 'Dev.to',
-            title: art.title,
-            url: art.url,
-            views: art.page_views_count || 0,
-            reactions: art.public_reactions_count || 0,
-            comments: art.comments_count || 0,
-          });
-        }
+      if (explicitLinkMatch || githubContextMatch) {
+        discovered.push({
+          id: `devto-${art.id}`,
+          date: art.published_at ? art.published_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
+          repo: repo.name,
+          platform: 'Dev.to',
+          title: art.title,
+          url: art.url,
+          views: art.page_views_count || 0,
+          reactions: art.public_reactions_count || 0,
+          comments: art.comments_count || 0,
+        });
       }
     }
-    return discovered;
-  } catch (err) {
-    console.error('[Watchtower Tracker] Dev.to Discovery Error:', err.message);
-    return [];
   }
+  return discovered;
 }
 
 // Compute Milestone Projection
@@ -655,6 +673,7 @@ async function runTracker() {
       launchesCount: repoLaunches.length
     };
     const recommendation = computeRecommendation(repoObjForRec, latestViewsToday);
+    const forkToStarRatio = repo.stargazers_count > 0 ? Number((repo.forks_count / repo.stargazers_count).toFixed(2)) : 0;
 
     processedRepos.push({
       id: repo.id,

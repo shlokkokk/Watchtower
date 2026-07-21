@@ -1,26 +1,22 @@
 {
-  "timestamp": "2026-07-21T15:29:53.772Z",
+  "timestamp": "2026-07-21T16:10:37.416Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
     "totalStars": 17,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 165,
-    "totalClones14d": 1146,
-    "followerCount": 4,
+    "totalViews14d": 0,
+    "totalClones14d": 0,
+    "followerCount": 0,
     "portfolioHealthAvg": 36,
     "velocityLeader": {
       "name": "Watchtower",
       "velocity": 0
     },
-    "topReferrerOverall": {
-      "name": "github.com",
-      "count": 25,
-      "uniques": 16
-    },
+    "topReferrerOverall": null,
     "trendingCount": 0,
-    "deadCount": 16
+    "deadCount": 20
   },
   "languageBreakdown": [
     {
@@ -59,53 +55,7 @@
       "percentage": 0
     }
   ],
-  "topReferrers": [
-    {
-      "name": "github.com",
-      "count": 25,
-      "uniques": 16
-    },
-    {
-      "name": "news.ycombinator.com",
-      "count": 17,
-      "uniques": 15
-    },
-    {
-      "name": "Google",
-      "count": 8,
-      "uniques": 1
-    },
-    {
-      "name": "devpost.com",
-      "count": 3,
-      "uniques": 3
-    },
-    {
-      "name": "Bing",
-      "count": 2,
-      "uniques": 2
-    },
-    {
-      "name": "kagi.com",
-      "count": 2,
-      "uniques": 2
-    },
-    {
-      "name": "Yahoo",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "name": "statics.teams.cdn.office.net",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "name": "DuckDuckGo",
-      "count": 1,
-      "uniques": 1
-    }
-  ],
+  "topReferrers": [],
   "repos": [
     {
       "id": 1306769567,
@@ -118,8 +68,8 @@
       "forks_count": 0,
       "watchers_count": 0,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-21T13:22:15Z",
-      "updated_at": "2026-07-21T13:23:11Z",
+      "pushed_at": "2026-07-21T16:03:43Z",
+      "updated_at": "2026-07-21T16:04:09Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -127,9 +77,24 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 8,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 161,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -140,34 +105,16 @@
         0,
         0,
         0,
-        0,
         8,
         8,
         8,
-        8
+        8,
+        0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 3,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
-          "title": "/actions/workflows/watchtower-cron.yml",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1169876809,
@@ -189,9 +136,24 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 8,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -208,28 +170,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/OSINT-Directory",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/OSINT-Directory/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
-          "title": "/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1097707027,
@@ -251,47 +195,56 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 19,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 604,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 3,
+        "devtoComments": 4,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
         0,
-        7,
-        7,
-        7,
-        7,
-        7,
-        7,
-        7,
         0,
         0,
         0,
         0
       ],
-      "topReferrers": [
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 1,
+      "launches": [
         {
-          "referrer": "Google",
-          "count": 8,
-          "uniques": 1
+          "id": "devto-4172798",
+          "date": "2026-07-18",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
+          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
+          "views": 0,
+          "reactions": 3,
+          "comments": 4
         }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/shlokkokk",
-          "title": "Overview",
-          "count": 17,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/actions/runs/29257887770",
-          "title": "/actions/runs/29257887770",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      ]
     },
     {
       "id": 1084752097,
@@ -313,9 +266,24 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 133,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -334,7 +302,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1261825778,
@@ -356,9 +325,24 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 7,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 56,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -375,28 +359,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 7,
-          "uniques": 3
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Chronicle",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/HackBaorda",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 2
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1299248882,
@@ -418,57 +384,44 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 4,
-      "uniqueVisitors14d": 4,
-      "trafficClones14d": 39,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0,
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "referrer": "Bing",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "referrer": "Yahoo",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/bgi-setup",
-          "title": "Overview",
-          "count": 3,
-          "uniques": 3
-        },
-        {
-          "path": "/shlokkokk/bgi-setup/blob/main/GUIDE.md",
-          "title": "/blob/main/GUIDE.md",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1278112581,
@@ -490,9 +443,24 @@
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -511,7 +479,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1256339384,
@@ -533,9 +502,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -554,7 +538,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1239126539,
@@ -576,9 +561,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 3,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -596,15 +596,9 @@
         0
       ],
       "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Oculus",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1201964523,
@@ -625,14 +619,28 @@
       "daysInactive": 53,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
-      "trafficViews14d": 108,
-      "uniqueVisitors14d": 87,
-      "trafficClones14d": 9,
+      "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 2,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
-        0,
         20,
         20,
         20,
@@ -643,63 +651,24 @@
         9,
         9,
         9,
-        9
+        9,
+        0
       ],
-      "topReferrers": [
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 1,
+      "launches": [
         {
-          "referrer": "news.ycombinator.com",
-          "count": 17,
-          "uniques": 15
-        },
-        {
-          "referrer": "github.com",
-          "count": 4,
-          "uniques": 2
-        },
-        {
-          "referrer": "kagi.com",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "referrer": "statics.teams.cdn.office.net",
-          "count": 1,
-          "uniques": 1
+          "id": "hn-48956440",
+          "date": "2026-07-18",
+          "repo": "ShellStack",
+          "platform": "Show HN",
+          "title": "Show HN: ShellStack – Interactive cybersecurity learning platform with 280 tool",
+          "url": "https://news.ycombinator.com/item?id=48956440",
+          "points": 2,
+          "comments": 0
         }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/ShellStack",
-          "title": "Overview",
-          "count": 77,
-          "uniques": 64
-        },
-        {
-          "path": "/shlokkokk/ShellStack/issues",
-          "title": "/issues",
-          "count": 3,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/actions",
-          "title": "/actions",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/ShellStack/blob/main/vercel.json",
-          "title": "/blob/main/vercel.json",
-          "count": 2,
-          "uniques": 2
-        }
-      ],
-      "launchesCount": 0
+      ]
     },
     {
       "id": 1245895665,
@@ -721,9 +690,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -742,7 +726,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1106410006,
@@ -763,10 +748,25 @@
       "daysInactive": 67,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
-      "trafficViews14d": 6,
-      "uniqueVisitors14d": 6,
-      "trafficClones14d": 3,
+      "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -777,44 +777,16 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 3,
-          "uniques": 3
-        },
-        {
-          "referrer": "Bing",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "referrer": "DuckDuckGo",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/ReconMaster",
-          "title": "Overview",
-          "count": 5,
-          "uniques": 5
-        },
-        {
-          "path": "/shlokkokk/ReconMaster/tree/main",
-          "title": "/tree/main",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1233779832,
@@ -836,9 +808,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -857,7 +844,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1222524015,
@@ -878,10 +866,25 @@
       "daysInactive": 71,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
-      "trafficViews14d": 3,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 6,
+      "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -892,33 +895,16 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
-      "topReferrers": [
-        {
-          "referrer": "devpost.com",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/kavach",
-          "title": "Overview",
-          "count": 3,
-          "uniques": 2
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1228677139,
@@ -940,9 +926,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -961,7 +962,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1094565796,
@@ -982,10 +984,25 @@
       "daysInactive": 76,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 2,
+      "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -996,22 +1013,16 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
       "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/cyberGuard/blob/main/vault.html",
-          "title": "/blob/main/vault.html",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1121146578,
@@ -1033,8 +1044,23 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 0,
       "viewTrend": [
         0,
@@ -1052,22 +1078,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "devpost.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/zerorisk-sentinel",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1194827901,
@@ -1089,9 +1103,24 @@
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 89,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1108,22 +1137,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "devpost.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/SwipeClean",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1193653695,
@@ -1145,9 +1162,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 6,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1166,7 +1198,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1126928717,
@@ -1188,9 +1221,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1209,7 +1257,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1123250007,
@@ -1231,9 +1280,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 1,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1250,28 +1314,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/zerorisk-sentinel-backend",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/zerorisk-sentinel-backend/blob/main/ai_explainer.py",
-          "title": "/blob/main/ai_explainer.py",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1146796487,
@@ -1293,8 +1339,23 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 0,
       "viewTrend": [
         0,
@@ -1312,22 +1373,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/skills-introduction-to-git",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1102251161,
@@ -1349,9 +1398,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1370,7 +1434,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1118856872,
@@ -1392,9 +1457,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1413,7 +1493,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1093146531,
@@ -1435,9 +1516,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1456,7 +1552,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1104757684,
@@ -1478,9 +1575,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 1,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1497,22 +1609,10 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/osint-academy",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1095998730,
@@ -1534,9 +1634,24 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -1555,7 +1670,8 @@
       ],
       "topReferrers": [],
       "popularPaths": [],
-      "launchesCount": 0
+      "launchesCount": 0,
+      "launches": []
     }
   ]
 }
