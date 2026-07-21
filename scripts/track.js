@@ -507,6 +507,7 @@ async function runTracker() {
         if (pointsDiff >= 5 || viewsDiff >= 25 || reactionsDiff > 0 || commentsDiff > 0) {
           launchSpikesToAlert.push({
             launch,
+            prevLaunch,
             pointsDiff,
             viewsDiff,
             reactionsDiff,
@@ -907,14 +908,27 @@ async function runTracker() {
   // Cross-Platform Post Engagement & Traction Alerts
   for (const s of launchSpikesToAlert) {
     const l = s.launch;
+    const p = s.prevLaunch || {};
 
     const deltas = [];
-    if (s.reactionsDiff > 0) deltas.push(`+${s.reactionsDiff} new reaction${s.reactionsDiff > 1 ? 's' : ''} (${l.reactions} total)`);
-    if (s.commentsDiff > 0) deltas.push(`+${s.commentsDiff} new comment${s.commentsDiff > 1 ? 's' : ''} (${l.comments} total)`);
-    if (s.pointsDiff >= 5) deltas.push(`+${s.pointsDiff} points (${l.points} total)`);
-    if (s.viewsDiff >= 25) deltas.push(`+${s.viewsDiff} views (${l.views} total)`);
+    if (s.reactionsDiff > 0) {
+      const prev = p.reactions || 0;
+      deltas.push(`+${s.reactionsDiff} new reaction${s.reactionsDiff > 1 ? 's' : ''} (${prev} → ${l.reactions} total)`);
+    }
+    if (s.commentsDiff > 0) {
+      const prev = p.comments || 0;
+      deltas.push(`+${s.commentsDiff} new comment${s.commentsDiff > 1 ? 's' : ''} (${prev} → ${l.comments} total)`);
+    }
+    if (s.pointsDiff >= 5) {
+      const prev = p.points || 0;
+      deltas.push(`+${s.pointsDiff} points (${prev} → ${l.points} total)`);
+    }
+    if (s.viewsDiff >= 25) {
+      const prev = p.views || 0;
+      deltas.push(`+${s.viewsDiff} views (${prev} → ${l.views} total)`);
+    }
 
-    const deltaText = deltas.join(', ') || 'Activity update';
+    const deltaText = deltas.join('\n') || 'Activity update';
 
     const embed = {
       title: `Post Engagement Alert — ${l.repo}`,
