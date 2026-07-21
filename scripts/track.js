@@ -23,6 +23,230 @@ const IS_WEEKLY_RUN = process.argv.includes('--weekly');
 
 const octokit = new Octokit({ auth: TOKEN || undefined });
 
+// DEV.to Configuration
+const DEVTO_USERNAME = process.env.DEVTO_USERNAME || USERNAME;
+const DEVTO_API_KEY = process.env.DEVTO_API_KEY || '';
+
+// URL Normalizer Helper
+function normalizeUrl(url) {
+  if (!url || typeof url !== 'string') return '';
+  return url.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/\/$/, '');
+}
+
+// Discover Hacker News stories linking to a repo
+async function discoverHNLaunches(repos) {
+  const discovered = [];
+  for (const repo of repos) {
+    const owner = repo.owner?.login || USERNAME;
+    const repoName = repo.name;
+    const query = `github.com/${owner}/${repoName}`;
+    const url = `https://hn.algolia.com/api/v1/search?query=${encodeURIComponent(query)}&tags=story`;
+    
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'Watchtower/2.0' } });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (data.hits && data.hits.length > 0) {
+        for (const hit of data.hits) {
+          const hitText = `${hit.title || ''} ${hit.url || ''} ${hit.story_text || ''}`.toLowerCase();
+          const targetMatch = `github.com/${owner.toLowerCase()}/${repoName.toLowerCase()}`;
+          
+          if (hitText.includes(targetMatch) || (hit.url && hit.url.toLowerCase().includes(repoName.toLowerCase()))) {
+            const isShowHN = hit.title && hit.title.toLowerCase().includes('show hn');
+            discovered.push({
+              id: `hn-${hit.objectID}`,
+              date: hit.created_at ? hit.created_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
+              repo: repoName,
+              platform: isShowHN ? 'Show HN' : 'Hacker News',
+              title: hit.title,
+              url: `https://news.ycombinator.com/item?id=${hit.objectID}`,
+              points: hit.points || 0,
+              comments: hit.num_comments || 0,
+            });
+          }
+        }
+      }
+    } catch (err) {
+      console.error(`[Watchtower Tracker] HN Discovery Error for ${repoName}:`, err.message);
+    }
+  }
+  return discovered;
+}
+
+// Discover Dev.to articles by username that link to the repo
+async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
+  let url = 'https://dev.to/api/articles';
+  const headers = { 'User-Agent': 'Watchtower/2.0' };
+  
+  if (devtoApiKey) {
+    url = 'https://dev.to/api/articles/me';
+    headers['api-key'] = devtoApiKey;
+  } else if (devtoUsername) {
+    url = `https://dev.to/api/articles?username=${encodeURIComponent(devtoUsername)}`;
+  } else {
+    return [];
+  }
+
+  try {
+    const res = await fetch(url, { headers });
+    if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
+    const articles = await res.json();
+    if (!Array.isArray(articles)) return [];
+    
+    const discovered = [];
+    for (const art of articles) {
+      const textToMatch = `${art.title || ''} ${art.description || ''} ${art.url || ''} ${art.canonical_url || ''} ${art.body_markdown || ''}`.toLowerCase();
+      
+      for (const repo of repos) {
+        const repoNameLower = repo.name.toLowerCase();
+        const ownerLower = (repo.owner?.login || USERNAME).toLowerCase();
+        const explicitLinkMatch = textToMatch.includes(`github.com/${ownerLower}/${repoNameLower}`);
+        const githubContextMatch = textToMatch.includes('github.com') && new RegExp(`\\b${repoNameLower.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i').test(textToMatch);
+        
+        if (explicitLinkMatch || githubContextMatch) {
+          discovered.push({
+            id: `devto-${art.id}`,
+            date: art.published_at ? art.published_at.slice(0, 10) : new Date().toISOString().slice(0, 10),
+            repo: repo.name,
+            platform: 'Dev.to',
+            title: art.title,
+            url: art.url,
+            views: art.page_views_count || 0,
+            reactions: art.public_reactions_count || 0,
+            comments: art.comments_count || 0,
+          });
+        }
+      }
+    }
+    return discovered;
+  } catch (err) {
+    console.error('[Watchtower Tracker] Dev.to Discovery Error:', err.message);
+    return [];
+  }
+}
+
+// Compute Milestone Projection
+function getMilestoneProjection(repo, historyLog) {
+  const currentStars = repo.stargazers_count;
+  const milestoneSteps = [10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000];
+  const nextMilestone = milestoneSteps.find(step => step > currentStars);
+  
+  if (!nextMilestone) return null;
+
+  const now = new Date();
+  const sevenDaysAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  
+  const validHistory = (historyLog || []).filter(h => h.repoStars && new Date(h.timestamp) >= sevenDaysAgo);
+  let avgDailyStars = 0;
+  
+  if (validHistory.length > 0) {
+    validHistory.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+    const oldestEntry = validHistory[0];
+    const oldestStars = oldestEntry.repoStars ? oldestEntry.repoStars[repo.name] : undefined;
+    
+    if (oldestStars !== undefined) {
+      const daysDiff = (now - new Date(oldestEntry.timestamp)) / (1000 * 60 * 60 * 24);
+      if (daysDiff > 0.1) {
+        const starDiff = currentStars - oldestStars;
+        avgDailyStars = starDiff / daysDiff;
+      }
+    }
+  }
+  
+  if (avgDailyStars <= 0 && repo.starVelocity24h > 0) {
+    avgDailyStars = repo.starVelocity24h;
+  }
+
+  if (avgDailyStars <= 0) {
+    return {
+      nextMilestone,
+      daysToMilestone: null,
+      avgDailyStars: 0,
+      formattedText: 'Steady pace'
+    };
+  }
+
+  const daysToMilestone = (nextMilestone - currentStars) / avgDailyStars;
+  const roundedDays = Math.ceil(daysToMilestone);
+
+  if (roundedDays > 365) {
+    return {
+      nextMilestone,
+      daysToMilestone: roundedDays,
+      avgDailyStars: Number(avgDailyStars.toFixed(2)),
+      formattedText: `> 1 year to ${nextMilestone} stars`
+    };
+  }
+
+  return {
+    nextMilestone,
+    daysToMilestone: roundedDays,
+    avgDailyStars: Number(avgDailyStars.toFixed(2)),
+    formattedText: `~${roundedDays} days to ${nextMilestone} stars`
+  };
+}
+
+let readmeCheckingDisabled = false;
+
+// Get README.md Staleness Check
+async function getReadmeStaleness(owner, repoName, pushedAt) {
+  if (!TOKEN || readmeCheckingDisabled || !pushedAt) return { isStale: false };
+  try {
+    const res = await octokit.repos.listCommits({
+      owner,
+      repo: repoName,
+      path: 'README.md',
+      per_page: 1,
+    });
+    if (res.data && res.data.length > 0) {
+      const lastCommitDate = new Date(res.data[0].commit.committer.date);
+      const pushDate = new Date(pushedAt);
+      if (isNaN(pushDate.getTime()) || isNaN(lastCommitDate.getTime())) return { isStale: false };
+      
+      const diffMs = pushDate - lastCommitDate;
+      const diffDays = diffMs / (1000 * 60 * 60 * 24);
+      
+      if (diffDays > 30) {
+        return {
+          isStale: true,
+          daysSinceUpdate: Math.floor(diffDays),
+          lastUpdated: lastCommitDate.toISOString().slice(0, 10)
+        };
+      }
+    }
+  } catch (err) {
+    if (err.status === 401 || err.status === 403) {
+      readmeCheckingDisabled = true;
+    }
+  }
+  return { isStale: false };
+}
+
+// Compute Weekly Recommendation Line
+function computeRecommendation(repo, latestViewsToday) {
+  const views = repo.trafficViews14d || latestViewsToday || 0;
+  const stars = repo.stargazers_count || 0;
+  const velocity = repo.starVelocity24h || 0;
+  const daysInactive = repo.daysInactive || 0;
+  
+  if (daysInactive >= 30 && stars < 15) {
+    return "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.";
+  }
+  if (views > 30 && velocity === 0) {
+    return "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.";
+  }
+  if (repo.isReadmeStale) {
+    return "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.";
+  }
+  if (repo.launchesCount > 0 && velocity > 2) {
+    return "Recent launch is converting well. Keep sharing updates and posts on successful platforms.";
+  }
+  if (velocity > 3) {
+    return "Strong momentum! Excellent time to share on social channels or write a blog post.";
+  }
+  return "Status stable. Keep monitoring traffic and user engagement.";
+}
+
 // Helper to load JSON safely
 function loadJson(filepath, fallback) {
   try {
@@ -180,6 +404,101 @@ async function runTracker() {
   const starGainsToAlert = [];
   const forkGainsToAlert = [];
 
+  // 1.5. Dynamic Launches/Posts Auto-Discovery
+  console.log(`[Watchtower Tracker] Auto-discovering HN stories and Dev.to articles for ${allRepos.length} repositories...`);
+  const discoveredHN = await discoverHNLaunches(allRepos);
+  const discoveredDevTo = await discoverDevToLaunches(DEVTO_USERNAME, allRepos, DEVTO_API_KEY);
+  console.log(`Auto-discovered: HN: ${discoveredHN.length} stories, Dev.to: ${discoveredDevTo.length} articles.`);
+
+  // Merge discovered launches with manual ones
+  const launchesMap = new Map();
+  for (const launch of launches) {
+    launchesMap.set(launch.url || launch.id || (launch.platform + '-' + launch.repo), launch);
+  }
+
+  const allDiscovered = [...discoveredHN, ...discoveredDevTo];
+  for (const disc of allDiscovered) {
+    const key = disc.url || disc.id;
+    if (launchesMap.has(key)) {
+      const existing = launchesMap.get(key);
+      launchesMap.set(key, {
+        ...existing,
+        title: disc.title,
+        points: disc.points !== undefined ? disc.points : existing.points,
+        views: disc.views !== undefined ? disc.views : existing.views,
+        reactions: disc.reactions !== undefined ? disc.reactions : existing.reactions,
+        comments: disc.comments !== undefined ? disc.comments : existing.comments,
+      });
+    } else {
+      launchesMap.set(key, disc);
+    }
+  }
+
+  // Update stats of existing manual launches that have valid HN URLs but weren't in auto-discovered hits
+  for (const [key, launch] of launchesMap.entries()) {
+    if ((launch.platform === 'Show HN' || launch.platform === 'Hacker News') && launch.url && !launch.id?.startsWith('hn-')) {
+      const match = launch.url.match(/id=(\d+)/);
+      if (match) {
+        const itemId = match[1];
+        try {
+          const hnRes = await fetch(`https://hacker-news.firebaseio.com/v0/item/${itemId}.json`);
+          if (hnRes.ok) {
+            const item = await hnRes.json();
+            launch.points = item.score || 0;
+            launch.comments = item.descendants || 0;
+            launch.title = item.title || launch.title;
+          }
+        } catch (err) {
+          // ignore
+        }
+      }
+    }
+  }
+
+  // Compare with previously saved launches to trigger real-time alerts for new posts or traction spikes
+  const prevLaunchesMap = new Map();
+  if (previousSnapshot) {
+    launches.forEach(l => {
+      const k = normalizeUrl(l.url) || l.id;
+      if (k) prevLaunchesMap.set(k, l);
+    });
+  }
+
+  const finalLaunches = Array.from(launchesMap.values());
+  saveJson(launchesPath, finalLaunches);
+  console.log(`Saved ${finalLaunches.length} total launches to ${launchesPath}`);
+
+  const newLaunchesToAlert = [];
+  const launchSpikesToAlert = [];
+
+  // Baseline check: only alert for NEW posts if previousSnapshot had launches, avoiding cold-start spam
+  const isBaselineSetup = !previousSnapshot || prevLaunchesMap.size === 0;
+
+  if (!isBaselineSetup) {
+    for (const launch of finalLaunches) {
+      const key = normalizeUrl(launch.url) || launch.id;
+      const prevLaunch = prevLaunchesMap.get(key);
+      if (!prevLaunch) {
+        newLaunchesToAlert.push(launch);
+      } else {
+        const pointsDiff = Math.max(0, (launch.points || 0) - (prevLaunch.points || 0));
+        const viewsDiff = Math.max(0, (launch.views || 0) - (prevLaunch.views || 0));
+        const reactionsDiff = Math.max(0, (launch.reactions || 0) - (prevLaunch.reactions || 0));
+        const commentsDiff = Math.max(0, (launch.comments || 0) - (prevLaunch.comments || 0));
+
+        if (pointsDiff >= 5 || viewsDiff >= 25 || reactionsDiff > 0 || commentsDiff > 0) {
+          launchSpikesToAlert.push({
+            launch,
+            pointsDiff,
+            viewsDiff,
+            reactionsDiff,
+            commentsDiff
+          });
+        }
+      }
+    }
+  }
+
   for (const repo of allRepos) {
     const repoName = repo.name;
     const prev = prevRepoMap.get(repoName);
@@ -245,8 +564,12 @@ async function runTracker() {
     const healthScore = computeHealthScore(repo, latestViewsToday, starVelocity24h, daysInactive);
     const isDead = daysInactive >= 30 && repo.stargazers_count < 10 && latestViewsToday === 0;
     const isTrending = latestViewsToday > 50 || starVelocity24h >= 3;
-    const forkToStarRatio = repo.stargazers_count > 0 ? Number((repo.forks_count / repo.stargazers_count).toFixed(2)) : 0;
-    const topRefName = referrers[0] ? `${referrers[0].referrer} (${referrers[0].count} views)` : 'Direct / Organic';
+    let topRefName = 'Direct / Organic';
+    if (referrers.length > 0) {
+      const best = referrers[0];
+      const count = best.count || 0;
+      topRefName = `${best.referrer} (${count} view${count === 1 ? '' : 's'})`;
+    }
 
     // Collect Star Gain Event
     if (prev && starDelta > 0) {
@@ -310,7 +633,28 @@ async function runTracker() {
     }
 
     // Launch correlation matching for this repo
-    const repoLaunches = launches.filter(l => l.repo?.toLowerCase() === repoName.toLowerCase());
+    const repoLaunches = finalLaunches.filter(l => l.repo?.toLowerCase() === repoName.toLowerCase());
+
+    const readmeStaleness = await getReadmeStaleness(repo.owner?.login || USERNAME, repoName, repo.pushed_at);
+    const milestoneProjection = getMilestoneProjection(repo, historyLog);
+
+    const devtoViews = repoLaunches.filter(l => l.platform === 'Dev.to').reduce((sum, l) => sum + (l.views || 0), 0);
+    const devtoReactions = repoLaunches.filter(l => l.platform === 'Dev.to').reduce((sum, l) => sum + (l.reactions || 0), 0);
+    const devtoComments = repoLaunches.filter(l => l.platform === 'Dev.to').reduce((sum, l) => sum + (l.comments || 0), 0);
+    const hnPoints = repoLaunches.filter(l => l.platform === 'Show HN' || l.platform === 'Hacker News').reduce((sum, l) => sum + (l.points || 0), 0);
+    const hnComments = repoLaunches.filter(l => l.platform === 'Show HN' || l.platform === 'Hacker News').reduce((sum, l) => sum + (l.comments || 0), 0);
+
+    const repoObjForRec = {
+      name: repo.name,
+      stargazers_count: repo.stargazers_count,
+      forks_count: repo.forks_count,
+      starVelocity24h,
+      daysInactive,
+      isReadmeStale: readmeStaleness.isStale,
+      trafficViews14d: viewsData.count || 0,
+      launchesCount: repoLaunches.length
+    };
+    const recommendation = computeRecommendation(repoObjForRec, latestViewsToday);
 
     processedRepos.push({
       id: repo.id,
@@ -334,6 +678,17 @@ async function runTracker() {
       healthScore,
       isTrending,
       isDead,
+      isReadmeStale: readmeStaleness.isStale,
+      readmeLastUpdated: readmeStaleness.lastUpdated,
+      milestoneProjection,
+      recommendation,
+      crossPlatform: {
+        devtoViews,
+        devtoReactions,
+        devtoComments,
+        hnPoints,
+        hnComments
+      },
 
       // Traffic
       trafficViews14d: viewsData.count || 0,
@@ -343,6 +698,7 @@ async function runTracker() {
       topReferrers: referrers.slice(0, 5),
       popularPaths: popularPaths.slice(0, 5),
       launchesCount: repoLaunches.length,
+      launches: repoLaunches,
     });
   }
 
@@ -395,6 +751,11 @@ async function runTracker() {
   console.log(`Saved updated snapshot to: ${snapshotPath}`);
 
   // Append to history log
+  const repoStars = {};
+  processedRepos.forEach(r => {
+    repoStars[r.name] = r.stargazers_count;
+  });
+
   const newHistoryEntry = {
     timestamp: snapshotData.timestamp,
     totalStars,
@@ -402,6 +763,7 @@ async function runTracker() {
     totalViews14d,
     portfolioHealthAvg,
     topRepo: processedRepos[0]?.name || '',
+    repoStars,
   };
   const updatedHistory = [...historyLog.slice(-180), newHistoryEntry];
   saveJson(historyPath, updatedHistory);
@@ -418,13 +780,13 @@ async function runTracker() {
         { name: 'Stars Gained', value: `+${s.delta} star${s.delta > 1 ? 's' : ''} (${s.prevStars} → ${s.currentStars})`, inline: true },
         { name: 'Language', value: s.language, inline: true },
         { name: 'Health Index', value: `${s.healthScore}/100`, inline: true },
-        { name: 'Traffic Source', value: s.topReferrer, inline: false },
+        { name: 'Top Referrer (14d)', value: s.topReferrer, inline: false },
       ],
       footer: { text: 'Watchtower • Portfolio Intelligence' },
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [embed] });
-    await sendTelegramNotification(`*STAR GAIN ALERT — ${s.repo}*\n\n*Gained:* +${s.delta} star${s.delta > 1 ? 's' : ''} (${s.prevStars} → ${s.currentStars})\n*Language:* ${s.language}\n*Health Score:* ${s.healthScore}/100\n*Traffic Source:* ${s.topReferrer}\n*URL:* ${s.url}`);
+    await sendTelegramNotification(`*STAR GAIN ALERT — ${s.repo}*\n\n*Gained:* +${s.delta} star${s.delta > 1 ? 's' : ''} (${s.prevStars} → ${s.currentStars})\n*Language:* ${s.language}\n*Health Score:* ${s.healthScore}/100\n*Top Referrer (14d):* ${s.topReferrer}\n*URL:* ${s.url}`);
   }
 
   // Fork Gains
@@ -437,13 +799,13 @@ async function runTracker() {
         { name: 'Forks Count', value: `+${f.delta} fork (${f.prevForks} → ${f.currentForks})`, inline: true },
         { name: 'Language', value: f.language, inline: true },
         { name: 'Health Index', value: `${f.healthScore}/100`, inline: true },
-        { name: 'Traffic Source', value: f.topReferrer, inline: false },
+        { name: 'Top Referrer (14d)', value: f.topReferrer, inline: false },
       ],
       footer: { text: 'Watchtower • Portfolio Intelligence' },
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [embed] });
-    await sendTelegramNotification(`*NEW CODE FORK — ${f.repo}*\n\n*Forks:* +${f.delta} fork (${f.prevForks} → ${f.currentForks})\n*Language:* ${f.language}\n*Health Score:* ${f.healthScore}/100\n*Traffic Source:* ${f.topReferrer}\n*URL:* ${f.url}`);
+    await sendTelegramNotification(`*NEW CODE FORK — ${f.repo}*\n\n*Forks:* +${f.delta} fork (${f.prevForks} → ${f.currentForks})\n*Language:* ${f.language}\n*Health Score:* ${f.healthScore}/100\n*Top Referrer (14d):* ${f.topReferrer}\n*URL:* ${f.url}`);
   }
 
   // Milestones
@@ -497,27 +859,135 @@ async function runTracker() {
     }
   }
 
+  // New Cross-Platform Post Discovered Alerts
+  for (const l of newLaunchesToAlert) {
+    const embed = {
+      title: `Cross-Platform Post Detected — ${l.repo}`,
+      description: `Watchtower auto-discovered a new post on **${l.platform}**: [${l.title}](${l.url})`,
+      color: 0x8b5cf6,
+      fields: [
+        { name: 'Target Repository', value: l.repo, inline: true },
+        { name: 'Platform', value: l.platform, inline: true },
+        { name: 'Initial Stats', value: l.views !== undefined && l.views > 0 ? `${l.views} views, ${l.reactions || 0} reactions` : `${l.points || 0} points, ${l.comments || 0} comments`, inline: false },
+      ],
+      footer: { text: 'Watchtower • Cross-Platform Intelligence' },
+      timestamp: new Date().toISOString(),
+    };
+    await sendDiscordNotification({ embeds: [embed] });
+
+    let tgMsg = `*CROSS-PLATFORM POST DETECTED — ${l.repo}*\n\n` +
+      `*Platform:* ${l.platform}\n` +
+      `*Title:* ${l.title}\n` +
+      `*URL:* ${l.url}\n`;
+    if (l.views !== undefined && l.views > 0) tgMsg += `*Stats:* ${l.views} views, ${l.reactions || 0} reactions, ${l.comments || 0} comments`;
+    else tgMsg += `*Stats:* ${l.points || 0} points, ${l.comments || 0} comments`;
+    
+    await sendTelegramNotification(tgMsg);
+  }
+
+  // Cross-Platform Post Engagement & Traction Alerts
+  for (const s of launchSpikesToAlert) {
+    const l = s.launch;
+
+    const deltas = [];
+    if (s.reactionsDiff > 0) deltas.push(`+${s.reactionsDiff} new reaction${s.reactionsDiff > 1 ? 's' : ''} (${l.reactions} total)`);
+    if (s.commentsDiff > 0) deltas.push(`+${s.commentsDiff} new comment${s.commentsDiff > 1 ? 's' : ''} (${l.comments} total)`);
+    if (s.pointsDiff >= 5) deltas.push(`+${s.pointsDiff} points (${l.points} total)`);
+    if (s.viewsDiff >= 25) deltas.push(`+${s.viewsDiff} views (${l.views} total)`);
+
+    const deltaText = deltas.join(', ') || 'Activity update';
+
+    const embed = {
+      title: `Post Engagement Alert — ${l.repo}`,
+      description: `New engagement on **${l.platform}**: [${l.title}](${l.url})`,
+      color: 0xec4899,
+      fields: [
+        { name: 'Platform', value: l.platform, inline: true },
+        { name: 'Target Repo', value: l.repo, inline: true },
+        { name: 'Activity Delta', value: deltaText, inline: false },
+      ],
+      footer: { text: 'Watchtower • Cross-Platform Intelligence' },
+      timestamp: new Date().toISOString(),
+    };
+    await sendDiscordNotification({ embeds: [embed] });
+
+    let tgMsg = `*POST ENGAGEMENT ALERT — ${l.repo}*\n\n` +
+      `*Platform:* ${l.platform}\n` +
+      `*Title:* ${l.title}\n` +
+      `*Activity:* ${deltaText}\n` +
+      `*URL:* ${l.url}`;
+    
+    await sendTelegramNotification(tgMsg);
+  }
+
   // Weekly Summary Digest
   if (IS_WEEKLY_RUN) {
     console.log('Generating Weekly Digest Notification...');
     const topPerformer = [...processedRepos].sort((a, b) => b.starVelocity24h - a.starVelocity24h)[0];
     const topRef = topReferrersList[0]?.name || 'Direct / Organic';
+
+    const totalHNPoints = finalLaunches.filter(l => l.platform === 'Show HN' || l.platform === 'Hacker News').reduce((sum, l) => sum + (l.points || 0), 0);
+    const totalDevToViews = finalLaunches.filter(l => l.platform === 'Dev.to').reduce((sum, l) => sum + (l.views || 0), 0);
+    const staleReadmes = processedRepos.filter(r => r.isReadmeStale);
+    const activeRecs = processedRepos.filter(r => r.recommendation && r.recommendation !== "Status stable. Keep monitoring traffic and user engagement.");
+
+    const fields = [
+      { name: 'Total Stars', value: `${totalStars}`, inline: true },
+      { name: 'Total Views (14d)', value: `${totalViews14d}`, inline: true },
+      { name: 'Health Index', value: `${portfolioHealthAvg}/100`, inline: true },
+      { name: 'Top Performer', value: topPerformer ? `${topPerformer.name} (+${topPerformer.starVelocity24h} stars)` : 'N/A', inline: false },
+      { name: 'Top Traffic Source', value: topRef, inline: true },
+      { name: 'Inactive Repos Flagged', value: `${deadReposDetected.length}`, inline: true },
+    ];
+
+    if (totalHNPoints > 0 || totalDevToViews > 0) {
+      fields.push({
+        name: 'Cross-Platform Metrics',
+        value: `Hacker News: ${totalHNPoints} points\nDev.to: ${totalDevToViews} views`,
+        inline: false
+      });
+    }
+
+    if (staleReadmes.length > 0) {
+      fields.push({
+        name: 'Stale Documentation Warnings',
+        value: staleReadmes.map(r => `${r.name} (stale since: ${r.readmeLastUpdated || 'unknown'})`).join('\n'),
+        inline: false
+      });
+    }
+
+    if (activeRecs.length > 0) {
+      fields.push({
+        name: 'Weekly Action Items',
+        value: activeRecs.map(r => `${r.name}: ${r.recommendation}`).join('\n'),
+        inline: false
+      });
+    }
+
     const weeklyEmbed = {
       title: `Watchtower Weekly Digest — ${USERNAME}`,
       description: `Here is your portfolio performance breakdown for the past week:`,
       color: 0xa855f7,
-      fields: [
-        { name: 'Total Stars', value: `${totalStars}`, inline: true },
-        { name: 'Total Views (14d)', value: `${totalViews14d}`, inline: true },
-        { name: 'Health Index', value: `${portfolioHealthAvg}/100`, inline: true },
-        { name: 'Top Performer', value: topPerformer ? `${topPerformer.name} (+${topPerformer.starVelocity24h} stars)` : 'N/A', inline: false },
-        { name: 'Top Traffic Source', value: topRef, inline: true },
-        { name: 'Inactive Repos Flagged', value: `${deadReposDetected.length}`, inline: true },
-      ],
+      fields,
       timestamp: new Date().toISOString(),
     };
     await sendDiscordNotification({ embeds: [weeklyEmbed] });
-    await sendTelegramNotification(`*WATCHTOWER WEEKLY DIGEST*\n\n*Total Stars:* ${totalStars}\n*Views (14d):* ${totalViews14d}\n*Health Index:* ${portfolioHealthAvg}/100\n*Top Performer:* ${topPerformer?.name || 'N/A'}\n*Top Traffic Source:* ${topRef}`);
+
+    let telegramMsg = `*WATCHTOWER WEEKLY DIGEST*\n\n*Total Stars:* ${totalStars}\n*Views (14d):* ${totalViews14d}\n*Health Index:* ${portfolioHealthAvg}/100\n*Top Performer:* ${topPerformer?.name || 'N/A'}\n*Top Traffic Source:* ${topRef}`;
+
+    if (totalHNPoints > 0 || totalDevToViews > 0) {
+      telegramMsg += `\n\n*Cross-Platform Metrics*\n- Hacker News: ${totalHNPoints} points\n- Dev.to: ${totalDevToViews} views`;
+    }
+
+    if (staleReadmes.length > 0) {
+      telegramMsg += `\n\n*Stale Documentation Warnings*\n` + staleReadmes.map(r => `- ${r.name} (stale since: ${r.readmeLastUpdated || 'unknown'})`).join('\n');
+    }
+
+    if (activeRecs.length > 0) {
+      telegramMsg += `\n\n*Weekly Action Items*\n` + activeRecs.map(r => `- ${r.name}: ${r.recommendation}`).join('\n');
+    }
+
+    await sendTelegramNotification(telegramMsg);
   }
 
   console.log('[Watchtower Tracker] Scanning and update process complete!\n');

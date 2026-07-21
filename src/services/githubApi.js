@@ -62,7 +62,7 @@ async function proxyGitHub(path, params = {}) {
   return res.json();
 }
 
-export async function fetchLivePortfolio(username) {
+export async function fetchLivePortfolio(username, existingSnapshot = null) {
   try {
     // 1. User profile
     const userData = await proxyGitHub(`/users/${encodeURIComponent(username)}`);
@@ -85,6 +85,8 @@ export async function fetchLivePortfolio(username) {
       const isDead = daysInactive >= 30 && repo.stargazers_count < 10;
       const isTrending = repo.stargazers_count > 25;
 
+      const existingRepo = existingSnapshot?.repos?.find(r => r.name === repo.name);
+
       return {
         id: repo.id,
         name: repo.name,
@@ -99,19 +101,31 @@ export async function fetchLivePortfolio(username) {
         pushed_at: repo.pushed_at,
         updated_at: repo.updated_at,
         created_at: repo.created_at,
-        starVelocity24h: 0,
+        starVelocity24h: existingRepo ? existingRepo.starVelocity24h : 0,
         forkToStarRatio,
         daysInactive,
         healthScore: calculateHealthScore(repo, daysInactive),
-        isTrending,
-        isDead,
-        trafficViews14d: 0,
-        uniqueVisitors14d: 0,
-        trafficClones14d: 0,
-        viewTrend: [0, 0, 0, 0, 0, 0, 0],
-        topReferrers: [],
-        popularPaths: [],
-        launchesCount: 0,
+        isTrending: existingRepo ? existingRepo.isTrending : isTrending,
+        isDead: existingRepo ? existingRepo.isDead : isDead,
+        isReadmeStale: existingRepo ? existingRepo.isReadmeStale : false,
+        readmeLastUpdated: existingRepo ? existingRepo.readmeLastUpdated : null,
+        milestoneProjection: existingRepo ? existingRepo.milestoneProjection : null,
+        recommendation: existingRepo ? existingRepo.recommendation : 'Status stable. Keep monitoring traffic and user engagement.',
+        crossPlatform: existingRepo ? existingRepo.crossPlatform : {
+          devtoViews: 0,
+          devtoReactions: 0,
+          devtoComments: 0,
+          hnPoints: 0,
+          hnComments: 0
+        },
+        trafficViews14d: existingRepo ? existingRepo.trafficViews14d : 0,
+        uniqueVisitors14d: existingRepo ? existingRepo.uniqueVisitors14d : 0,
+        trafficClones14d: existingRepo ? existingRepo.trafficClones14d : 0,
+        viewTrend: existingRepo ? existingRepo.viewTrend : [0, 0, 0, 0, 0, 0, 0],
+        topReferrers: existingRepo ? existingRepo.topReferrers : [],
+        popularPaths: existingRepo ? existingRepo.popularPaths : [],
+        launchesCount: existingRepo ? existingRepo.launchesCount : 0,
+        launches: existingRepo ? existingRepo.launches : [],
       };
     });
 
@@ -136,6 +150,11 @@ export async function fetchLivePortfolio(username) {
       ? Math.round(processedRepos.reduce((a, r) => a + r.healthScore, 0) / processedRepos.length)
       : 0;
 
+    const totalViews14d = existingSnapshot?.summary?.totalViews14d || 0;
+    const totalClones14d = existingSnapshot?.summary?.totalClones14d || 0;
+    const velocityLeader = existingSnapshot?.summary?.velocityLeader || (processedRepos[0] ? { name: processedRepos[0].name, velocity: 0 } : null);
+    const topReferrerOverall = existingSnapshot?.summary?.topReferrerOverall || null;
+
     return {
       timestamp: new Date().toISOString(),
       username: userData.login,
@@ -145,12 +164,12 @@ export async function fetchLivePortfolio(username) {
         totalStars,
         totalForks,
         totalOpenIssues,
-        totalViews14d: 0,
-        totalClones14d: 0,
+        totalViews14d,
+        totalClones14d,
         followerCount: userData.followers || 0,
         portfolioHealthAvg,
-        velocityLeader: processedRepos[0] ? { name: processedRepos[0].name, velocity: 0 } : null,
-        topReferrerOverall: null,
+        velocityLeader,
+        topReferrerOverall,
         trendingCount: processedRepos.filter(r => r.isTrending).length,
         deadCount: processedRepos.filter(r => r.isDead).length,
       },

@@ -48,6 +48,7 @@ export function filterAndSortRepos(repos = [], { searchQuery, language, status, 
     if (status === 'TRENDING') result = result.filter(r => r.isTrending);
     if (status === 'ACTIVE') result = result.filter(r => !r.isDead && r.daysInactive <= 14);
     if (status === 'STALE') result = result.filter(r => r.daysInactive > 14 && r.daysInactive < 30);
+    if (status === 'README_STALE') result = result.filter(r => r.isReadmeStale);
     if (status === 'DEAD') result = result.filter(r => r.isDead);
     if (status === 'MILESTONE') result = result.filter(r => r.stargazers_count >= 10);
   }
@@ -56,6 +57,7 @@ export function filterAndSortRepos(repos = [], { searchQuery, language, status, 
   result.sort((a, b) => {
     if (sortBy === 'velocity') return (b.starVelocity24h || 0) - (a.starVelocity24h || 0);
     if (sortBy === 'stars') return b.stargazers_count - a.stargazers_count;
+    if (sortBy === 'reach') return ((b.trafficViews14d || 0) + (b.crossPlatform?.devtoViews || 0) + (b.crossPlatform?.hnPoints || 0)) - ((a.trafficViews14d || 0) + (a.crossPlatform?.devtoViews || 0) + (a.crossPlatform?.hnPoints || 0));
     if (sortBy === 'health') return (b.healthScore || 0) - (a.healthScore || 0);
     if (sortBy === 'activity') return (a.daysInactive || 0) - (b.daysInactive || 0);
     if (sortBy === 'forks') return b.forks_count - a.forks_count;

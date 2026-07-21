@@ -207,29 +207,61 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
             </button>
           </form>
 
-          {/* Logged Launches List */}
+          {/* Logged Launch History & Auto-Discovered Launches */}
           <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-5 space-y-3">
-            <h3 className="text-xs font-mono uppercase text-slate-300 flex items-center gap-2 font-bold">
-              <Calendar className="w-4 h-4 text-cyan-400" /> Logged Launch History
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xs font-mono uppercase text-slate-300 flex items-center gap-2 font-bold">
+                <Calendar className="w-4 h-4 text-cyan-400" /> Launches & Cross-Platform Posts ({launches.length})
+              </h3>
+            </div>
             {launches.length === 0 ? (
-              <p className="text-xs text-slate-500 font-mono py-2">No launch entries logged yet.</p>
+              <p className="text-xs text-slate-500 font-mono py-2">No launch entries discovered or logged yet.</p>
             ) : (
               <div className="space-y-2 font-mono text-xs">
                 {launches.map((l) => (
-                  <div key={l.id} className="p-3 rounded-xl bg-slate-950 border border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-500/30 text-[11px] font-bold">
-                        {l.platform}
-                      </span>
-                      <span className="font-bold text-cyan-300">{l.repo}</span>
-                      <span className="text-slate-400">— {l.title}</span>
+                  <div key={l.id || l.url} className="p-3.5 rounded-xl bg-slate-950 border border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-purple-500/40 transition-all">
+                    <div className="space-y-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="px-2 py-0.5 rounded bg-purple-950 text-purple-300 border border-purple-500/30 text-[10px] font-bold">
+                          {l.platform}
+                        </span>
+                        <span className="font-bold text-cyan-300">{l.repo}</span>
+                        <span className="text-slate-300 font-medium">— {l.title}</span>
+                      </div>
+
+                      {/* Live Metric Badges */}
+                      <div className="flex flex-wrap items-center gap-2 text-[11px] pt-1">
+                        {l.views !== undefined && l.views > 0 && (
+                          <span className="px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-500/20 font-bold">
+                            👁 {l.views.toLocaleString()} views
+                          </span>
+                        )}
+                        {l.reactions !== undefined && l.reactions > 0 && (
+                          <span className="px-2 py-0.5 rounded bg-pink-950/60 text-pink-300 border border-pink-500/20 font-bold">
+                            ❤️ {l.reactions} reactions
+                          </span>
+                        )}
+                        {l.points !== undefined && l.points > 0 && (
+                          <span className="px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 border border-amber-500/20 font-bold">
+                            ⬆ {l.points} points
+                          </span>
+                        )}
+                        {l.comments !== undefined && l.comments > 0 && (
+                          <span className="px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 border border-purple-500/20 font-bold">
+                            💬 {l.comments} comments
+                          </span>
+                        )}
+                        {l.id?.startsWith('devto-') || l.id?.startsWith('hn-') ? (
+                          <span className="text-[10px] text-slate-500 italic">Auto-Discovered</span>
+                        ) : null}
+                      </div>
                     </div>
-                    <div className="flex items-center gap-3 text-slate-500 text-[11px]">
+
+                    <div className="flex items-center gap-3 text-slate-400 text-[11px] shrink-0">
                       <span>{l.date}</span>
                       {l.url && (
-                        <a href={l.url} target="_blank" rel="noreferrer" className="text-purple-400 hover:underline flex items-center gap-1">
-                          Link <ExternalLink className="w-3 h-3" />
+                        <a href={l.url} target="_blank" rel="noreferrer" className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 text-purple-300 hover:text-white border border-slate-700 transition-all flex items-center gap-1">
+                          Open Post <ExternalLink className="w-3 h-3 text-purple-400" />
                         </a>
                       )}
                     </div>

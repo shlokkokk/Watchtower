@@ -101,7 +101,7 @@ export default function App() {
     setIsRefreshing(true);
     setErrorMessage(null);
     try {
-      const liveData = await fetchLivePortfolio(targetUser);
+      const liveData = await fetchLivePortfolio(targetUser, snapshotData);
       setSnapshotData(liveData);
       setRateLimit(currentRateLimit);
       setUsername(targetUser);
@@ -138,6 +138,19 @@ export default function App() {
 
   // Repos list
   const repos = snapshotData?.repos || [];
+
+  // Combine launches from state + snapshotData repos embedded launches
+  const allCombinedLaunches = React.useMemo(() => {
+    const fromSnapshot = repos.flatMap(r => r.launches || []);
+    const map = new Map();
+    [...launches, ...fromSnapshot].forEach(l => {
+      if (l && (l.url || l.id)) {
+        map.set(l.url || l.id, l);
+      }
+    });
+    return Array.from(map.values());
+  }, [launches, repos]);
+
   const filteredRepos = filterAndSortRepos(repos, {
     searchQuery,
     language: selectedLanguage,
@@ -248,14 +261,14 @@ export default function App() {
         <RepoDetailModal
           repo={selectedRepo}
           onClose={() => setSelectedRepo(null)}
-          launches={launches}
+          launches={allCombinedLaunches}
           onAddLaunch={() => setShowLaunchModal(true)}
         />
       )}
 
       {showLaunchModal && (
         <LaunchTracker
-          launches={launches}
+          launches={allCombinedLaunches}
           repos={repos}
           onSaveLaunch={handleSaveLaunch}
           onClose={() => setShowLaunchModal(false)}

@@ -17,6 +17,12 @@ export function RepoDetailModal({ repo, onClose, launches = [], onAddLaunch }) {
     pushed_at,
     starVelocity24h = 0,
     healthScore = 50,
+    isReadmeStale,
+    readmeLastUpdated,
+    milestoneProjection,
+    recommendation,
+    crossPlatform,
+    launches: embeddedLaunches = [],
     trafficViews14d = 0,
     uniqueVisitors14d = 0,
     trafficClones14d = 0,
@@ -31,7 +37,11 @@ export function RepoDetailModal({ repo, onClose, launches = [], onAddLaunch }) {
     views: v,
   }));
 
-  const repoLaunches = launches.filter(l => l.repo?.toLowerCase() === name.toLowerCase());
+  // Combine parent launches state with embedded snapshot launches (filtering out duplicates by ID or URL)
+  const allLaunchesRaw = [...launches.filter(l => l.repo?.toLowerCase() === name.toLowerCase()), ...embeddedLaunches];
+  const launchesMap = new Map();
+  allLaunchesRaw.forEach(l => launchesMap.set(l.url || l.id, l));
+  const repoLaunches = Array.from(launchesMap.values());
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
@@ -104,6 +114,46 @@ export function RepoDetailModal({ repo, onClose, launches = [], onAddLaunch }) {
               </p>
             </div>
           </div>
+
+          {/* Action Recommendation & Intelligence Insights */}
+          {recommendation && (
+            <div className="bg-gradient-to-r from-purple-950/40 to-slate-900 border border-purple-500/30 rounded-2xl p-4 font-mono text-xs">
+              <div className="flex items-center gap-2 text-purple-300 font-bold mb-1">
+                <Activity className="w-4 h-4 text-purple-400" />
+                <span>Action Recommendation</span>
+              </div>
+              <p className="text-slate-200 leading-relaxed font-sans">{recommendation}</p>
+            </div>
+          )}
+
+          {/* Milestone Projection & README Alert */}
+          {(milestoneProjection || isReadmeStale) && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
+              {milestoneProjection && (
+                <div className="bg-slate-900/80 border border-cyan-500/30 rounded-xl p-3.5 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] text-slate-400 uppercase font-bold block">Next Milestone</span>
+                    <span className="text-sm font-bold text-cyan-300">{milestoneProjection.nextMilestone} Stars</span>
+                  </div>
+                  <span className="text-xs px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30 font-bold">
+                    {milestoneProjection.formattedText}
+                  </span>
+                </div>
+              )}
+
+              {isReadmeStale && (
+                <div className="bg-amber-950/40 border border-amber-500/40 rounded-xl p-3.5 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] text-amber-400 uppercase font-bold block">Documentation Warning</span>
+                    <span className="text-xs font-bold text-amber-200">README May Be Stale</span>
+                  </div>
+                  <span className="text-[11px] text-amber-300 font-sans">
+                    {readmeLastUpdated ? `Last updated ${readmeLastUpdated}` : 'No recent updates'}
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* View Trend Area Chart */}
           {chartData.length > 0 && (

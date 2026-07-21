@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers, ChevronDown, Crosshair, CornerDownRight } from 'lucide-react';
+import { Search, Filter, ArrowUpDown, LayoutGrid, List, Flame, Zap, Clock, Skull, Star, Layers, ChevronDown, Crosshair, CornerDownRight, AlertCircle } from 'lucide-react';
 
 export function FilterControls({
   username,
@@ -32,6 +32,7 @@ export function FilterControls({
     { id: 'TRENDING', label: 'Trending', icon: Flame },
     { id: 'ACTIVE', label: 'Active', icon: Zap },
     { id: 'STALE', label: 'Stale', icon: Clock },
+    { id: 'README_STALE', label: 'README Stale', icon: AlertCircle },
     { id: 'DEAD', label: 'Inactive', icon: Skull },
     { id: 'MILESTONE', label: 'Milestones', icon: Star },
   ];
@@ -121,6 +122,7 @@ export function FilterControls({
               >
                 <option value="velocity" className="bg-slate-900">Star Velocity (24h)</option>
                 <option value="stars" className="bg-slate-900">Total Stars</option>
+                <option value="reach" className="bg-slate-900">Total Cross-Platform Reach</option>
                 <option value="health" className="bg-slate-900">Health Index</option>
                 <option value="views" className="bg-slate-900">14-Day Views</option>
                 <option value="activity" className="bg-slate-900">Recent Activity</option>

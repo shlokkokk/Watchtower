@@ -14,6 +14,9 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
     healthScore = 50,
     isTrending,
     isDead,
+    isReadmeStale,
+    milestoneProjection,
+    crossPlatform,
     daysInactive,
     viewTrend = [],
     topReferrers = [],
@@ -21,6 +24,7 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
   } = repo;
 
   const hasTrafficData = viewTrend.some(v => v > 0);
+  const totalReach = (trafficViews14d || 0) + (crossPlatform?.devtoViews || 0) + (crossPlatform?.hnPoints || 0);
 
   // Render Mini Sparkline with Gradient Fill (SVG)
   const renderSparkline = () => {
@@ -76,7 +80,7 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
       <div>
         {/* Top Header Status Row */}
         <div className="flex items-center justify-between gap-2 mb-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-slate-950 text-cyan-300 border border-slate-800">
               {language}
             </span>
@@ -88,6 +92,11 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
             {isDead && (
               <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-red-950 text-red-400 border border-red-500/30 flex items-center gap-1">
                 <Skull className="w-3 h-3 text-red-400" /> Inactive ({daysInactive}d)
+              </span>
+            )}
+            {isReadmeStale && (
+              <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-amber-950/80 text-amber-300 border border-amber-500/30 flex items-center gap-1" title="README untouched for >30 days since code pushes">
+                <AlertCircle className="w-3 h-3 text-amber-400" /> README Stale
               </span>
             )}
           </div>
@@ -106,10 +115,18 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
         {/* Title */}
         <h3
           onClick={() => onSelectRepo(repo)}
-          className="text-lg font-bold font-mono text-white group-hover:text-cyan-300 transition-colors cursor-pointer mb-2 truncate"
+          className="text-lg font-bold font-mono text-white group-hover:text-cyan-300 transition-colors cursor-pointer mb-1 truncate"
         >
           {name}
         </h3>
+
+        {/* Milestone Projection Subtitle */}
+        {milestoneProjection?.formattedText && (
+          <div className="text-[11px] font-mono text-cyan-400/90 mb-2 font-semibold flex items-center gap-1">
+            <Activity className="w-3 h-3 text-cyan-400" />
+            <span>{milestoneProjection.formattedText}</span>
+          </div>
+        )}
 
         {/* Description */}
         <p className="text-xs text-slate-400 font-sans line-clamp-2 leading-relaxed mb-4 min-h-[2.5rem]">
@@ -118,6 +135,27 @@ export function RepoCard({ repo, onSelectRepo, onAddLaunch }) {
       </div>
 
       <div>
+        {/* Cross Platform & Total Reach Badges */}
+        {(totalReach > 0 || crossPlatform?.hnPoints > 0 || crossPlatform?.devtoViews > 0) && (
+          <div className="flex items-center gap-1.5 flex-wrap mb-3 font-mono text-[10px]">
+            {totalReach > 0 && (
+              <span className="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-500/30 font-bold">
+                Reach: {totalReach.toLocaleString()}
+              </span>
+            )}
+            {crossPlatform?.hnPoints > 0 && (
+              <span className="px-2 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-500/30 font-bold">
+                HN: {crossPlatform.hnPoints} pts
+              </span>
+            )}
+            {crossPlatform?.devtoViews > 0 && (
+              <span className="px-2 py-0.5 rounded bg-purple-950/80 text-purple-300 border border-purple-500/30 font-bold">
+                Dev.to: {crossPlatform.devtoViews} views
+              </span>
+            )}
+          </div>
+        )}
+
         {/* Referrer Tags */}
         {topReferrers.length > 0 && (
           <div className="flex items-center gap-1.5 flex-wrap mb-4">
