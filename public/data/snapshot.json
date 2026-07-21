@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-07-21T05:22:17.731Z",
+  "timestamp": "2026-07-21T08:12:56.658Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
     "totalStars": 16,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 145,
-    "totalClones14d": 932,
-    "followerCount": 3,
+    "totalViews14d": 165,
+    "totalClones14d": 1146,
+    "followerCount": 4,
     "portfolioHealthAvg": 35,
     "velocityLeader": {
-      "name": "shlokkokk",
+      "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 21,
-      "uniques": 15
+      "count": 25,
+      "uniques": 16
     },
     "trendingCount": 0,
-    "deadCount": 20
+    "deadCount": 17
   },
   "languageBreakdown": [
     {
@@ -62,13 +62,13 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 21,
-      "uniques": 15
+      "count": 25,
+      "uniques": 16
     },
     {
       "name": "news.ycombinator.com",
-      "count": 16,
-      "uniques": 14
+      "count": 17,
+      "uniques": 15
     },
     {
       "name": "Google",
@@ -76,19 +76,19 @@
       "uniques": 1
     },
     {
-      "name": "kagi.com",
-      "count": 2,
-      "uniques": 2
-    },
-    {
       "name": "devpost.com",
-      "count": 2,
-      "uniques": 2
+      "count": 3,
+      "uniques": 3
     },
     {
       "name": "Bing",
-      "count": 1,
-      "uniques": 1
+      "count": 2,
+      "uniques": 2
+    },
+    {
+      "name": "kagi.com",
+      "count": 2,
+      "uniques": 2
     },
     {
       "name": "Yahoo",
@@ -107,6 +107,65 @@
     }
   ],
   "repos": [
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-21T05:22:18Z",
+      "updated_at": "2026-07-21T05:23:11Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "trafficViews14d": 8,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 161,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
+          "title": "/actions/workflows/watchtower-cron.yml",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0
+    },
     {
       "id": 1097707027,
       "name": "shlokkokk",
@@ -129,7 +188,7 @@
       "isDead": false,
       "trafficViews14d": 19,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 592,
+      "trafficClones14d": 604,
       "viewTrend": [
         0,
         0,
@@ -141,7 +200,8 @@
         7,
         7,
         7,
-        7
+        7,
+        0
       ],
       "topReferrers": [
         {
@@ -167,45 +227,6 @@
       "launchesCount": 0
     },
     {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": 0,
-      "open_issues_count": 0,
-      "pushed_at": "2026-07-21T01:58:29Z",
-      "updated_at": "2026-07-21T01:58:33Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [],
-      "popularPaths": [],
-      "launchesCount": 0
-    },
-    {
       "id": 1084752097,
       "name": "Portfolio",
       "full_name": "shlokkokk/Portfolio",
@@ -227,8 +248,9 @@
       "isDead": false,
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 102,
+      "trafficClones14d": 133,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -261,7 +283,7 @@
       "created_at": "2026-06-07T07:44:36Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 2,
+      "daysInactive": 3,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -269,6 +291,7 @@
       "uniqueVisitors14d": 3,
       "trafficClones14d": 56,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -338,7 +361,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
       "topReferrers": [
         {
@@ -407,6 +431,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -435,8 +460,9 @@
       "isDead": true,
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -477,9 +503,9 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 3,
       "viewTrend": [
-        55,
         80,
         110,
+        0,
         0,
         0,
         0,
@@ -520,14 +546,13 @@
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
       "daysInactive": 53,
-      "healthScore": 30,
+      "healthScore": 25,
       "isTrending": false,
       "isDead": false,
-      "trafficViews14d": 99,
-      "uniqueVisitors14d": 81,
-      "trafficClones14d": 4,
+      "trafficViews14d": 108,
+      "uniqueVisitors14d": 87,
+      "trafficClones14d": 9,
       "viewTrend": [
-        90,
         142,
         210,
         0,
@@ -540,17 +565,18 @@
         20,
         20,
         20,
-        20
+        20,
+        9
       ],
       "topReferrers": [
         {
           "referrer": "news.ycombinator.com",
-          "count": 16,
-          "uniques": 14
+          "count": 17,
+          "uniques": 15
         },
         {
           "referrer": "github.com",
-          "count": 3,
+          "count": 4,
           "uniques": 2
         },
         {
@@ -568,8 +594,8 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 69,
-          "uniques": 59
+          "count": 77,
+          "uniques": 64
         },
         {
           "path": "/shlokkokk/ShellStack/issues",
@@ -590,8 +616,8 @@
           "uniques": 2
         },
         {
-          "path": "/shlokkokk/ShellStack/pulls",
-          "title": "/pulls",
+          "path": "/shlokkokk/ShellStack/blob/main/vercel.json",
+          "title": "/blob/main/vercel.json",
           "count": 2,
           "uniques": 2
         }
@@ -632,6 +658,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -657,9 +684,9 @@
       "daysInactive": 67,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 5,
+      "isDead": false,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 6,
       "trafficClones14d": 3,
       "viewTrend": [
         0,
@@ -672,13 +699,19 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
           "count": 3,
           "uniques": 3
+        },
+        {
+          "referrer": "Bing",
+          "count": 1,
+          "uniques": 1
         },
         {
           "referrer": "DuckDuckGo",
@@ -692,6 +725,12 @@
           "title": "Overview",
           "count": 5,
           "uniques": 5
+        },
+        {
+          "path": "/shlokkokk/ReconMaster/tree/main",
+          "title": "/tree/main",
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0
@@ -718,8 +757,9 @@
       "isDead": true,
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 6,
+      "trafficClones14d": 7,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -755,10 +795,10 @@
       "daysInactive": 70,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 4,
+      "isDead": false,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -770,9 +810,15 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [
+        {
+          "referrer": "devpost.com",
+          "count": 1,
+          "uniques": 1
+        },
         {
           "referrer": "github.com",
           "count": 1,
@@ -783,8 +829,8 @@
         {
           "path": "/shlokkokk/kavach",
           "title": "Overview",
-          "count": 2,
-          "uniques": 1
+          "count": 3,
+          "uniques": 2
         }
       ],
       "launchesCount": 0
@@ -823,6 +869,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -845,13 +892,13 @@
       "created_at": "2025-11-11T22:03:51Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 75,
+      "daysInactive": 76,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "isDead": false,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -863,10 +910,18 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/cyberGuard/blob/main/vault.html",
+          "title": "/blob/main/vault.html",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0
     },
     {
@@ -885,7 +940,7 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 75,
+      "daysInactive": 76,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -893,6 +948,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 0,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -944,8 +1000,9 @@
       "isDead": true,
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 88,
+      "trafficClones14d": 89,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -997,8 +1054,9 @@
       "isDead": true,
       "trafficViews14d": 2,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 7,
+      "trafficClones14d": 8,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1068,6 +1126,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1108,6 +1167,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1138,6 +1198,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1207,6 +1268,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [
@@ -1260,6 +1322,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1290,6 +1353,7 @@
       "uniqueVisitors14d": 0,
       "trafficClones14d": 2,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1340,6 +1404,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1370,6 +1435,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1423,6 +1489,7 @@
       "uniqueVisitors14d": 0,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
