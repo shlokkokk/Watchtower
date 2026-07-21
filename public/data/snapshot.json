@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-21T08:12:56.658Z",
+  "timestamp": "2026-07-21T11:00:41.395Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
@@ -9,9 +9,9 @@
     "totalViews14d": 165,
     "totalClones14d": 1146,
     "followerCount": 4,
-    "portfolioHealthAvg": 35,
+    "portfolioHealthAvg": 36,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "OSINT-Directory",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -20,7 +20,7 @@
       "uniques": 16
     },
     "trendingCount": 0,
-    "deadCount": 17
+    "deadCount": 16
   },
   "languageBreakdown": [
     {
@@ -108,6 +108,67 @@
   ],
   "repos": [
     {
+      "id": 1169876809,
+      "name": "OSINT-Directory",
+      "full_name": "shlokkokk/OSINT-Directory",
+      "html_url": "https://github.com/shlokkokk/OSINT-Directory",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-21T10:50:34Z",
+      "updated_at": "2026-07-21T10:50:40Z",
+      "created_at": "2026-03-01T11:10:14Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 8,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/OSINT-Directory",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/OSINT-Directory/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
+          "title": "/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -118,8 +179,8 @@
       "forks_count": 0,
       "watchers_count": 0,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-21T05:22:18Z",
-      "updated_at": "2026-07-21T05:23:11Z",
+      "pushed_at": "2026-07-21T08:12:57Z",
+      "updated_at": "2026-07-21T08:14:27Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -141,6 +202,7 @@
         0,
         0,
         0,
+        8,
         8
       ],
       "topReferrers": [
@@ -201,6 +263,7 @@
         7,
         7,
         7,
+        0,
         0
       ],
       "topReferrers": [
@@ -261,6 +324,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -291,6 +355,7 @@
       "uniqueVisitors14d": 3,
       "trafficClones14d": 56,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -362,6 +427,7 @@
         1,
         1,
         1,
+        0,
         0
       ],
       "topReferrers": [
@@ -432,6 +498,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -473,6 +540,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -503,8 +571,8 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 3,
       "viewTrend": [
-        80,
         110,
+        0,
         0,
         0,
         0,
@@ -553,7 +621,6 @@
       "uniqueVisitors14d": 87,
       "trafficClones14d": 9,
       "viewTrend": [
-        142,
         210,
         0,
         0,
@@ -566,6 +633,7 @@
         20,
         20,
         20,
+        9,
         9
       ],
       "topReferrers": [
@@ -659,6 +727,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -700,6 +769,7 @@
         0,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [
@@ -770,6 +840,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -792,7 +863,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 70,
+      "daysInactive": 71,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -811,6 +882,7 @@
         0,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [
@@ -870,6 +942,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -911,6 +984,7 @@
         0,
         0,
         0,
+        1,
         1
       ],
       "topReferrers": [],
@@ -948,6 +1022,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 0,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1013,6 +1088,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [
@@ -1026,66 +1102,6 @@
         {
           "path": "/shlokkokk/SwipeClean",
           "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0
-    },
-    {
-      "id": 1169876809,
-      "name": "OSINT-Directory",
-      "full_name": "shlokkokk/OSINT-Directory",
-      "html_url": "https://github.com/shlokkokk/OSINT-Directory",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-03-30T17:17:36Z",
-      "updated_at": "2026-07-18T10:09:24Z",
-      "created_at": "2026-03-01T11:10:14Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 112,
-      "healthScore": 25,
-      "isTrending": false,
-      "isDead": true,
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 8,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/OSINT-Directory",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/OSINT-Directory/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
-          "title": "/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
           "count": 1,
           "uniques": 1
         }
@@ -1116,6 +1132,7 @@
       "uniqueVisitors14d": 0,
       "trafficClones14d": 6,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1168,6 +1185,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1198,6 +1216,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1269,6 +1288,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [
@@ -1304,7 +1324,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 185,
+      "daysInactive": 186,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1312,6 +1332,7 @@
       "uniqueVisitors14d": 0,
       "trafficClones14d": 3,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1364,6 +1385,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1405,6 +1427,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -1435,6 +1458,7 @@
       "uniqueVisitors14d": 1,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
@@ -1489,6 +1513,7 @@
       "uniqueVisitors14d": 0,
       "trafficClones14d": 1,
       "viewTrend": [
+        0,
         0,
         0,
         0,
