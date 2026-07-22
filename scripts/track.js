@@ -519,7 +519,7 @@ async function runTracker() {
         const reactionsDiff = Math.max(0, (launch.reactions || 0) - (prevLaunch.reactions || 0));
         const commentsDiff = Math.max(0, (launch.comments || 0) - (prevLaunch.comments || 0));
 
-        if (pointsDiff >= 5 || viewsDiff >= 25 || reactionsDiff > 0 || commentsDiff > 0) {
+        if (pointsDiff >= 1 || viewsDiff >= 10 || reactionsDiff > 0 || commentsDiff > 0) {
           launchSpikesToAlert.push({
             launch,
             prevLaunch,
@@ -938,7 +938,7 @@ async function runTracker() {
       const prev = p.points || 0;
       deltas.push(`+${s.pointsDiff} points (${prev} → ${l.points} total)`);
     }
-    if (s.viewsDiff >= 25) {
+    if (s.viewsDiff >= 10) {
       const prev = p.views || 0;
       deltas.push(`+${s.viewsDiff} views (${prev} → ${l.views} total)`);
     }
