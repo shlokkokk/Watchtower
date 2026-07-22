@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-22T20:57:45.160Z",
+  "timestamp": "2026-07-22T22:03:24.894Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-22T19:02:03Z",
-      "updated_at": "2026-07-22T19:04:03Z",
+      "pushed_at": "2026-07-22T20:57:46Z",
+      "updated_at": "2026-07-22T20:57:59Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -125,9 +125,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 11,
-        "avgDailyStars": 0.83,
-        "formattedText": "~11 days to 10 stars"
+        "daysToMilestone": 12,
+        "avgDailyStars": 0.8,
+        "formattedText": "~12 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -148,7 +148,7 @@
         8,
         8,
         8,
-        8,
+        6,
         6,
         6,
         6,
@@ -221,9 +221,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 11,
-        "avgDailyStars": 0.83,
-        "formattedText": "~11 days to 10 stars"
+        "daysToMilestone": 12,
+        "avgDailyStars": 0.8,
+        "formattedText": "~12 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -880,7 +880,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -1286,7 +1286,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1355,7 +1355,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
