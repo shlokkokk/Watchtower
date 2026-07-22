@@ -8,6 +8,16 @@ const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'public', 'data');
 
+// Load environment variables from .env if present
+const ENV_FILE = path.join(ROOT_DIR, '.env');
+if (fs.existsSync(ENV_FILE)) {
+  try {
+    process.loadEnvFile(ENV_FILE);
+  } catch (err) {
+    // fallback if process.loadEnvFile is unavailable
+  }
+}
+
 // Ensure data directory exists
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -80,7 +90,8 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
   
   if (devtoApiKey) {
     try {
-      const res = await fetch('https://dev.to/api/articles/me', { headers: { ...headers, 'api-key': devtoApiKey } });
+      const meHeaders = { ...headers, 'api-key': devtoApiKey, 'accept': 'application/vnd.forem.api-v1+json' };
+      const res = await fetch('https://dev.to/api/articles/me/published', { headers: meHeaders });
       if (res.ok) {
         articles = await res.json();
       }
@@ -92,7 +103,7 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
   if (!Array.isArray(articles) || articles.length === 0) {
     const targetUser = devtoUsername || USERNAME;
     try {
-      const res = await fetch(`https://dev.to/api/articles?username=${encodeURIComponent(targetUser)}`, { headers });
+      const res = await fetch(`https://dev.to/api/articles?username=${encodeURIComponent(targetUser)}&per_page=100`, { headers });
       if (res.ok) {
         articles = await res.json();
       }
@@ -107,11 +118,15 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
   for (const art of articles) {
     // Dev.to list API endpoint does not return body_markdown. Fetch full detail to inspect body text & GitHub links
     let fullBody = '';
+    const detailHeaders = devtoApiKey ? { ...headers, 'api-key': devtoApiKey, 'accept': 'application/vnd.forem.api-v1+json' } : headers;
     try {
-      const detailRes = await fetch(`https://dev.to/api/articles/${art.id}`, { headers });
+      const detailRes = await fetch(`https://dev.to/api/articles/${art.id}`, { headers: detailHeaders });
       if (detailRes.ok) {
         const detailData = await detailRes.json();
         fullBody = detailData.body_markdown || detailData.body_html || '';
+        if (detailData.page_views_count !== undefined) {
+          art.page_views_count = detailData.page_views_count;
+        }
       }
     } catch (e) {
       // ignore individual detail fetch error
@@ -134,7 +149,7 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
           title: art.title,
           url: art.url,
           views: art.page_views_count || 0,
-          reactions: art.public_reactions_count || 0,
+          reactions: art.public_reactions_count || art.positive_reactions_count || 0,
           comments: art.comments_count || 0,
         });
       }
