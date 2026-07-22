@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Rocket, Plus, ExternalLink, TrendingUp, Award, Calendar, ChevronDown, Eye, Heart, ArrowUp, MessageSquare } from 'lucide-react';
 import { computePlatformROI } from '../services/metrics';
 
 export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose }) {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   const [formData, setFormData] = useState({
     date: new Date().toISOString().slice(0, 10),
     repo: repos[0]?.name || '',
@@ -76,16 +83,40 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
             {roiStats.length === 0 ? (
               <p className="text-xs text-slate-500 font-mono py-2">No launch data available for ROI calculation yet.</p>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 font-mono text-xs">
                 {roiStats.map((p, i) => (
-                  <div key={i} className="p-3.5 rounded-xl bg-slate-950 border border-purple-500/20">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-bold text-white">{p.platform}</span>
-                      <span className="text-[10px] text-purple-400">{p.count} posts</span>
+                  <div key={i} className="p-4 rounded-xl bg-slate-950/80 border border-purple-500/30 hover:border-purple-500/60 transition-all flex flex-col justify-between gap-3 shadow-lg shadow-purple-950/10">
+                    <div className="flex items-center justify-between">
+                      <span className="px-2.5 py-1 rounded-lg bg-purple-950/80 text-purple-300 border border-purple-500/30 text-xs font-bold">
+                        {p.platform}
+                      </span>
+                      <span className="text-[11px] text-slate-400 font-bold">{p.count} post{p.count > 1 ? 's' : ''}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-slate-300 mt-2">
-                      <span className="text-emerald-400 font-bold">{p.avgStarsPerLaunch} stars / post</span>
-                      <span className="text-cyan-300">{p.avgViewsPerLaunch} views / post</span>
+
+                    <div className="flex flex-wrap items-center gap-2 pt-1">
+                      {p.avgViewsPerLaunch > 0 && (
+                        <span className="px-2.5 py-1 rounded-lg bg-cyan-950/60 text-cyan-300 border border-cyan-500/20 font-bold flex items-center gap-1.5 text-xs">
+                          <Eye className="w-3.5 h-3.5 text-cyan-400" /> {p.avgViewsPerLaunch} views / post
+                        </span>
+                      )}
+                      {p.avgPointsPerLaunch > 0 && (
+                        <span className="px-2.5 py-1 rounded-lg bg-amber-950/60 text-amber-300 border border-amber-500/20 font-bold flex items-center gap-1.5 text-xs">
+                          <ArrowUp className="w-3.5 h-3.5 text-amber-400" /> {p.avgPointsPerLaunch} points / post
+                        </span>
+                      )}
+                      {p.avgReactionsPerLaunch > 0 && (
+                        <span className="px-2.5 py-1 rounded-lg bg-pink-950/60 text-pink-300 border border-pink-500/20 font-bold flex items-center gap-1.5 text-xs">
+                          <Heart className="w-3.5 h-3.5 text-pink-400" /> {p.avgReactionsPerLaunch} reactions / post
+                        </span>
+                      )}
+                      {p.avgStarsPerLaunch > 0 && (
+                        <span className="px-2.5 py-1 rounded-lg bg-emerald-950/60 text-emerald-300 border border-emerald-500/20 font-bold flex items-center gap-1.5 text-xs">
+                          <TrendingUp className="w-3.5 h-3.5 text-emerald-400" /> +{p.avgStarsPerLaunch} stars / post
+                        </span>
+                      )}
+                      {p.avgViewsPerLaunch === 0 && p.avgPointsPerLaunch === 0 && p.avgStarsPerLaunch === 0 && (
+                        <span className="text-[11px] text-slate-500 italic">Live tracking connected</span>
+                      )}
                     </div>
                   </div>
                 ))}

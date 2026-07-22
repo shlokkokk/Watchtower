@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, Star, GitFork, Eye, Globe, ExternalLink, Activity, ArrowUpRight, FileText, Rocket } from 'lucide-react';
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 
 export function RepoDetailModal({ repo, onClose, launches = [], onAddLaunch }) {
+  useEffect(() => {
+    if (repo) {
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = 'unset';
+      };
+    }
+  }, [repo]);
+
   if (!repo) return null;
 
   const {

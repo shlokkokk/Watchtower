@@ -7,7 +7,15 @@ export function computePlatformROI(launches = [], repos = []) {
   launches.forEach(launch => {
     const platform = launch.platform || 'Unknown';
     if (!platformStats[platform]) {
-      platformStats[platform] = { platform, count: 0, totalStarsGained: 0, totalViews: 0 };
+      platformStats[platform] = {
+        platform,
+        count: 0,
+        totalStarsGained: 0,
+        totalViews: 0,
+        totalPoints: 0,
+        totalReactions: 0,
+        totalComments: 0
+      };
     }
     platformStats[platform].count += 1;
 
@@ -15,15 +23,20 @@ export function computePlatformROI(launches = [], repos = []) {
     if (repo) {
       platformStats[platform].totalStarsGained += repo.starVelocity24h || 0;
     }
-    const launchViews = (launch.views !== undefined && launch.views !== null) ? launch.views : (repo?.trafficViews14d || 0);
-    platformStats[platform].totalViews += launchViews;
+    platformStats[platform].totalViews += launch.views || 0;
+    platformStats[platform].totalPoints += launch.points || 0;
+    platformStats[platform].totalReactions += launch.reactions || 0;
+    platformStats[platform].totalComments += launch.comments || 0;
   });
 
   return Object.values(platformStats).map(p => ({
     ...p,
     avgStarsPerLaunch: Number((p.totalStarsGained / p.count).toFixed(1)),
     avgViewsPerLaunch: Math.round(p.totalViews / p.count),
-  })).sort((a, b) => b.totalStarsGained - a.totalStarsGained);
+    avgPointsPerLaunch: Math.round(p.totalPoints / p.count),
+    avgReactionsPerLaunch: Math.round(p.totalReactions / p.count),
+    avgCommentsPerLaunch: Math.round(p.totalComments / p.count),
+  })).sort((a, b) => b.count - a.count);
 }
 
 export function filterAndSortRepos(repos = [], { searchQuery, language, status, sortBy }) {
