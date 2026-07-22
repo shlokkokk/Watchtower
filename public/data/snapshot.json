@@ -1,22 +1,26 @@
 {
-  "timestamp": "2026-07-22T11:53:02.883Z",
+  "timestamp": "2026-07-22T11:01:41.311Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
     "totalStars": 19,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 0,
-    "totalClones14d": 0,
+    "totalViews14d": 175,
+    "totalClones14d": 1164,
     "followerCount": 4,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
       "name": "Watchtower",
       "velocity": 0
     },
-    "topReferrerOverall": null,
+    "topReferrerOverall": {
+      "name": "github.com",
+      "count": 26,
+      "uniques": 17
+    },
     "trendingCount": 0,
-    "deadCount": 19
+    "deadCount": 17
   },
   "languageBreakdown": [
     {
@@ -55,7 +59,53 @@
       "percentage": 0
     }
   ],
-  "topReferrers": [],
+  "topReferrers": [
+    {
+      "name": "github.com",
+      "count": 26,
+      "uniques": 17
+    },
+    {
+      "name": "news.ycombinator.com",
+      "count": 17,
+      "uniques": 15
+    },
+    {
+      "name": "Google",
+      "count": 8,
+      "uniques": 1
+    },
+    {
+      "name": "devpost.com",
+      "count": 3,
+      "uniques": 3
+    },
+    {
+      "name": "kagi.com",
+      "count": 2,
+      "uniques": 2
+    },
+    {
+      "name": "Bing",
+      "count": 2,
+      "uniques": 2
+    },
+    {
+      "name": "statics.teams.cdn.office.net",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "name": "Yahoo",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "name": "DuckDuckGo",
+      "count": 1,
+      "uniques": 1
+    }
+  ],
   "repos": [
     {
       "id": 1306769567,
@@ -68,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-22T11:01:42Z",
-      "updated_at": "2026-07-22T11:02:37Z",
+      "pushed_at": "2026-07-22T08:13:29Z",
+      "updated_at": "2026-07-22T08:17:48Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -81,52 +131,59 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 8,
-        "avgDailyStars": 1.22,
+        "avgDailyStars": 1.27,
         "formattedText": "~8 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
-        "devtoViews": 6,
+        "devtoViews": 0,
         "devtoReactions": 0,
         "devtoComments": 0,
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 8,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 161,
       "viewTrend": [
+        8,
+        8,
+        8,
         0,
         0,
         8,
         8,
         8,
         8,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        8,
+        8,
+        8,
+        8,
+        8
       ],
-      "topReferrers": [],
-      "popularPaths": [],
-      "launchesCount": 1,
-      "launches": [
+      "topReferrers": [
         {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 6,
-          "reactions": 0,
-          "comments": 0
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 1
         }
-      ]
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
+          "title": "/actions/workflows/watchtower-cron.yml",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
     },
     {
       "id": 1097707027,
@@ -152,23 +209,23 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 8,
-        "avgDailyStars": 1.22,
+        "avgDailyStars": 1.27,
         "formattedText": "~8 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
-        "devtoViews": 68,
+        "devtoViews": 0,
         "devtoReactions": 3,
         "devtoComments": 4,
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 19,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 604,
       "viewTrend": [
-        7,
-        7,
+        0,
+        0,
         0,
         0,
         0,
@@ -182,8 +239,27 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "Google",
+          "count": 8,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/shlokkokk",
+          "title": "Overview",
+          "count": 17,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/actions/runs/29257887770",
+          "title": "/actions/runs/29257887770",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 1,
       "launches": [
         {
@@ -193,7 +269,7 @@
           "platform": "Dev.to",
           "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
           "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
-          "views": 68,
+          "views": 0,
           "reactions": 3,
           "comments": 4
         }
@@ -219,14 +295,15 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-04-27",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
         "avgDailyStars": 0,
         "formattedText": "Steady pace"
       },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
       "crossPlatform": {
         "devtoViews": 0,
         "devtoReactions": 0,
@@ -234,27 +311,79 @@
         "hnPoints": 2,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 117,
+      "uniqueVisitors14d": 94,
+      "trafficClones14d": 13,
       "viewTrend": [
-        20,
-        20,
+        9,
+        9,
+        9,
+        0,
+        0,
         9,
         9,
         9,
         9,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        9,
+        9,
+        9,
+        9,
+        9
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "news.ycombinator.com",
+          "count": 17,
+          "uniques": 15
+        },
+        {
+          "referrer": "github.com",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "referrer": "kagi.com",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "referrer": "statics.teams.cdn.office.net",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/ShellStack",
+          "title": "Overview",
+          "count": 82,
+          "uniques": 67
+        },
+        {
+          "path": "/shlokkokk/ShellStack/issues",
+          "title": "/issues",
+          "count": 3,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/actions",
+          "title": "/actions",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/blob/main/README.md",
+          "title": "/blob/main/README.md",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/ShellStack/blob/main/components.json",
+          "title": "/blob/main/components.json",
+          "count": 2,
+          "uniques": 2
+        }
+      ],
       "launchesCount": 1,
       "launches": [
         {
@@ -289,14 +418,15 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-03-01",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
         "avgDailyStars": 0,
         "formattedText": "Steady pace"
       },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
       "crossPlatform": {
         "devtoViews": 0,
         "devtoReactions": 0,
@@ -304,9 +434,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 20,
       "viewTrend": [
         0,
         0,
@@ -323,8 +453,27 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/OSINT-Directory",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/OSINT-Directory/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
+          "title": "/blob/bd5dbd98006ba24464f08b118855e09a4fb09414/public/osint-tools.json",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -348,14 +497,15 @@
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-05-07",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
         "avgDailyStars": 0,
         "formattedText": "Steady pace"
       },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
       "crossPlatform": {
         "devtoViews": 0,
         "devtoReactions": 0,
@@ -365,7 +515,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 133,
       "viewTrend": [
         0,
         0,
@@ -422,9 +572,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 7,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 56,
       "viewTrend": [
         0,
         0,
@@ -441,8 +591,27 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 7,
+          "uniques": 3
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Chronicle",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/HackBaorda",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -481,12 +650,12 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 4,
+      "trafficClones14d": 41,
       "viewTrend": [
-        1,
-        1,
+        0,
+        0,
         0,
         0,
         0,
@@ -500,8 +669,37 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "referrer": "Bing",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "referrer": "Yahoo",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/bgi-setup",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 3
+        },
+        {
+          "path": "/shlokkokk/bgi-setup/blob/main/GUIDE.md",
+          "title": "/blob/main/GUIDE.md",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -542,7 +740,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -601,7 +799,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -658,9 +856,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -678,7 +876,14 @@
         0
       ],
       "topReferrers": [],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Oculus",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -719,7 +924,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -760,7 +965,7 @@
       "daysInactive": 68,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -776,27 +981,56 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 6,
+      "trafficClones14d": 3,
       "viewTrend": [
+        1,
+        1,
+        1,
         0,
         0,
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1,
+        1,
+        1,
+        1
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 3
+        },
+        {
+          "referrer": "Bing",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "referrer": "DuckDuckGo",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/ReconMaster",
+          "title": "Overview",
+          "count": 5,
+          "uniques": 5
+        },
+        {
+          "path": "/shlokkokk/ReconMaster/tree/main",
+          "title": "/tree/main",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -837,7 +1071,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -878,7 +1112,7 @@
       "daysInactive": 72,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -894,27 +1128,45 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 6,
       "viewTrend": [
+        1,
+        1,
+        1,
         0,
         0,
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1,
+        1,
+        1,
+        1,
+        1
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "referrer": "devpost.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/kavach",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 3
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -955,7 +1207,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -1012,27 +1264,34 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
+        1,
+        1,
+        1,
         0,
         0,
         1,
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
         0,
         0,
         0
       ],
       "topReferrers": [],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/cyberGuard/blob/main/vault.html",
+          "title": "/blob/main/vault.html",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1071,8 +1330,8 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 0,
       "viewTrend": [
         0,
@@ -1090,8 +1349,21 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "devpost.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/zerorisk-sentinel",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1130,9 +1402,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 89,
       "viewTrend": [
         0,
         0,
@@ -1149,8 +1421,21 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "devpost.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/SwipeClean",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1191,7 +1476,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1233,7 +1518,8 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-01-15",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
@@ -1250,7 +1536,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -1307,9 +1593,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -1326,8 +1612,27 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/zerorisk-sentinel-backend",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/zerorisk-sentinel-backend/blob/main/ai_explainer.py",
+          "title": "/blob/main/ai_explainer.py",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1366,8 +1671,8 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 0,
       "viewTrend": [
         0,
@@ -1385,8 +1690,21 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/skills-introduction-to-git",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1410,7 +1728,8 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2025-11-23",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
@@ -1427,7 +1746,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1486,7 +1805,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1545,7 +1864,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1602,9 +1921,9 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -1621,8 +1940,21 @@
         0,
         0
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/osint-academy",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1663,7 +1995,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
