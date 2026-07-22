@@ -13,9 +13,10 @@ export function computePlatformROI(launches = [], repos = []) {
 
     const repo = repoMap.get(launch.repo?.toLowerCase());
     if (repo) {
-      platformStats[platform].totalStarsGained += repo.starVelocity24h || 1;
-      platformStats[platform].totalViews += repo.trafficViews14d || 50;
+      platformStats[platform].totalStarsGained += repo.starVelocity24h || 0;
     }
+    const launchViews = (launch.views !== undefined && launch.views !== null) ? launch.views : (repo?.trafficViews14d || 0);
+    platformStats[platform].totalViews += launchViews;
   });
 
   return Object.values(platformStats).map(p => ({

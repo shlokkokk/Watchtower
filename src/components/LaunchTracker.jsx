@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Rocket, Plus, ExternalLink, TrendingUp, Award, Calendar, ChevronDown } from 'lucide-react';
+import { X, Rocket, Plus, ExternalLink, TrendingUp, Award, Calendar, ChevronDown, Eye, Heart, ArrowUp, MessageSquare } from 'lucide-react';
 import { computePlatformROI } from '../services/metrics';
 
 export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose }) {
@@ -84,8 +84,8 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
                       <span className="text-[10px] text-purple-400">{p.count} posts</span>
                     </div>
                     <div className="flex items-center gap-3 text-slate-300 mt-2">
-                      <span className="text-emerald-400 font-bold">~{p.avgStarsPerLaunch} stars / post</span>
-                      <span className="text-cyan-300">~{p.avgViewsPerLaunch} views</span>
+                      <span className="text-emerald-400 font-bold">{p.avgStarsPerLaunch} stars / post</span>
+                      <span className="text-cyan-300">{p.avgViewsPerLaunch} views / post</span>
                     </div>
                   </div>
                 ))}
@@ -217,7 +217,7 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
             {launches.length === 0 ? (
               <p className="text-xs text-slate-500 font-mono py-2">No launch entries discovered or logged yet.</p>
             ) : (
-              <div className="space-y-2 font-mono text-xs">
+              <div className="space-y-2 font-mono text-xs max-h-80 overflow-y-auto pr-1">
                 {launches.map((l) => (
                   <div key={l.id || l.url} className="p-3.5 rounded-xl bg-slate-950 border border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:border-purple-500/40 transition-all">
                     <div className="space-y-1">
@@ -231,24 +231,24 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
 
                       {/* Live Metric Badges */}
                       <div className="flex flex-wrap items-center gap-2 text-[11px] pt-1">
-                        {l.views !== undefined && l.views > 0 && (
-                          <span className="px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-500/20 font-bold">
-                            👁 {l.views.toLocaleString()} views
+                        {l.views !== undefined && (
+                          <span className="px-2 py-0.5 rounded bg-cyan-950/60 text-cyan-300 border border-cyan-500/20 font-bold flex items-center gap-1">
+                            <Eye className="w-3 h-3 text-cyan-400" /> {l.views.toLocaleString()} views
                           </span>
                         )}
                         {l.reactions !== undefined && l.reactions > 0 && (
-                          <span className="px-2 py-0.5 rounded bg-pink-950/60 text-pink-300 border border-pink-500/20 font-bold">
-                            ❤️ {l.reactions} reactions
+                          <span className="px-2 py-0.5 rounded bg-pink-950/60 text-pink-300 border border-pink-500/20 font-bold flex items-center gap-1">
+                            <Heart className="w-3 h-3 text-pink-400" /> {l.reactions} reactions
                           </span>
                         )}
                         {l.points !== undefined && l.points > 0 && (
-                          <span className="px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 border border-amber-500/20 font-bold">
-                            ⬆ {l.points} points
+                          <span className="px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 border border-amber-500/20 font-bold flex items-center gap-1">
+                            <ArrowUp className="w-3 h-3 text-amber-400" /> {l.points} points
                           </span>
                         )}
                         {l.comments !== undefined && l.comments > 0 && (
-                          <span className="px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 border border-purple-500/20 font-bold">
-                            💬 {l.comments} comments
+                          <span className="px-2 py-0.5 rounded bg-purple-950/60 text-purple-300 border border-purple-500/20 font-bold flex items-center gap-1">
+                            <MessageSquare className="w-3 h-3 text-purple-400" /> {l.comments} comments
                           </span>
                         )}
                         {l.id?.startsWith('devto-') || l.id?.startsWith('hn-') ? (
