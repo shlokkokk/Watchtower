@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-07-23T08:17:09.773Z",
+  "timestamp": "2026-07-23T11:03:48.731Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
     "totalStars": 19,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 183,
-    "totalClones14d": 1257,
+    "totalViews14d": 190,
+    "totalClones14d": 1235,
     "followerCount": 5,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
@@ -16,11 +16,11 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 32,
-      "uniques": 20
+      "count": 33,
+      "uniques": 21
     },
     "trendingCount": 0,
-    "deadCount": 15
+    "deadCount": 18
   },
   "languageBreakdown": [
     {
@@ -62,8 +62,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 32,
-      "uniques": 20
+      "count": 33,
+      "uniques": 21
     },
     {
       "name": "news.ycombinator.com",
@@ -79,6 +79,11 @@
       "name": "devpost.com",
       "count": 3,
       "uniques": 3
+    },
+    {
+      "name": "shlok-shah-portfolio.vercel.app",
+      "count": 2,
+      "uniques": 1
     },
     {
       "name": "kagi.com",
@@ -113,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-23T05:46:58Z",
-      "updated_at": "2026-07-23T05:47:24Z",
+      "pushed_at": "2026-07-23T08:17:10Z",
+      "updated_at": "2026-07-23T08:57:36Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -125,9 +130,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 16,
-        "avgDailyStars": 0.6,
-        "formattedText": "~16 days to 10 stars"
+        "daysToMilestone": 17,
+        "avgDailyStars": 0.56,
+        "formattedText": "~17 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -137,13 +142,12 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 14,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 244,
+      "trafficViews14d": 17,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 309,
       "viewTrend": [
         8,
         8,
-        8,
         6,
         6,
         6,
@@ -154,12 +158,18 @@
         6,
         6,
         6,
-        6
+        6,
+        3
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
           "count": 6,
+          "uniques": 1
+        },
+        {
+          "referrer": "shlok-shah-portfolio.vercel.app",
+          "count": 2,
           "uniques": 1
         }
       ],
@@ -167,8 +177,8 @@
         {
           "path": "/shlokkokk/Watchtower",
           "title": "Overview",
-          "count": 8,
-          "uniques": 1
+          "count": 10,
+          "uniques": 2
         },
         {
           "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
@@ -221,9 +231,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 16,
-        "avgDailyStars": 0.6,
-        "formattedText": "~16 days to 10 stars"
+        "daysToMilestone": 17,
+        "avgDailyStars": 0.56,
+        "formattedText": "~17 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -235,7 +245,7 @@
       },
       "trafficViews14d": 19,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 613,
+      "trafficClones14d": 576,
       "viewTrend": [
         0,
         0,
@@ -324,9 +334,9 @@
         "hnPoints": 2,
         "hnComments": 0
       },
-      "trafficViews14d": 117,
-      "uniqueVisitors14d": 94,
-      "trafficClones14d": 13,
+      "trafficViews14d": 121,
+      "uniqueVisitors14d": 96,
+      "trafficClones14d": 18,
       "viewTrend": [
         9,
         9,
@@ -341,7 +351,7 @@
         9,
         9,
         9,
-        9
+        4
       ],
       "topReferrers": [
         {
@@ -351,8 +361,8 @@
         },
         {
           "referrer": "github.com",
-          "count": 4,
-          "uniques": 2
+          "count": 5,
+          "uniques": 3
         },
         {
           "referrer": "kagi.com",
@@ -369,8 +379,8 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 82,
-          "uniques": 67
+          "count": 86,
+          "uniques": 69
         },
         {
           "path": "/shlokkokk/ShellStack/issues",
@@ -427,7 +437,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 1,
+      "daysInactive": 2,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -449,7 +459,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 20,
+      "trafficClones14d": 22,
       "viewTrend": [
         0,
         0,
@@ -528,7 +538,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 134,
+      "trafficClones14d": 110,
       "viewTrend": [
         0,
         0,
@@ -587,7 +597,7 @@
       },
       "trafficViews14d": 7,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 56,
+      "trafficClones14d": 22,
       "viewTrend": [
         0,
         0,
@@ -753,7 +763,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -853,7 +863,7 @@
       "daysInactive": 51,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -871,11 +881,10 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -886,7 +895,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
       "topReferrers": [
         {
@@ -984,7 +994,7 @@
       "daysInactive": 69,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1002,7 +1012,7 @@
       },
       "trafficViews14d": 6,
       "uniqueVisitors14d": 6,
-      "trafficClones14d": 2,
+      "trafficClones14d": 4,
       "viewTrend": [
         1,
         1,
@@ -1017,7 +1027,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -1123,10 +1133,10 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 72,
+      "daysInactive": 73,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1142,7 +1152,7 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 4,
+      "trafficViews14d": 3,
       "uniqueVisitors14d": 3,
       "trafficClones14d": 6,
       "viewTrend": [
@@ -1159,7 +1169,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -1177,7 +1187,7 @@
         {
           "path": "/shlokkokk/kavach",
           "title": "Overview",
-          "count": 4,
+          "count": 3,
           "uniques": 3
         }
       ],
@@ -1344,13 +1354,13 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 0,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
-        0,
+        1,
         1,
         1,
         1,
@@ -1379,8 +1389,8 @@
         {
           "path": "/shlokkokk/zerorisk-sentinel",
           "title": "Overview",
-          "count": 2,
-          "uniques": 2
+          "count": 3,
+          "uniques": 3
         }
       ],
       "launchesCount": 0,
@@ -1423,7 +1433,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 89,
+      "trafficClones14d": 90,
       "viewTrend": [
         0,
         0,
@@ -1743,7 +1753,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 187,
+      "daysInactive": 188,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1883,7 +1893,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
