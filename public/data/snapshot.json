@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-24T16:35:27.007Z",
+  "timestamp": "2026-07-24T18:13:33.183Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
@@ -11,7 +11,7 @@
     "followerCount": 5,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "Chronicle",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -108,6 +108,84 @@
   ],
   "repos": [
     {
+      "id": 1261825778,
+      "name": "Chronicle",
+      "full_name": "shlokkokk/Chronicle",
+      "html_url": "https://github.com/shlokkokk/Chronicle",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-24T18:13:14Z",
+      "updated_at": "2026-07-18T07:47:41Z",
+      "created_at": "2026-06-07T07:44:36Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 7,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 24,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 7,
+          "uniques": 3
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Chronicle",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/HackBaorda",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -118,8 +196,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-24T14:48:39Z",
-      "updated_at": "2026-07-24T14:48:56Z",
+      "pushed_at": "2026-07-24T16:35:31Z",
+      "updated_at": "2026-07-24T16:41:59Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -131,7 +209,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 28,
-        "avgDailyStars": 0.33,
+        "avgDailyStars": 0.32,
         "formattedText": "~28 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -154,7 +232,7 @@
         3,
         3,
         3,
-        3,
+        0,
         0,
         0,
         0,
@@ -232,14 +310,14 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 28,
-        "avgDailyStars": 0.33,
+        "avgDailyStars": 0.32,
         "formattedText": "~28 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
         "devtoViews": 0,
-        "devtoReactions": 4,
-        "devtoComments": 4,
+        "devtoReactions": 5,
+        "devtoComments": 5,
         "hnPoints": 0,
         "hnComments": 0
       },
@@ -293,8 +371,8 @@
           "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
           "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
           "views": 0,
-          "reactions": 4,
-          "comments": 4
+          "reactions": 5,
+          "comments": 5
         }
       ]
     },
@@ -314,7 +392,7 @@
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 2,
+      "daysInactive": 3,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -561,84 +639,6 @@
       "launches": []
     },
     {
-      "id": 1261825778,
-      "name": "Chronicle",
-      "full_name": "shlokkokk/Chronicle",
-      "html_url": "https://github.com/shlokkokk/Chronicle",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": 0,
-      "open_issues_count": 0,
-      "pushed_at": "2026-07-18T07:47:35Z",
-      "updated_at": "2026-07-18T07:47:41Z",
-      "created_at": "2026-06-07T07:44:36Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 6,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0
-      },
-      "trafficViews14d": 7,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 24,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 7,
-          "uniques": 3
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Chronicle",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/HackBaorda",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 2
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
-    },
-    {
       "id": 1299248882,
       "name": "bgi-setup",
       "full_name": "shlokkokk/bgi-setup",
@@ -801,7 +801,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 52,
+      "daysInactive": 53,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -860,7 +860,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 52,
+      "daysInactive": 53,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -932,7 +932,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 63,
+      "daysInactive": 64,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1074,7 +1074,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 72,
+      "daysInactive": 73,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1366,7 +1366,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1668,7 +1668,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 173,
+      "daysInactive": 174,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1918,7 +1918,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 239,
+      "daysInactive": 240,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
