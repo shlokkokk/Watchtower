@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-07-24T04:09:44.012Z",
+  "timestamp": "2026-07-24T07:27:28.718Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
-    "totalStars": 19,
+    "totalStars": 18,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 190,
-    "totalClones14d": 1235,
+    "totalViews14d": 192,
+    "totalClones14d": 1264,
     "followerCount": 5,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "shlokkokk",
+      "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -20,33 +20,33 @@
       "uniques": 21
     },
     "trendingCount": 0,
-    "deadCount": 19
+    "deadCount": 20
   },
   "languageBreakdown": [
     {
       "language": "TypeScript",
-      "stars": 6,
-      "percentage": 31.6
+      "stars": 5,
+      "percentage": 27.8
     },
     {
       "language": "JavaScript",
       "stars": 4,
-      "percentage": 21.1
+      "percentage": 22.2
     },
     {
       "language": "HTML",
       "stars": 3,
-      "percentage": 15.8
+      "percentage": 16.7
     },
     {
       "language": "Python",
       "stars": 3,
-      "percentage": 15.8
+      "percentage": 16.7
     },
     {
       "language": "Shell",
       "stars": 3,
-      "percentage": 15.8
+      "percentage": 16.7
     },
     {
       "language": "C++",
@@ -76,11 +76,6 @@
       "uniques": 1
     },
     {
-      "name": "devpost.com",
-      "count": 3,
-      "uniques": 3
-    },
-    {
       "name": "shlok-shah-portfolio.vercel.app",
       "count": 2,
       "uniques": 1
@@ -96,6 +91,11 @@
       "uniques": 2
     },
     {
+      "name": "devpost.com",
+      "count": 2,
+      "uniques": 2
+    },
+    {
       "name": "statics.teams.cdn.office.net",
       "count": 1,
       "uniques": 1
@@ -107,6 +107,107 @@
     }
   ],
   "repos": [
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-24T04:09:44Z",
+      "updated_at": "2026-07-24T04:09:49Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": 24,
+        "avgDailyStars": 0.38,
+        "formattedText": "~24 days to 10 stars"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 1,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0
+      },
+      "trafficViews14d": 17,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 361,
+      "viewTrend": [
+        6,
+        6,
+        6,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 6,
+          "uniques": 1
+        },
+        {
+          "referrer": "shlok-shah-portfolio.vercel.app",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 10,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
+          "title": "/actions/workflows/watchtower-cron.yml",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions",
+          "title": "/actions",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4198717",
+          "date": "2026-07-21",
+          "repo": "Watchtower",
+          "platform": "Dev.to",
+          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
+          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
+          "views": 0,
+          "reactions": 1,
+          "comments": 0
+        }
+      ]
+    },
     {
       "id": 1097707027,
       "name": "shlokkokk",
@@ -130,9 +231,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 23,
-        "avgDailyStars": 0.4,
-        "formattedText": "~23 days to 10 stars"
+        "daysToMilestone": 24,
+        "avgDailyStars": 0.38,
+        "formattedText": "~24 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -144,7 +245,7 @@
       },
       "trafficViews14d": 19,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 576,
+      "trafficClones14d": 564,
       "viewTrend": [
         0,
         0,
@@ -198,119 +299,18 @@
       ]
     },
     {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-07-24T00:05:26Z",
-      "updated_at": "2026-07-24T00:05:33Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": 23,
-        "avgDailyStars": 0.4,
-        "formattedText": "~23 days to 10 stars"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 1,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0
-      },
-      "trafficViews14d": 17,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 309,
-      "viewTrend": [
-        6,
-        6,
-        6,
-        6,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 6,
-          "uniques": 1
-        },
-        {
-          "referrer": "shlok-shah-portfolio.vercel.app",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 10,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
-          "title": "/actions/workflows/watchtower-cron.yml",
-          "count": 2,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Watchtower/actions",
-          "title": "/actions",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 0,
-          "reactions": 1,
-          "comments": 0
-        }
-      ]
-    },
-    {
       "id": 1201964523,
       "name": "ShellStack",
       "full_name": "shlokkokk/ShellStack",
       "html_url": "https://github.com/shlokkokk/ShellStack",
       "description": "A consolidated offensive security reference — 280+ tools and 1,000+ commands organized by category for fast execution during pentests and CTFs.",
       "language": "TypeScript",
-      "stargazers_count": 4,
+      "stargazers_count": 3,
       "forks_count": 0,
-      "watchers_count": 4,
+      "watchers_count": 3,
       "open_issues_count": 0,
       "pushed_at": "2026-07-21T17:59:52Z",
-      "updated_at": "2026-07-21T18:01:23Z",
+      "updated_at": "2026-07-24T07:14:59Z",
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -334,14 +334,14 @@
         "hnPoints": 2,
         "hnComments": 0
       },
-      "trafficViews14d": 121,
-      "uniqueVisitors14d": 96,
-      "trafficClones14d": 18,
+      "trafficViews14d": 125,
+      "uniqueVisitors14d": 97,
+      "trafficClones14d": 23,
       "viewTrend": [
         9,
         9,
         9,
-        9,
+        4,
         4,
         4,
         4,
@@ -379,7 +379,7 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 86,
+          "count": 89,
           "uniques": 69
         },
         {
@@ -459,7 +459,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 22,
+      "trafficClones14d": 19,
       "viewTrend": [
         0,
         0,
@@ -538,7 +538,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 110,
+      "trafficClones14d": 98,
       "viewTrend": [
         0,
         0,
@@ -597,7 +597,7 @@
       },
       "trafficViews14d": 7,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 22,
+      "trafficClones14d": 24,
       "viewTrend": [
         0,
         0,
@@ -763,7 +763,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -879,14 +879,14 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 2,
       "viewTrend": [
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -909,8 +909,8 @@
         {
           "path": "/shlokkokk/Oculus",
           "title": "Overview",
-          "count": 2,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -1017,7 +1017,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1095,7 +1095,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1159,7 +1159,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1335,10 +1335,10 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 78,
+      "daysInactive": 79,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1371,7 +1371,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -1431,8 +1431,8 @@
         "hnPoints": 0,
         "hnComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 90,
       "viewTrend": [
         0,
@@ -1450,21 +1450,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "devpost.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/SwipeClean",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -1775,7 +1762,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
