@@ -210,9 +210,29 @@ async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
     }
   }
 
-  if (rawPosts.length === 0) return [];
+  // Search 3: Query user's comments (e.g. megathreads in r/github, r/webdev, r/reactjs) if REDDIT_USERNAME is set
+  const rawComments = [];
+  if (redditUsername) {
+    try {
+      const commentUrl = `https://www.reddit.com/user/${redditUsername}/comments.json?limit=50`;
+      const res = await fetch(commentUrl, { headers });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.data?.children) {
+          data.data.children.forEach(c => {
+            if (c?.data) rawComments.push(c.data);
+          });
+        }
+      }
+    } catch (err) {
+      console.error(`[Watchtower Tracker] Reddit User Comments Discovery Error for /u/${redditUsername}:`, err.message);
+    }
+  }
+
+
 
   for (const post of rawPosts) {
+
     if (!post || !post.id || !post.permalink) continue;
     if (seenPostIds.has(post.id)) continue;
     if (post.title === '[deleted]' || post.author === '[deleted]' || post.removed_by_category) continue;
@@ -254,8 +274,50 @@ async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
       }
     }
   }
+
+  for (const item of rawComments) {
+
+    if (!item || !item.id || item.body === '[deleted]') continue;
+    if (seenPostIds.has(`comment-${item.id}`)) continue;
+
+    const fullText = `${item.body || ''} ${item.link_title || ''} ${item.link_url || ''}`.toLowerCase();
+
+    for (const repo of repos) {
+      const repoNameLower = repo.name.toLowerCase();
+      const ownerLower = (repo.owner?.login || USERNAME).toLowerCase();
+      const targetMatch = `github.com/${ownerLower}/${repoNameLower}`;
+      const repoMatch = new RegExp(`\\b${repoNameLower.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i');
+
+      const isMatch = fullText.includes(targetMatch) || 
+                      (fullText.includes('github.com') && repoMatch.test(fullText));
+
+      if (isMatch) {
+        seenPostIds.add(`comment-${item.id}`);
+        const subName = item.subreddit ? item.subreddit.replace(/^r\//i, '') : '';
+        const commentUrl = item.link_permalink
+          ? `https://www.reddit.com${item.link_permalink}`
+          : (item.link_id ? `https://www.reddit.com/r/${subName}/comments/${item.link_id.replace('t3_', '')}/_/${item.id}/` : `https://www.reddit.com/user/${redditUsername}/comments/`);
+
+        discovered.push({
+          id: `reddit-comment-${item.id}`,
+          date: item.created_utc ? new Date(item.created_utc * 1000).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10),
+          repo: repo.name,
+          platform: 'Reddit',
+          subreddit: subName ? `r/${subName} (Megathread)` : 'Reddit Comment',
+          title: item.link_title ? `Comment: ${item.link_title}` : 'Reddit Megathread Comment',
+          url: commentUrl,
+          points: item.ups !== undefined ? item.ups : (item.score || 0),
+          comments: 0,
+          upvoteRatio: 1.0,
+        });
+        break;
+      }
+    }
+  }
+
   return discovered;
 }
+
 
 
 // Compute Milestone Projection

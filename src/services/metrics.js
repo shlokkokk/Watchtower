@@ -29,15 +29,30 @@ export function computePlatformROI(launches = [], repos = []) {
     platformStats[platform].totalComments += launch.comments || 0;
   });
 
-  return Object.values(platformStats).map(p => ({
-    ...p,
-    avgStarsPerLaunch: Number((p.totalStarsGained / p.count).toFixed(1)),
-    avgViewsPerLaunch: Math.round(p.totalViews / p.count),
-    avgPointsPerLaunch: Math.round(p.totalPoints / p.count),
-    avgReactionsPerLaunch: Math.round(p.totalReactions / p.count),
-    avgCommentsPerLaunch: Math.round(p.totalComments / p.count),
-  })).sort((a, b) => b.count - a.count);
+  return Object.values(platformStats).map(p => {
+    const avgStarsPerLaunch = Number((p.totalStarsGained / p.count).toFixed(1));
+    const avgViewsPerLaunch = Math.round(p.totalViews / p.count);
+    const avgPointsPerLaunch = Math.round(p.totalPoints / p.count);
+    const avgReactionsPerLaunch = Math.round(p.totalReactions / p.count);
+    const avgCommentsPerLaunch = Math.round(p.totalComments / p.count);
+
+    // Compute composite conversion score for platform ranking
+    const engagementIndex = Math.round(
+      p.totalPoints + (p.totalComments * 2) + p.totalReactions + Math.round(p.totalViews / 10) + (p.totalStarsGained * 5)
+    );
+
+    return {
+      ...p,
+      avgStarsPerLaunch,
+      avgViewsPerLaunch,
+      avgPointsPerLaunch,
+      avgReactionsPerLaunch,
+      avgCommentsPerLaunch,
+      engagementIndex,
+    };
+  }).sort((a, b) => (b.engagementIndex - a.engagementIndex) || (b.count - a.count));
 }
+
 
 export function filterAndSortRepos(repos = [], { searchQuery, language, status, sortBy }) {
   let result = [...repos];
