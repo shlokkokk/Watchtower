@@ -37,6 +37,9 @@ const octokit = new Octokit({ auth: TOKEN || undefined });
 const DEVTO_USERNAME = process.env.DEVTO_USERNAME || USERNAME;
 const DEVTO_API_KEY = process.env.DEVTO_API_KEY || '';
 
+// Reddit Configuration
+const REDDIT_USERNAME = process.env.REDDIT_USERNAME || 'jakee-peraltaa';
+
 // URL Normalizer Helper
 function normalizeUrl(url) {
   if (!url || typeof url !== 'string') return '';
@@ -152,6 +155,88 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
           reactions: art.public_reactions_count || art.positive_reactions_count || 0,
           comments: art.comments_count || 0,
         });
+      }
+    }
+  }
+  return discovered;
+}
+
+// Discover Reddit posts linking to repositories or submitted by REDDIT_USERNAME
+async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
+  const discovered = [];
+  const seenUrls = new Set();
+  const headers = { 'User-Agent': 'Watchtower/2.0 (by /u/' + (redditUsername || 'WatchtowerBot') + ')' };
+
+  const rawPosts = [];
+
+  // Search 1: Query Reddit public search API for any posts mentioning github.com/owner/
+  try {
+    const searchUrl = `https://www.reddit.com/search.json?q=site:github.com/${USERNAME}&sort=new&limit=50`;
+    const res = await fetch(searchUrl, { headers });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.data?.children) {
+        data.data.children.forEach(c => {
+          if (c?.data) rawPosts.push(c.data);
+        });
+      }
+    }
+  } catch (err) {
+    console.error('[Watchtower Tracker] Reddit Search Discovery Error:', err.message);
+  }
+
+  // Search 2: Query user's submitted posts if REDDIT_USERNAME is set
+  if (redditUsername) {
+    try {
+      const userUrl = `https://www.reddit.com/user/${redditUsername}/submitted.json?limit=50`;
+      const res = await fetch(userUrl, { headers });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.data?.children) {
+          data.data.children.forEach(c => {
+            if (c?.data) rawPosts.push(c.data);
+          });
+        }
+      }
+    } catch (err) {
+      console.error(`[Watchtower Tracker] Reddit User Posts Discovery Error for /u/${redditUsername}:`, err.message);
+    }
+  }
+
+  if (rawPosts.length === 0) return [];
+
+  for (const post of rawPosts) {
+    if (!post || !post.id || !post.permalink) continue;
+    const postUrl = `https://www.reddit.com${post.permalink}`;
+    if (seenUrls.has(postUrl)) continue;
+
+    const fullText = `${post.title || ''} ${post.selftext || ''} ${post.url || ''}`.toLowerCase();
+
+    for (const repo of repos) {
+      const repoNameLower = repo.name.toLowerCase();
+      const ownerLower = (repo.owner?.login || USERNAME).toLowerCase();
+      const targetMatch = `github.com/${ownerLower}/${repoNameLower}`;
+      const repoMatch = new RegExp(`\\b${repoNameLower.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')}\\b`, 'i');
+
+      const isMatch = fullText.includes(targetMatch) || 
+                      (fullText.includes('github.com') && repoMatch.test(fullText)) ||
+                      (post.url && post.url.toLowerCase().includes(targetMatch));
+
+      if (isMatch) {
+        seenUrls.add(postUrl);
+        discovered.push({
+          id: `reddit-${post.id}`,
+          date: post.created_utc ? new Date(post.created_utc * 1000).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10),
+          repo: repo.name,
+          platform: 'Reddit',
+          subreddit: post.subreddit ? `r/${post.subreddit}` : 'Reddit',
+          title: post.title,
+          url: postUrl,
+          points: post.ups !== undefined ? post.ups : (post.score || 0),
+          comments: post.num_comments || 0,
+          upvoteRatio: post.upvote_ratio || 1.0,
+        });
+        break;
       }
     }
   }
@@ -438,10 +523,11 @@ async function runTracker() {
   const forkGainsToAlert = [];
 
   // 1.5. Dynamic Launches/Posts Auto-Discovery
-  console.log(`[Watchtower Tracker] Auto-discovering HN stories and Dev.to articles for ${allRepos.length} repositories...`);
+  console.log(`[Watchtower Tracker] Auto-discovering HN stories, Dev.to articles, and Reddit posts for ${allRepos.length} repositories...`);
   const discoveredHN = await discoverHNLaunches(allRepos);
   const discoveredDevTo = await discoverDevToLaunches(DEVTO_USERNAME, allRepos, DEVTO_API_KEY);
-  console.log(`Auto-discovered: HN: ${discoveredHN.length} stories, Dev.to: ${discoveredDevTo.length} articles.`);
+  const discoveredReddit = await discoverRedditLaunches(allRepos, REDDIT_USERNAME);
+  console.log(`Auto-discovered: HN: ${discoveredHN.length} stories, Dev.to: ${discoveredDevTo.length} articles, Reddit: ${discoveredReddit.length} posts.`);
 
   // Merge discovered launches with manual ones
   const launchesMap = new Map();
@@ -449,7 +535,7 @@ async function runTracker() {
     launchesMap.set(launch.url || launch.id || (launch.platform + '-' + launch.repo), launch);
   }
 
-  const allDiscovered = [...discoveredHN, ...discoveredDevTo];
+  const allDiscovered = [...discoveredHN, ...discoveredDevTo, ...discoveredReddit];
   for (const disc of allDiscovered) {
     const key = disc.url || disc.id;
     if (launchesMap.has(key)) {
@@ -677,6 +763,8 @@ async function runTracker() {
     const devtoComments = repoLaunches.filter(l => l.platform === 'Dev.to').reduce((sum, l) => sum + (l.comments || 0), 0);
     const hnPoints = repoLaunches.filter(l => l.platform === 'Show HN' || l.platform === 'Hacker News').reduce((sum, l) => sum + (l.points || 0), 0);
     const hnComments = repoLaunches.filter(l => l.platform === 'Show HN' || l.platform === 'Hacker News').reduce((sum, l) => sum + (l.comments || 0), 0);
+    const redditPoints = repoLaunches.filter(l => l.platform === 'Reddit').reduce((sum, l) => sum + (l.points || 0), 0);
+    const redditComments = repoLaunches.filter(l => l.platform === 'Reddit').reduce((sum, l) => sum + (l.comments || 0), 0);
 
     const repoObjForRec = {
       name: repo.name,
@@ -722,7 +810,9 @@ async function runTracker() {
         devtoReactions,
         devtoComments,
         hnPoints,
-        hnComments
+        hnComments,
+        redditPoints,
+        redditComments
       },
 
       // Traffic

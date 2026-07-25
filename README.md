@@ -39,8 +39,8 @@
 - Useful for competitor research, open-source discovery, or just curiosity.
 
 ### 4. Launch Attribution & ROI Studio
-- **Multi-Platform Logger** — record post events on Show HN, Dev.to, Reddit, ProductHunt, Twitter/X, Substack, LinkedIn, Discord, or any custom channel.
-- **Platform ROI Matrix** — computes average stars and views per distribution channel to surface your highest-converting platforms.
+- **Autonomous Multi-Platform Auto-Discovery** — automatically scans Hacker News, Dev.to, and Reddit for posts linking to your repositories, updating upvotes, comments, and views live on every hourly scan.
+- **Platform ROI Matrix** — computes average stars, views, upvotes, and comments per distribution channel to surface your highest-converting platforms.
 
 ### 5. Autonomous Webhook Alert Engine (24/7)
 Alerts fire automatically via GitHub Actions cron every hour — no browser required:

@@ -282,7 +282,12 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
                             <MessageSquare className="w-3 h-3 text-purple-400" /> {l.comments} comments
                           </span>
                         )}
-                        {l.id?.startsWith('devto-') || l.id?.startsWith('hn-') ? (
+                        {l.subreddit && (
+                          <span className="px-2 py-0.5 rounded bg-orange-950/80 text-orange-300 border border-orange-500/30 font-bold text-[10px]">
+                            {l.subreddit}
+                          </span>
+                        )}
+                        {l.id?.startsWith('devto-') || l.id?.startsWith('hn-') || l.id?.startsWith('reddit-') ? (
                           <span className="text-[10px] text-slate-500 italic">Auto-Discovered</span>
                         ) : null}
                       </div>
