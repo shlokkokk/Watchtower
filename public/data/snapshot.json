@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-25T15:31:46.047Z",
+  "timestamp": "2026-07-25T16:02:28.271Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-25T15:26:49Z",
-      "updated_at": "2026-07-25T15:26:55Z",
+      "pushed_at": "2026-07-25T15:55:06Z",
+      "updated_at": "2026-07-25T15:55:49Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -136,7 +136,7 @@
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
-        "devtoViews": 10,
+        "devtoViews": 0,
         "devtoReactions": 2,
         "devtoComments": 0,
         "hnPoints": 0,
@@ -204,7 +204,7 @@
           "platform": "Dev.to",
           "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
           "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 10,
+          "views": 0,
           "reactions": 2,
           "comments": 0
         }
@@ -255,7 +255,7 @@
         4,
         4,
         4,
-        4,
+        3,
         3,
         3,
         3,
@@ -363,7 +363,7 @@
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
-        "devtoViews": 84,
+        "devtoViews": 0,
         "devtoReactions": 5,
         "devtoComments": 8,
         "hnPoints": 0,
@@ -420,7 +420,7 @@
           "platform": "Dev.to",
           "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
           "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
-          "views": 84,
+          "views": 0,
           "reactions": 5,
           "comments": 8
         }
