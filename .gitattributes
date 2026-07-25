@@ -1,0 +1,2 @@
+# Automatically resolve merge conflicts for data snapshot JSON files by favoring local state
+public/data/*.json merge=ours
