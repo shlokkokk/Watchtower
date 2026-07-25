@@ -287,6 +287,11 @@ export function LaunchTracker({ launches = [], repos = [], onSaveLaunch, onClose
                             {l.subreddit}
                           </span>
                         )}
+                        {l.upvoteRatio !== undefined && (
+                          <span className="px-2 py-0.5 rounded bg-amber-950/40 text-amber-400 border border-amber-500/20 font-bold text-[10px]">
+                            {Math.round(l.upvoteRatio * 100)}% Upvoted
+                          </span>
+                        )}
                         {l.id?.startsWith('devto-') || l.id?.startsWith('hn-') || l.id?.startsWith('reddit-') ? (
                           <span className="text-[10px] text-slate-500 italic">Auto-Discovered</span>
                         ) : null}

@@ -46,6 +46,13 @@ function normalizeUrl(url) {
   return url.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/\/$/, '');
 }
 
+// Extract Reddit Post ID from any Reddit URL format
+function extractRedditPostId(url) {
+  if (!url || typeof url !== 'string') return null;
+  const match = url.match(/(?:comments|redd\.it)\/([a-z0-9]+)/i);
+  return match ? match[1] : null;
+}
+
 // Discover Hacker News stories linking to a repo
 async function discoverHNLaunches(repos) {
   const discovered = [];
@@ -164,12 +171,12 @@ async function discoverDevToLaunches(devtoUsername, repos, devtoApiKey = '') {
 // Discover Reddit posts linking to repositories or submitted by REDDIT_USERNAME
 async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
   const discovered = [];
-  const seenUrls = new Set();
+  const seenPostIds = new Set();
   const headers = { 'User-Agent': 'Watchtower/2.0 (by /u/' + (redditUsername || 'WatchtowerBot') + ')' };
 
   const rawPosts = [];
 
-  // Search 1: Query Reddit public search API for any posts mentioning github.com/owner/
+  // Search 1: Query Reddit public search API for site:github.com/USERNAME
   try {
     const searchUrl = `https://www.reddit.com/search.json?q=site:github.com/${USERNAME}&sort=new&limit=50`;
     const res = await fetch(searchUrl, { headers });
@@ -207,10 +214,14 @@ async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
 
   for (const post of rawPosts) {
     if (!post || !post.id || !post.permalink) continue;
-    const postUrl = `https://www.reddit.com${post.permalink}`;
-    if (seenUrls.has(postUrl)) continue;
+    if (seenPostIds.has(post.id)) continue;
+    if (post.title === '[deleted]' || post.author === '[deleted]' || post.removed_by_category) continue;
 
-    const fullText = `${post.title || ''} ${post.selftext || ''} ${post.url || ''}`.toLowerCase();
+    // Check crosspost parent if available
+    const crosspostParent = post.crosspost_parent_list?.[0];
+    const targetPost = crosspostParent || post;
+
+    const fullText = `${targetPost.title || ''} ${targetPost.selftext || ''} ${targetPost.url || ''}`.toLowerCase();
 
     for (const repo of repos) {
       const repoNameLower = repo.name.toLowerCase();
@@ -220,16 +231,19 @@ async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
 
       const isMatch = fullText.includes(targetMatch) || 
                       (fullText.includes('github.com') && repoMatch.test(fullText)) ||
-                      (post.url && post.url.toLowerCase().includes(targetMatch));
+                      (targetPost.url && targetPost.url.toLowerCase().includes(targetMatch));
 
       if (isMatch) {
-        seenUrls.add(postUrl);
+        seenPostIds.add(post.id);
+        const subName = post.subreddit ? post.subreddit.replace(/^r\//i, '') : '';
+        const postUrl = `https://www.reddit.com${post.permalink}`;
+
         discovered.push({
           id: `reddit-${post.id}`,
           date: post.created_utc ? new Date(post.created_utc * 1000).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10),
           repo: repo.name,
           platform: 'Reddit',
-          subreddit: post.subreddit ? `r/${post.subreddit}` : 'Reddit',
+          subreddit: subName ? `r/${subName}` : 'Reddit',
           title: post.title,
           url: postUrl,
           points: post.ups !== undefined ? post.ups : (post.score || 0),
@@ -242,6 +256,7 @@ async function discoverRedditLaunches(repos, redditUsername = REDDIT_USERNAME) {
   }
   return discovered;
 }
+
 
 // Compute Milestone Projection
 function getMilestoneProjection(repo, historyLog) {
@@ -572,7 +587,32 @@ async function runTracker() {
         }
       }
     }
+
+    // Update live stats for existing Reddit posts (whether auto-discovered or manually added)
+    if (launch.platform === 'Reddit' && launch.url) {
+      const postId = launch.id?.startsWith('reddit-') ? launch.id.slice(7) : extractRedditPostId(launch.url);
+      if (postId) {
+        try {
+          const headers = { 'User-Agent': 'Watchtower/2.0 (by /u/' + (REDDIT_USERNAME || 'WatchtowerBot') + ')' };
+          const res = await fetch(`https://www.reddit.com/comments/${postId}.json`, { headers });
+          if (res.ok) {
+            const data = await res.json();
+            const postData = data?.[0]?.data?.children?.[0]?.data;
+            if (postData && !postData.removed_by_category && postData.title !== '[deleted]') {
+              launch.points = postData.ups !== undefined ? postData.ups : (postData.score || 0);
+              launch.comments = postData.num_comments || 0;
+              launch.upvoteRatio = postData.upvote_ratio || 1.0;
+              if (postData.title && postData.title !== '[deleted]') launch.title = postData.title;
+              if (postData.subreddit) launch.subreddit = `r/${postData.subreddit.replace(/^r\//i, '')}`;
+            }
+          }
+        } catch (err) {
+          // ignore individual Reddit live fetch error
+        }
+      }
+    }
   }
+
 
   // Compare with previously saved launches to trigger real-time alerts for new posts or traction spikes
   const prevLaunchesMap = new Map();
