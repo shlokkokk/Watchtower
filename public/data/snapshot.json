@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-07-26T02:04:20.828Z",
+  "timestamp": "2026-07-26T05:53:18.960Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 27,
     "totalStars": 18,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 194,
-    "totalClones14d": 1370,
+    "totalViews14d": 192,
+    "totalClones14d": 1377,
     "followerCount": 7,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "shlokkokk",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 33,
-      "uniques": 21
+      "count": 31,
+      "uniques": 20
     },
     "trendingCount": 0,
     "deadCount": 20
@@ -62,8 +62,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 33,
-      "uniques": 21
+      "count": 31,
+      "uniques": 20
     },
     {
       "name": "news.ycombinator.com",
@@ -108,6 +108,98 @@
   ],
   "repos": [
     {
+      "id": 1097707027,
+      "name": "shlokkokk",
+      "full_name": "shlokkokk/shlokkokk",
+      "html_url": "https://github.com/shlokkokk/shlokkokk",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-26T02:46:47Z",
+      "updated_at": "2026-07-24T20:17:46Z",
+      "created_at": "2025-11-16T17:24:43Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": 42,
+        "avgDailyStars": 0.22,
+        "formattedText": "~42 days to 10 stars"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 5,
+        "devtoComments": 8,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 19,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 586,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "Google",
+          "count": 8,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/shlokkokk",
+          "title": "Overview",
+          "count": 17,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/actions/runs/29257887770",
+          "title": "/actions/runs/29257887770",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4172798",
+          "date": "2026-07-18",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
+          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
+          "views": 0,
+          "reactions": 5,
+          "comments": 8
+        }
+      ]
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -118,8 +210,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-25T23:54:02Z",
-      "updated_at": "2026-07-25T23:54:06Z",
+      "pushed_at": "2026-07-26T02:04:21Z",
+      "updated_at": "2026-07-26T02:04:25Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -130,9 +222,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 40,
-        "avgDailyStars": 0.23,
-        "formattedText": "~40 days to 10 stars"
+        "daysToMilestone": 42,
+        "avgDailyStars": 0.22,
+        "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -249,7 +341,7 @@
       },
       "trafficViews14d": 128,
       "uniqueVisitors14d": 99,
-      "trafficClones14d": 25,
+      "trafficClones14d": 32,
       "viewTrend": [
         3,
         3,
@@ -264,7 +356,7 @@
         3,
         3,
         3,
-        3
+        0
       ],
       "topReferrers": [
         {
@@ -331,98 +423,6 @@
           "url": "https://news.ycombinator.com/item?id=48956440",
           "points": 2,
           "comments": 0
-        }
-      ]
-    },
-    {
-      "id": 1097707027,
-      "name": "shlokkokk",
-      "full_name": "shlokkokk/shlokkokk",
-      "html_url": "https://github.com/shlokkokk/shlokkokk",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-07-25T02:38:03Z",
-      "updated_at": "2026-07-24T20:17:46Z",
-      "created_at": "2025-11-16T17:24:43Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": 40,
-        "avgDailyStars": 0.23,
-        "formattedText": "~40 days to 10 stars"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 5,
-        "devtoComments": 8,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 19,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 586,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "Google",
-          "count": 8,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/shlokkokk",
-          "title": "Overview",
-          "count": 17,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/actions/runs/29257887770",
-          "title": "/actions/runs/29257887770",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4172798",
-          "date": "2026-07-18",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
-          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
-          "views": 0,
-          "reactions": 5,
-          "comments": 8
         }
       ]
     },
@@ -1650,8 +1650,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 2,
       "viewTrend": [
         0,
@@ -1669,27 +1669,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/zerorisk-sentinel-backend",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/zerorisk-sentinel-backend/blob/main/ai_explainer.py",
-          "title": "/blob/main/ai_explainer.py",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
