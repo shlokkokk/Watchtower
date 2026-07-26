@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-26T19:06:39.482Z",
+  "timestamp": "2026-07-26T20:49:12.978Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 28,
@@ -11,8 +11,8 @@
     "followerCount": 7,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "Oculus",
-      "velocity": 1
+      "name": "Watchtower",
+      "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-26T17:57:08Z",
-      "updated_at": "2026-07-26T17:57:15Z",
+      "pushed_at": "2026-07-26T19:06:41Z",
+      "updated_at": "2026-07-26T19:06:46Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -131,7 +131,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 47,
-        "avgDailyStars": 0.2,
+        "avgDailyStars": 0.19,
         "formattedText": "~47 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -155,7 +155,7 @@
         0,
         0,
         0,
-        0,
+        5,
         5,
         5,
         5,
@@ -254,6 +254,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -346,7 +347,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 47,
-        "avgDailyStars": 0.2,
+        "avgDailyStars": 0.19,
         "formattedText": "~47 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -459,7 +460,7 @@
         3,
         3,
         3,
-        3,
+        0,
         0,
         0,
         0,
@@ -715,7 +716,7 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 10,
+      "daysInactive": 11,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -925,17 +926,17 @@
       "pushed_at": "2026-06-01T17:04:49Z",
       "updated_at": "2026-07-26T18:43:40Z",
       "created_at": "2026-05-14T19:38:05Z",
-      "starVelocity24h": 1,
+      "starVelocity24h": 0,
       "forkToStarRatio": 0,
       "daysInactive": 55,
-      "healthScore": 30,
+      "healthScore": 25,
       "isTrending": false,
       "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 47,
-        "avgDailyStars": 0.2,
+        "avgDailyStars": 0.19,
         "formattedText": "~47 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1062,7 +1063,7 @@
       "created_at": "2025-11-29T07:27:01Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 72,
+      "daysInactive": 73,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1287,7 +1288,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 80,
+      "daysInactive": 81,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2067,7 +2068,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 254,
+      "daysInactive": 255,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
