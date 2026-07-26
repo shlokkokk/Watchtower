@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-07-26T13:17:01.140Z",
+  "timestamp": "2026-07-26T14:59:00.195Z",
   "username": "shlokkokk",
   "summary": {
-    "totalRepos": 27,
+    "totalRepos": 28,
     "totalStars": 18,
     "totalForks": 2,
     "totalOpenIssues": 1,
     "totalViews14d": 192,
     "totalClones14d": 1419,
     "followerCount": 7,
-    "portfolioHealthAvg": 37,
+    "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "opsec-hardening-suite",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -34,17 +34,17 @@
       "percentage": 22.2
     },
     {
+      "language": "Shell",
+      "stars": 3,
+      "percentage": 16.7
+    },
+    {
       "language": "HTML",
       "stars": 3,
       "percentage": 16.7
     },
     {
       "language": "Python",
-      "stars": 3,
-      "percentage": 16.7
-    },
-    {
-      "language": "Shell",
       "stars": 3,
       "percentage": 16.7
     },
@@ -108,6 +108,54 @@
   ],
   "repos": [
     {
+      "id": 1312822160,
+      "name": "opsec-hardening-suite",
+      "full_name": "shlokkokk/opsec-hardening-suite",
+      "html_url": "https://github.com/shlokkokk/opsec-hardening-suite",
+      "description": "OPSEC hardening suite. 47 vectors. Tor + hardware spoofing + anti-forensics.",
+      "language": "Shell",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-26T13:34:10Z",
+      "updated_at": "2026-07-26T13:34:24Z",
+      "created_at": "2026-07-26T13:25:12Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
+      "viewTrend": [
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -118,8 +166,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-26T11:57:31Z",
-      "updated_at": "2026-07-26T11:58:07Z",
+      "pushed_at": "2026-07-26T13:17:04Z",
+      "updated_at": "2026-07-26T13:17:41Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -130,9 +178,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 44,
+        "daysToMilestone": 45,
         "avgDailyStars": 0.2,
-        "formattedText": "~44 days to 10 stars"
+        "formattedText": "~45 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -159,7 +207,7 @@
         0,
         0,
         0,
-        0,
+        5,
         5,
         5
       ],
@@ -294,9 +342,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 44,
+        "daysToMilestone": 45,
         "avgDailyStars": 0.2,
-        "formattedText": "~44 days to 10 stars"
+        "formattedText": "~45 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -412,7 +460,7 @@
         3,
         3,
         3,
-        3,
+        0,
         0,
         0,
         0,
@@ -754,7 +802,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 32,
+      "daysInactive": 33,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1561,7 +1609,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 129,
+      "daysInactive": 130,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
