@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-07-27T10:35:43.861Z",
+  "timestamp": "2026-07-27T13:34:37.295Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 28,
     "totalStars": 19,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 195,
-    "totalClones14d": 1467,
+    "totalViews14d": 197,
+    "totalClones14d": 1471,
     "followerCount": 7,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
@@ -16,8 +16,8 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 34,
-      "uniques": 18
+      "count": 36,
+      "uniques": 19
     },
     "trendingCount": 0,
     "deadCount": 18
@@ -62,8 +62,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 34,
-      "uniques": 18
+      "count": 36,
+      "uniques": 19
     },
     {
       "name": "news.ycombinator.com",
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-27T06:21:16Z",
-      "updated_at": "2026-07-27T06:22:07Z",
+      "pushed_at": "2026-07-27T10:35:44Z",
+      "updated_at": "2026-07-27T10:36:42Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -130,9 +130,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 52,
+        "daysToMilestone": 54,
         "avgDailyStars": 0.17,
-        "formattedText": "~52 days to 10 stars"
+        "formattedText": "~54 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -148,19 +148,19 @@
       "uniqueVisitors14d": 2,
       "trafficClones14d": 600,
       "viewTrend": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
         0,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
         0
       ],
       "topReferrers": [
@@ -233,9 +233,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 52,
+        "daysToMilestone": 54,
         "avgDailyStars": 0.17,
-        "formattedText": "~52 days to 10 stars"
+        "formattedText": "~54 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -318,7 +318,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 0,
+      "daysInactive": 1,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -339,9 +339,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 0,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -353,10 +353,24 @@
         0,
         0,
         0,
-        0
+        0,
+        2
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/opsec-hardening-suite",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -413,7 +427,7 @@
         0,
         0,
         0,
-        0,
+        2,
         2
       ],
       "topReferrers": [
@@ -654,7 +668,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 5,
+      "daysInactive": 6,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -825,7 +839,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 33,
+      "daysInactive": 34,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -954,9 +968,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 52,
+        "daysToMilestone": 54,
         "avgDailyStars": 0.17,
-        "formattedText": "~52 days to 10 stars"
+        "formattedText": "~54 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
       "crossPlatform": {
@@ -984,7 +998,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1473,7 +1487,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1571,7 +1585,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 121,
+      "daysInactive": 122,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1816,7 +1830,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 191,
+      "daysInactive": 192,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1878,7 +1892,7 @@
       "created_at": "2025-12-18T11:30:18Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 220,
+      "daysInactive": 221,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1939,7 +1953,7 @@
       "created_at": "2025-11-10T01:06:50Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 233,
+      "daysInactive": 234,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
