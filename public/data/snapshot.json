@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-27T16:10:39.616Z",
+  "timestamp": "2026-07-27T18:20:11.217Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 28,
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-27T13:34:38Z",
-      "updated_at": "2026-07-27T13:36:26Z",
+      "pushed_at": "2026-07-27T16:10:40Z",
+      "updated_at": "2026-07-27T16:11:45Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -130,9 +130,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 54,
-        "avgDailyStars": 0.17,
-        "formattedText": "~54 days to 10 stars"
+        "daysToMilestone": 55,
+        "avgDailyStars": 0.16,
+        "formattedText": "~55 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -158,7 +158,7 @@
         5,
         5,
         5,
-        5,
+        0,
         0,
         0,
         0
@@ -233,9 +233,9 @@
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 54,
-        "avgDailyStars": 0.17,
-        "formattedText": "~54 days to 10 stars"
+        "daysToMilestone": 55,
+        "avgDailyStars": 0.16,
+        "formattedText": "~55 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
       "crossPlatform": {
@@ -355,6 +355,7 @@
         0,
         0,
         2,
+        2,
         2
       ],
       "topReferrers": [
@@ -426,7 +427,7 @@
         0,
         0,
         0,
-        0,
+        2,
         2,
         2,
         2
@@ -901,7 +902,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 55,
+      "daysInactive": 56,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -962,16 +963,16 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 55,
+      "daysInactive": 56,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 54,
-        "avgDailyStars": 0.17,
-        "formattedText": "~54 days to 10 stars"
+        "daysToMilestone": 55,
+        "avgDailyStars": 0.16,
+        "formattedText": "~55 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
       "crossPlatform": {
@@ -997,7 +998,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -1036,7 +1037,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 66,
+      "daysInactive": 67,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1182,7 +1183,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 75,
+      "daysInactive": 76,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1486,7 +1487,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -1525,7 +1526,7 @@
       "created_at": "2026-03-28T21:35:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 1,
-      "daysInactive": 97,
+      "daysInactive": 98,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1770,7 +1771,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 176,
+      "daysInactive": 177,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2015,7 +2016,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 242,
+      "daysInactive": 243,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
