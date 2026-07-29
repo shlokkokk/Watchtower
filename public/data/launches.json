@@ -30,5 +30,16 @@
     "views": 0,
     "reactions": 2,
     "comments": 0
+  },
+  {
+    "id": "devto-4236375",
+    "date": "2026-07-28",
+    "repo": "shlokkokk",
+    "platform": "Dev.to",
+    "title": "I kept losing scan chains to timeouts and copy-paste errors, so I built a recon-to-exploitation orchestrator instead of another scanner",
+    "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
+    "views": 0,
+    "reactions": 1,
+    "comments": 0
   }
 ]
