@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-07-29T19:02:44.920Z",
+  "timestamp": "2026-07-29T20:45:15.823Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 29,
@@ -9,9 +9,9 @@
     "totalViews14d": 199,
     "totalClones14d": 1354,
     "followerCount": 7,
-    "portfolioHealthAvg": 39,
+    "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "Portfolio",
+      "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -103,80 +103,6 @@
   ],
   "repos": [
     {
-      "id": 1084752097,
-      "name": "Portfolio",
-      "full_name": "shlokkokk/Portfolio",
-      "html_url": "https://github.com/shlokkokk/Portfolio",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-07-29T17:41:34Z",
-      "updated_at": "2026-07-29T17:41:38Z",
-      "created_at": "2025-10-28T05:33:29Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 100,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Portfolio",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
-    },
-    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -187,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-29T17:07:39Z",
-      "updated_at": "2026-07-29T17:08:18Z",
+      "pushed_at": "2026-07-29T19:02:45Z",
+      "updated_at": "2026-07-29T19:03:21Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -280,6 +206,80 @@
       ]
     },
     {
+      "id": 1084752097,
+      "name": "Portfolio",
+      "full_name": "shlokkokk/Portfolio",
+      "html_url": "https://github.com/shlokkokk/Portfolio",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-07-29T17:41:34Z",
+      "updated_at": "2026-07-29T17:41:38Z",
+      "created_at": "2025-10-28T05:33:29Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 100,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Portfolio",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1315344183,
       "name": "freshbeatbash",
       "full_name": "shlokkokk/freshbeatbash",
@@ -326,6 +326,7 @@
         0,
         0,
         0,
+        1,
         1,
         1,
         1,
@@ -496,7 +497,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -823,8 +824,8 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 13,
-      "healthScore": 60,
+      "daysInactive": 14,
+      "healthScore": 50,
       "isTrending": false,
       "isDead": false,
       "isReadmeStale": false,
@@ -1154,7 +1155,7 @@
       "created_at": "2025-11-29T07:27:01Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 75,
+      "daysInactive": 76,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1379,7 +1380,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 83,
+      "daysInactive": 84,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1540,7 +1541,7 @@
         3,
         3,
         3,
-        3,
+        0,
         0,
         0,
         0,
@@ -1816,7 +1817,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -2171,7 +2172,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 257,
+      "daysInactive": 258,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
