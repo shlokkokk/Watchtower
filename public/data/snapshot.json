@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-07-31T08:52:26.701Z",
+  "timestamp": "2026-07-31T11:24:21.824Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 29,
-    "totalStars": 19,
+    "totalStars": 20,
     "totalForks": 2,
     "totalOpenIssues": 1,
     "totalViews14d": 226,
@@ -11,8 +11,8 @@
     "followerCount": 7,
     "portfolioHealthAvg": 39,
     "velocityLeader": {
-      "name": "Watchtower",
-      "velocity": 0
+      "name": "osint-academy",
+      "velocity": 1
     },
     "topReferrerOverall": {
       "name": "github.com",
@@ -26,27 +26,27 @@
     {
       "language": "TypeScript",
       "stars": 5,
-      "percentage": 26.3
+      "percentage": 25
     },
     {
       "language": "JavaScript",
       "stars": 4,
-      "percentage": 21.1
+      "percentage": 20
+    },
+    {
+      "language": "HTML",
+      "stars": 4,
+      "percentage": 20
     },
     {
       "language": "Python",
       "stars": 4,
-      "percentage": 21.1
-    },
-    {
-      "language": "HTML",
-      "stars": 3,
-      "percentage": 15.8
+      "percentage": 20
     },
     {
       "language": "Shell",
       "stars": 3,
-      "percentage": 15.8
+      "percentage": 15
     },
     {
       "language": "C++",
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-07-31T05:58:59Z",
-      "updated_at": "2026-07-31T05:59:16Z",
+      "pushed_at": "2026-07-31T08:52:27Z",
+      "updated_at": "2026-07-31T08:53:38Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -425,7 +425,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -573,16 +573,16 @@
         0,
         0,
         0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         0,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
         0
       ],
       "topReferrers": [
@@ -697,7 +697,6 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -707,6 +706,7 @@
         1,
         1,
         1,
+        4,
         4
       ],
       "topReferrers": [
@@ -772,7 +772,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 9,
+      "daysInactive": 10,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -875,7 +875,6 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
@@ -885,6 +884,7 @@
         1,
         1,
         1,
+        18,
         18
       ],
       "topReferrers": [
@@ -1243,7 +1243,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1352,7 +1352,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 80,
+      "daysInactive": 81,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1380,7 +1380,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1689,7 +1689,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1
       ],
       "topReferrers": [
@@ -1978,7 +1978,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 195,
+      "daysInactive": 196,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2153,25 +2153,25 @@
       "html_url": "https://github.com/shlokkokk/osint-academy",
       "description": "OSINT Academy is a cyber-styled open-source intelligence platform featuring a Google Dork Generator, username/email/phone reconnaissance, animated UI, and a complete OSINT study guide for cybersecurity learners and pentesters.",
       "language": "HTML",
-      "stargazers_count": 2,
+      "stargazers_count": 3,
       "forks_count": 0,
-      "watchers_count": 2,
+      "watchers_count": 3,
       "open_issues_count": 0,
       "pushed_at": "2025-11-26T17:11:03Z",
-      "updated_at": "2026-07-18T10:09:52Z",
+      "updated_at": "2026-07-31T10:33:35Z",
       "created_at": "2025-11-26T16:40:08Z",
-      "starVelocity24h": 0,
+      "starVelocity24h": 1,
       "forkToStarRatio": 0,
       "daysInactive": 246,
-      "healthScore": 25,
+      "healthScore": 30,
       "isTrending": false,
       "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
+        "daysToMilestone": 49,
+        "avgDailyStars": 0.14,
+        "formattedText": "~49 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
       "crossPlatform": {
