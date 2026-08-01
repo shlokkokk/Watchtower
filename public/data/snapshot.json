@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-01T08:08:34.272Z",
+  "timestamp": "2026-08-01T10:29:06.121Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 29,
@@ -11,7 +11,7 @@
     "followerCount": 7,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "shlokkokk",
+      "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -113,6 +113,109 @@
   ],
   "repos": [
     {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-08-01T08:08:35Z",
+      "updated_at": "2026-08-01T08:09:23Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 2,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 22,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 933,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 10,
+          "uniques": 1
+        },
+        {
+          "referrer": "shlok-shah-portfolio.vercel.app",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 12,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
+          "title": "/actions/workflows/watchtower-cron.yml",
+          "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/actions",
+          "title": "/actions",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4198717",
+          "date": "2026-07-21",
+          "repo": "Watchtower",
+          "platform": "Dev.to",
+          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
+          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
+          "views": 0,
+          "reactions": 2,
+          "comments": 0
+        }
+      ]
+    },
+    {
       "id": 1097707027,
       "name": "shlokkokk",
       "full_name": "shlokkokk/shlokkokk",
@@ -205,109 +308,6 @@
           "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
           "views": 0,
           "reactions": 1,
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-08-01T05:48:44Z",
-      "updated_at": "2026-08-01T05:48:50Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 2,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 22,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 933,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 10,
-          "uniques": 1
-        },
-        {
-          "referrer": "shlok-shah-portfolio.vercel.app",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 12,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/Watchtower/actions/workflows/watchtower-cron.yml",
-          "title": "/actions/workflows/watchtower-cron.yml",
-          "count": 2,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Watchtower/actions",
-          "title": "/actions",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 0,
-          "reactions": 2,
           "comments": 0
         }
       ]
@@ -576,7 +576,7 @@
       "trafficClones14d": 35,
       "viewTrend": [
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -700,7 +700,7 @@
       "trafficClones14d": 37,
       "viewTrend": [
         1,
-        1,
+        4,
         4,
         4,
         4,
@@ -878,7 +878,7 @@
       "trafficClones14d": 5,
       "viewTrend": [
         1,
-        1,
+        18,
         18,
         18,
         18,
@@ -1237,17 +1237,17 @@
       "trafficClones14d": 4,
       "viewTrend": [
         0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0
       ],
@@ -1683,7 +1683,7 @@
       "trafficClones14d": 4,
       "viewTrend": [
         0,
-        0,
+        1,
         1,
         1,
         1,
