@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-08-06T13:47:15.783Z",
+  "timestamp": "2026-08-07T00:37:09.986Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 29,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 86,
-    "totalClones14d": 1468,
-    "followerCount": 15,
+    "totalViews14d": 87,
+    "totalClones14d": 1436,
+    "followerCount": 17,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
       "name": "Watchtower",
@@ -16,8 +16,8 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 27,
-      "uniques": 16
+      "count": 31,
+      "uniques": 17
     },
     "trendingCount": 0,
     "deadCount": 16
@@ -67,8 +67,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 27,
-      "uniques": 16
+      "count": 31,
+      "uniques": 17
     },
     {
       "name": "Google",
@@ -84,11 +84,6 @@
       "name": "copilot.microsoft.com",
       "count": 7,
       "uniques": 3
-    },
-    {
-      "name": "shlok-shah-portfolio.vercel.app",
-      "count": 2,
-      "uniques": 1
     },
     {
       "name": "Bing",
@@ -113,8 +108,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-06T11:14:23Z",
-      "updated_at": "2026-08-06T11:16:46Z",
+      "pushed_at": "2026-08-06T13:47:16Z",
+      "updated_at": "2026-08-06T13:48:39Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -139,9 +134,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 11,
+      "trafficViews14d": 12,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 961,
+      "trafficClones14d": 929,
       "viewTrend": [
         0,
         0,
@@ -156,26 +151,27 @@
         0,
         0,
         0,
-        0
+        4
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 6,
-          "uniques": 2
-        },
-        {
-          "referrer": "shlok-shah-portfolio.vercel.app",
-          "count": 2,
-          "uniques": 1
+          "count": 10,
+          "uniques": 3
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/Watchtower",
           "title": "Overview",
-          "count": 5,
+          "count": 4,
           "uniques": 3
+        },
+        {
+          "path": "/shlokkokk/Watchtower/blob/main/src/services/metrics.js",
+          "title": "/blob/main/src/services/metrics.js",
+          "count": 1,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/Watchtower/deployments",
@@ -186,6 +182,12 @@
         {
           "path": "/shlokkokk/Watchtower/deployments/Production",
           "title": "/deployments/Production",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/tree/main/src",
+          "title": "/tree/main/src",
           "count": 1,
           "uniques": 1
         }
@@ -256,7 +258,7 @@
         0,
         0,
         0,
-        0,
+        6,
         6,
         6,
         6
@@ -330,7 +332,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 3,
+      "daysInactive": 4,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -404,7 +406,7 @@
       "created_at": "2025-10-28T05:33:29Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 7,
+      "daysInactive": 8,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -439,7 +441,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -577,17 +579,17 @@
       "uniqueVisitors14d": 10,
       "trafficClones14d": 21,
       "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
         1,
         1
@@ -643,7 +645,7 @@
       "created_at": "2026-06-07T07:44:36Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 12,
+      "daysInactive": 13,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -678,7 +680,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -802,7 +804,7 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 21,
+      "daysInactive": 22,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -960,7 +962,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 65,
+      "daysInactive": 66,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1021,7 +1023,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 65,
+      "daysInactive": 66,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1095,7 +1097,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 76,
+      "daysInactive": 77,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1156,7 +1158,7 @@
       "created_at": "2025-11-29T07:27:01Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 83,
+      "daysInactive": 84,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1230,7 +1232,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 1,
-      "daysInactive": 85,
+      "daysInactive": 86,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1365,7 +1367,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 91,
+      "daysInactive": 92,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -1400,7 +1402,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -1597,7 +1599,7 @@
       "created_at": "2026-03-28T21:35:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0.5,
-      "daysInactive": 107,
+      "daysInactive": 108,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1622,17 +1624,17 @@
       "uniqueVisitors14d": 3,
       "trafficClones14d": 4,
       "viewTrend": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0,
         0
@@ -1742,7 +1744,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 140,
+      "daysInactive": 141,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1804,7 +1806,7 @@
       "created_at": "2025-12-26T13:35:46Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 170,
+      "daysInactive": 171,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1872,7 +1874,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 186,
+      "daysInactive": 187,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -1907,7 +1909,7 @@
         0,
         0,
         0,
-        0,
+        2,
         2,
         2,
         2
@@ -1982,7 +1984,7 @@
         0,
         0,
         0,
-        0,
+        3,
         3,
         3,
         3
@@ -2129,7 +2131,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -2162,7 +2164,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 252,
+      "daysInactive": 253,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2223,7 +2225,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 265,
+      "daysInactive": 266,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
