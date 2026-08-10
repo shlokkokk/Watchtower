@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-10T09:10:45.089Z",
+  "timestamp": "2026-08-10T11:01:12.707Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 30,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 103,
-    "totalClones14d": 1470,
+    "totalViews14d": 98,
+    "totalClones14d": 1422,
     "followerCount": 18,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
@@ -16,11 +16,11 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 46,
-      "uniques": 20
+      "count": 40,
+      "uniques": 16
     },
     "trendingCount": 0,
-    "deadCount": 18
+    "deadCount": 19
   },
   "languageBreakdown": [
     {
@@ -67,8 +67,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 46,
-      "uniques": 20
+      "count": 40,
+      "uniques": 16
     },
     {
       "name": "Google",
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-10T07:16:37Z",
-      "updated_at": "2026-08-10T07:16:54Z",
+      "pushed_at": "2026-08-10T09:10:46Z",
+      "updated_at": "2026-08-10T09:12:57Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -141,7 +141,7 @@
       },
       "trafficViews14d": 7,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 924,
+      "trafficClones14d": 932,
       "viewTrend": [
         0,
         0,
@@ -251,7 +251,7 @@
       },
       "trafficViews14d": 16,
       "uniqueVisitors14d": 5,
-      "trafficClones14d": 148,
+      "trafficClones14d": 146,
       "viewTrend": [
         8,
         8,
@@ -266,7 +266,7 @@
         8,
         8,
         8,
-        8
+        0
       ],
       "topReferrers": [
         {
@@ -345,7 +345,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -360,7 +360,7 @@
       },
       "trafficViews14d": 6,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 158,
+      "trafficClones14d": 159,
       "viewTrend": [
         5,
         5,
@@ -375,7 +375,7 @@
         5,
         5,
         5,
-        5
+        0
       ],
       "topReferrers": [
         {
@@ -467,7 +467,7 @@
         9,
         9,
         9,
-        9
+        0
       ],
       "topReferrers": [
         {
@@ -542,9 +542,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 3,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 45,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 12,
       "viewTrend": [
         0,
         0,
@@ -564,16 +564,16 @@
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 3,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/Portfolio",
           "title": "Overview",
-          "count": 3,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -603,7 +603,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -616,9 +616,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 4,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 13,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -635,19 +635,13 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
       "popularPaths": [
         {
           "path": "/shlokkokk/opsec-hardening-suite",
           "title": "Overview",
-          "count": 4,
-          "uniques": 3
+          "count": 2,
+          "uniques": 2
         }
       ],
       "launchesCount": 0,
@@ -677,7 +671,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -692,7 +686,7 @@
       },
       "trafficViews14d": 5,
       "uniqueVisitors14d": 5,
-      "trafficClones14d": 7,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -762,7 +756,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -777,7 +771,7 @@
       },
       "trafficViews14d": 6,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 10,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -851,7 +845,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 19,
+      "daysInactive": 20,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -860,7 +854,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 56,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~56 days to 10 stars"
       },
       "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
@@ -875,7 +869,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -921,7 +915,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -1018,7 +1012,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1033,7 +1027,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1079,7 +1073,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1094,7 +1088,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1153,9 +1147,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 9,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -1172,21 +1166,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Oculus",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -1214,7 +1195,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1270,12 +1251,12 @@
       "daysInactive": 87,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1305,7 +1286,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -1360,7 +1341,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1375,7 +1356,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 6,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -1413,7 +1394,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 90,
+      "daysInactive": 91,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1421,7 +1402,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1495,7 +1476,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1510,7 +1491,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 7,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -1569,7 +1550,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1643,8 +1624,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 3,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 2,
       "trafficClones14d": 4,
       "viewTrend": [
         0,
@@ -1667,19 +1648,14 @@
           "referrer": "devpost.com",
           "count": 1,
           "uniques": 1
-        },
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/zerorisk-sentinel",
           "title": "Overview",
-          "count": 2,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/zerorisk-sentinel/blob/main/demo-samples/keylogger-demo.py",
@@ -1727,7 +1703,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 56,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~56 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1740,8 +1716,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 4,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 5,
       "trafficClones14d": 4,
       "viewTrend": [
         2,
@@ -1757,7 +1733,7 @@
         2,
         2,
         2,
-        2
+        1
       ],
       "topReferrers": [
         {
@@ -1780,8 +1756,8 @@
         {
           "path": "/shlokkokk/SwipeClean",
           "title": "Overview",
-          "count": 5,
-          "uniques": 4
+          "count": 6,
+          "uniques": 5
         }
       ],
       "launchesCount": 0,
@@ -1811,7 +1787,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1873,7 +1849,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1888,7 +1864,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1934,7 +1910,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1949,7 +1925,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -2017,7 +1993,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -2068,7 +2044,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 205,
+      "daysInactive": 206,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2077,7 +2053,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2092,7 +2068,7 @@
       },
       "trafficViews14d": 3,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 7,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -2163,7 +2139,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2224,7 +2200,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2239,7 +2215,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -2292,7 +2268,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2307,7 +2283,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -2353,7 +2329,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
