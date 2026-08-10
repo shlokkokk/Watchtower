@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-10T11:01:12.707Z",
+  "timestamp": "2026-08-10T12:52:38.276Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 30,
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-10T09:10:46Z",
-      "updated_at": "2026-08-10T09:12:57Z",
+      "pushed_at": "2026-08-10T11:01:16Z",
+      "updated_at": "2026-08-10T11:01:40Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -265,7 +265,7 @@
         8,
         8,
         8,
-        8,
+        0,
         0
       ],
       "topReferrers": [
@@ -345,7 +345,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -374,7 +374,7 @@
         5,
         5,
         5,
-        5,
+        0,
         0
       ],
       "topReferrers": [
@@ -466,7 +466,7 @@
         9,
         9,
         9,
-        9,
+        0,
         0
       ],
       "topReferrers": [
@@ -603,7 +603,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -671,7 +671,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -756,7 +756,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -854,7 +854,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 56,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~56 days to 10 stars"
       },
       "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
@@ -915,7 +915,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
@@ -1012,7 +1012,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1073,7 +1073,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1195,7 +1195,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1256,7 +1256,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1285,7 +1285,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0
       ],
       "topReferrers": [
@@ -1341,7 +1341,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1402,7 +1402,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1476,7 +1476,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1550,7 +1550,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1703,7 +1703,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 56,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~56 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1732,7 +1732,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1
       ],
       "topReferrers": [
@@ -1787,7 +1787,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1849,7 +1849,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -1910,7 +1910,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2053,7 +2053,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2139,7 +2139,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2192,7 +2192,7 @@
       "created_at": "2025-11-10T01:06:50Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 247,
+      "daysInactive": 248,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2200,7 +2200,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2268,7 +2268,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 42,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~42 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2329,7 +2329,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 63,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~63 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
