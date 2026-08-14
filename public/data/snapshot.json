@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-08-14T09:01:20.319Z",
+  "timestamp": "2026-08-14T10:52:00.215Z",
   "username": "shlokkokk",
   "summary": {
-    "totalRepos": 30,
+    "totalRepos": 31,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 105,
-    "totalClones14d": 1318,
+    "totalViews14d": 82,
+    "totalClones14d": 1304,
     "followerCount": 18,
-    "portfolioHealthAvg": 37,
+    "portfolioHealthAvg": 38,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "claude-pinger",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 46,
-      "uniques": 18
+      "count": 47,
+      "uniques": 19
     },
     "trendingCount": 0,
-    "deadCount": 19
+    "deadCount": 20
   },
   "languageBreakdown": [
     {
@@ -67,33 +67,28 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 46,
-      "uniques": 18
-    },
-    {
-      "name": "Google",
-      "count": 12,
-      "uniques": 1
-    },
-    {
-      "name": "devpost.com",
-      "count": 6,
-      "uniques": 3
+      "count": 47,
+      "uniques": 19
     },
     {
       "name": "copilot.microsoft.com",
-      "count": 6,
-      "uniques": 2
-    },
-    {
-      "name": "Bing",
       "count": 5,
-      "uniques": 4
+      "uniques": 2
     },
     {
       "name": "DuckDuckGo",
       "count": 5,
       "uniques": 4
+    },
+    {
+      "name": "Bing",
+      "count": 3,
+      "uniques": 2
+    },
+    {
+      "name": "devpost.com",
+      "count": 2,
+      "uniques": 2
     },
     {
       "name": "ecosia.org",
@@ -108,6 +103,54 @@
   ],
   "repos": [
     {
+      "id": 1334031924,
+      "name": "claude-pinger",
+      "full_name": "shlokkokk/claude-pinger",
+      "html_url": "https://github.com/shlokkokk/claude-pinger",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-08-14T09:51:42Z",
+      "updated_at": "2026-08-14T09:51:46Z",
+      "created_at": "2026-08-14T09:49:24Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
+      "viewTrend": [
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -118,8 +161,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-14T07:14:03Z",
-      "updated_at": "2026-08-14T07:14:23Z",
+      "pushed_at": "2026-08-14T09:01:21Z",
+      "updated_at": "2026-08-14T09:01:44Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -146,7 +189,7 @@
       },
       "trafficViews14d": 8,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 937,
+      "trafficClones14d": 922,
       "viewTrend": [
         1,
         1,
@@ -161,7 +204,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -256,7 +299,7 @@
       },
       "trafficViews14d": 22,
       "uniqueVisitors14d": 6,
-      "trafficClones14d": 148,
+      "trafficClones14d": 152,
       "viewTrend": [
         6,
         6,
@@ -271,7 +314,7 @@
         6,
         6,
         6,
-        6
+        0
       ],
       "topReferrers": [
         {
@@ -377,7 +420,7 @@
       },
       "trafficViews14d": 5,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 72,
+      "trafficClones14d": 68,
       "viewTrend": [
         0,
         0,
@@ -469,7 +512,7 @@
       },
       "trafficViews14d": 9,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 83,
+      "trafficClones14d": 85,
       "viewTrend": [
         0,
         0,
@@ -561,7 +604,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 7,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -635,7 +678,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -701,8 +744,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 5,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 6,
       "trafficClones14d": 3,
       "viewTrend": [
         2,
@@ -718,11 +761,16 @@
         2,
         2,
         2,
-        2
+        1
       ],
       "topReferrers": [
         {
           "referrer": "Bing",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "referrer": "github.com",
           "count": 1,
           "uniques": 1
         }
@@ -731,8 +779,8 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 5,
-          "uniques": 5
+          "count": 6,
+          "uniques": 6
         }
       ],
       "launchesCount": 1,
@@ -786,9 +834,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 5,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -807,11 +855,6 @@
       ],
       "topReferrers": [
         {
-          "referrer": "devpost.com",
-          "count": 4,
-          "uniques": 1
-        },
-        {
           "referrer": "github.com",
           "count": 1,
           "uniques": 1
@@ -819,26 +862,8 @@
       ],
       "popularPaths": [
         {
-          "path": "/shlokkokk/Chronicle/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 2,
-          "uniques": 1
-        },
-        {
           "path": "/shlokkokk/Chronicle",
           "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Chronicle/blob/main/.gitignore",
-          "title": "/blob/main/.gitignore",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Chronicle/edit/main/README.md",
-          "title": "/edit/main/README.md",
           "count": 1,
           "uniques": 1
         }
@@ -862,7 +887,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 23,
+      "daysInactive": 24,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -945,9 +970,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 23,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 3,
+      "trafficViews14d": 5,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -966,40 +991,35 @@
       ],
       "topReferrers": [
         {
-          "referrer": "Google",
-          "count": 12,
-          "uniques": 1
-        },
-        {
           "referrer": "copilot.microsoft.com",
-          "count": 6,
+          "count": 5,
           "uniques": 2
         }
       ],
       "popularPaths": [
         {
+          "path": "/shlokkokk/bgi-setup",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        },
+        {
           "path": "/shlokkokk/bgi-setup/blob/main/graphics.h",
           "title": "/blob/main/graphics.h",
-          "count": 7,
-          "uniques": 3
+          "count": 1,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/bgi-setup/blob/main/libbgi.a",
           "title": "/blob/main/libbgi.a",
-          "count": 7,
-          "uniques": 3
+          "count": 1,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/bgi-setup/blob/main/winbgim.h",
           "title": "/blob/main/winbgim.h",
-          "count": 5,
-          "uniques": 3
-        },
-        {
-          "path": "/shlokkokk/bgi-setup",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -1166,7 +1186,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -1268,7 +1288,7 @@
       "daysInactive": 91,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1286,9 +1306,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 7,
-      "uniqueVisitors14d": 6,
-      "trafficClones14d": 2,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 5,
+      "trafficClones14d": 3,
       "viewTrend": [
         4,
         4,
@@ -1303,18 +1323,13 @@
         4,
         4,
         4,
-        4
+        0
       ],
       "topReferrers": [
         {
           "referrer": "DuckDuckGo",
           "count": 5,
           "uniques": 4
-        },
-        {
-          "referrer": "Bing",
-          "count": 1,
-          "uniques": 1
         },
         {
           "referrer": "ecosia.org",
@@ -1332,8 +1347,8 @@
         {
           "path": "/shlokkokk/ReconMaster/tree/main",
           "title": "/tree/main",
-          "count": 2,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -1416,7 +1431,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 94,
+      "daysInactive": 95,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1439,7 +1454,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -1635,7 +1650,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         0,
         0,
@@ -1707,8 +1722,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 8,
-      "uniqueVisitors14d": 6,
+      "trafficViews14d": 7,
+      "uniqueVisitors14d": 5,
       "trafficClones14d": 3,
       "viewTrend": [
         0,
@@ -1729,8 +1744,8 @@
       "topReferrers": [
         {
           "referrer": "Bing",
-          "count": 3,
-          "uniques": 2
+          "count": 2,
+          "uniques": 1
         },
         {
           "referrer": "chatgpt.com",
@@ -1747,8 +1762,8 @@
         {
           "path": "/shlokkokk/SwipeClean",
           "title": "Overview",
-          "count": 7,
-          "uniques": 6
+          "count": 6,
+          "uniques": 5
         },
         {
           "path": "/shlokkokk/SwipeClean/releases",
@@ -2034,7 +2049,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 209,
+      "daysInactive": 210,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2058,7 +2073,7 @@
       },
       "trafficViews14d": 3,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 4,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -2347,7 +2362,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
