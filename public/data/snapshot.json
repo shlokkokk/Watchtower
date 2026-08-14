@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-14T18:43:10.155Z",
+  "timestamp": "2026-08-14T19:43:18.502Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 31,
@@ -20,7 +20,7 @@
       "uniques": 19
     },
     "trendingCount": 0,
-    "deadCount": 20
+    "deadCount": 21
   },
   "languageBreakdown": [
     {
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-14T17:46:57Z",
-      "updated_at": "2026-08-14T17:47:30Z",
+      "pushed_at": "2026-08-14T18:43:11Z",
+      "updated_at": "2026-08-14T18:43:16Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -148,7 +148,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -260,6 +260,7 @@
         0,
         0,
         0,
+        0,
         0
       ],
       "topReferrers": [],
@@ -313,7 +314,7 @@
         6,
         6,
         6,
-        6,
+        0,
         0,
         0,
         0,
@@ -760,7 +761,7 @@
         2,
         2,
         2,
-        2,
+        1,
         1,
         1,
         1,
@@ -956,10 +957,10 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 29,
+      "daysInactive": 30,
       "healthScore": 50,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -967,7 +968,7 @@
         "avgDailyStars": 0,
         "formattedText": "Steady pace"
       },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
       "crossPlatform": {
         "devtoViews": 0,
         "devtoReactions": 0,
@@ -1322,7 +1323,7 @@
         4,
         4,
         4,
-        4,
+        0,
         0,
         0,
         0,
