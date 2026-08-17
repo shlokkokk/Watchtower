@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-08-17T15:19:34.210Z",
+  "timestamp": "2026-08-17T16:19:02.579Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 78,
+    "totalViews14d": 79,
     "totalClones14d": 1306,
     "followerCount": 18,
     "portfolioHealthAvg": 38,
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-17T14:21:06Z",
-      "updated_at": "2026-08-17T14:21:09Z",
+      "pushed_at": "2026-08-17T15:19:35Z",
+      "updated_at": "2026-08-17T15:19:39Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -165,7 +165,32 @@
           "uniques": 2
         }
       ],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/Watchtower/blob/main/src/services/metrics.js",
+          "title": "/blob/main/src/services/metrics.js",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/tree/main/src",
+          "title": "/tree/main/src",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/Watchtower/tree/main/src/services",
+          "title": "/tree/main/src/services",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 1,
       "launches": [
         {
@@ -244,7 +269,38 @@
           "uniques": 6
         }
       ],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/shlokkokk",
+          "title": "Overview",
+          "count": 17,
+          "uniques": 6
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/blob/main/.github/workflows/generate-cards.yml",
+          "title": "/blob/main/.github/workflows/generate-cards.yml",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/blob/main/.github/workflows/main.yml",
+          "title": "/blob/main/.github/workflows/main.yml",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/issues",
+          "title": "/issues",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/shlokkokk/tree/main",
+          "title": "/tree/main",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 2,
       "launches": [
         {
@@ -408,7 +464,26 @@
           "uniques": 2
         }
       ],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/window-fx",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/window-fx/wiki",
+          "title": "/wiki",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/window-fx/wiki/_new",
+          "title": "/wiki/_new",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -615,8 +690,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 4,
       "viewTrend": [
         0,
