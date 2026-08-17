@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-08-17T14:21:05.105Z",
+  "timestamp": "2026-08-17T15:19:34.210Z",
   "username": "shlokkokk",
   "summary": {
-    "totalRepos": 33,
+    "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 88,
-    "totalClones14d": 1391,
+    "totalViews14d": 78,
+    "totalClones14d": 1306,
     "followerCount": 18,
-    "portfolioHealthAvg": 39,
+    "portfolioHealthAvg": 38,
     "velocityLeader": {
       "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 58,
-      "uniques": 24
+      "count": 50,
+      "uniques": 23
     },
     "trendingCount": 0,
     "deadCount": 19
@@ -72,8 +72,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 58,
-      "uniques": 24
+      "count": 50,
+      "uniques": 23
     },
     {
       "name": "DuckDuckGo",
@@ -113,8 +113,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-17T13:34:43Z",
-      "updated_at": "2026-08-17T13:36:44Z",
+      "pushed_at": "2026-08-17T14:21:06Z",
+      "updated_at": "2026-08-17T14:21:09Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -165,32 +165,7 @@
           "uniques": 2
         }
       ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/Watchtower/blob/main/src/services/metrics.js",
-          "title": "/blob/main/src/services/metrics.js",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Watchtower/tree/main/src",
-          "title": "/tree/main/src",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/Watchtower/tree/main/src/services",
-          "title": "/tree/main/src/services",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 1,
       "launches": [
         {
@@ -269,38 +244,7 @@
           "uniques": 6
         }
       ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/shlokkokk",
-          "title": "Overview",
-          "count": 17,
-          "uniques": 6
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/blob/main/.github/workflows/generate-cards.yml",
-          "title": "/blob/main/.github/workflows/generate-cards.yml",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/blob/main/.github/workflows/main.yml",
-          "title": "/blob/main/.github/workflows/main.yml",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/issues",
-          "title": "/issues",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/shlokkokk/tree/main",
-          "title": "/tree/main",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 2,
       "launches": [
         {
@@ -464,26 +408,7 @@
           "uniques": 2
         }
       ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/window-fx",
-          "title": "Overview",
-          "count": 3,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/window-fx/wiki",
-          "title": "/wiki",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/window-fx/wiki/_new",
-          "title": "/wiki/_new",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -654,98 +579,6 @@
       "launches": []
     },
     {
-      "id": 1327341267,
-      "name": "claude-ping",
-      "full_name": "shlokkokk/claude-ping",
-      "html_url": "https://github.com/shlokkokk/claude-ping",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": 0,
-      "open_issues_count": 0,
-      "pushed_at": "2026-08-08T03:12:11Z",
-      "updated_at": "2026-08-08T03:12:15Z",
-      "created_at": "2026-08-08T02:17:06Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 9,
-      "healthScore": 60,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 9,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 85,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 8,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/claude-ping",
-          "title": "Overview",
-          "count": 5,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/claude-ping/blob/main/claude-auto-ping.user.js",
-          "title": "/blob/main/claude-auto-ping.user.js",
-          "count": 2,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/claude-ping/blob/main/claude-ping-extension.zip",
-          "title": "/blob/main/claude-ping-extension.zip",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/claude-ping/commit/83ee10c7b941d628b55050bb8a21b8e6ad5594f5",
-          "title": "/commit/83ee10c7b941d628b55050bb8a21b8e6ad5594f5",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
-    },
-    {
       "id": 1084752097,
       "name": "Portfolio",
       "full_name": "shlokkokk/Portfolio",
@@ -782,8 +615,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 4,
       "viewTrend": [
         0,
@@ -1988,7 +1821,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 151,
+      "daysInactive": 152,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2050,7 +1883,7 @@
       "created_at": "2025-12-26T13:35:46Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 181,
+      "daysInactive": 182,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2189,7 +2022,8 @@
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
-      "isReadmeStale": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2025-11-23",
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": null,
