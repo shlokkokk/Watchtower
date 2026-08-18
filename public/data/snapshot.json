@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-18T09:25:10.816Z",
+  "timestamp": "2026-08-18T10:20:47.787Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 83,
-    "totalClones14d": 1372,
+    "totalViews14d": 93,
+    "totalClones14d": 1385,
     "followerCount": 18,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
@@ -16,8 +16,8 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 55,
-      "uniques": 25
+      "count": 65,
+      "uniques": 28
     },
     "trendingCount": 0,
     "deadCount": 21
@@ -72,8 +72,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 55,
-      "uniques": 25
+      "count": 65,
+      "uniques": 28
     },
     {
       "name": "DuckDuckGo",
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-18T08:26:54Z",
-      "updated_at": "2026-08-18T08:28:21Z",
+      "pushed_at": "2026-08-18T09:25:12Z",
+      "updated_at": "2026-08-18T09:27:26Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -380,9 +380,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 4,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 41,
+      "trafficViews14d": 14,
+      "uniqueVisitors14d": 5,
+      "trafficClones14d": 54,
       "viewTrend": [
         4,
         4,
@@ -397,21 +397,45 @@
         4,
         4,
         4,
-        4
+        1
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 4,
-          "uniques": 2
+          "count": 14,
+          "uniques": 5
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/cloudstream-ios",
           "title": "Overview",
-          "count": 4,
-          "uniques": 2
+          "count": 8,
+          "uniques": 5
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/blob/main/server/data/extensions_store.json",
+          "title": "/blob/main/server/data/extensions_store.json",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/blob/main/server/providers/extensionManager.js",
+          "title": "/blob/main/server/providers/extensionManager.js",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server",
+          "title": "/tree/main/server",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server/data",
+          "title": "/tree/main/server/data",
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -468,7 +492,7 @@
         5,
         5,
         5,
-        5,
+        0,
         0,
         0,
         0
@@ -519,7 +543,7 @@
       "created_at": "2026-08-14T09:49:24Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 3,
+      "daysInactive": 4,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -554,7 +578,7 @@
         0,
         0,
         0,
-        0,
+        3,
         3,
         3,
         3
@@ -868,7 +892,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1,
         1
@@ -1404,7 +1428,7 @@
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0
@@ -2303,7 +2327,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0
