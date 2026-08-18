@@ -41,5 +41,16 @@
     "views": 0,
     "reactions": 1,
     "comments": 0
+  },
+  {
+    "id": "devto-4418986",
+    "date": "2026-08-17",
+    "repo": "shlokkokk",
+    "platform": "Dev.to",
+    "title": "How I Automated Claude’s 5-Hour Usage Window with Cloudflare Workers & Puppeteer",
+    "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
+    "views": 0,
+    "reactions": 0,
+    "comments": 0
   }
 ]
