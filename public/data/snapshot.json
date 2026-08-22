@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-22T10:15:47.060Z",
+  "timestamp": "2026-08-22T11:14:35.000Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 76,
-    "totalClones14d": 1491,
+    "totalViews14d": 80,
+    "totalClones14d": 1508,
     "followerCount": 19,
     "portfolioHealthAvg": 38,
     "velocityLeader": {
@@ -16,11 +16,11 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 51,
-      "uniques": 19
+      "count": 53,
+      "uniques": 21
     },
     "trendingCount": 0,
-    "deadCount": 21
+    "deadCount": 22
   },
   "languageBreakdown": [
     {
@@ -72,8 +72,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 51,
-      "uniques": 19
+      "count": 53,
+      "uniques": 21
     },
     {
       "name": "DuckDuckGo",
@@ -108,8 +108,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-22T09:20:27Z",
-      "updated_at": "2026-08-22T09:21:45Z",
+      "pushed_at": "2026-08-22T10:15:48Z",
+      "updated_at": "2026-08-22T10:16:01Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -136,7 +136,7 @@
       },
       "trafficViews14d": 3,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 1168,
+      "trafficClones14d": 1175,
       "viewTrend": [
         0,
         0,
@@ -222,7 +222,7 @@
       },
       "trafficViews14d": 14,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 135,
+      "trafficClones14d": 136,
       "viewTrend": [
         0,
         0,
@@ -438,8 +438,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 8,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 9,
+      "uniqueVisitors14d": 2,
       "trafficClones14d": 23,
       "viewTrend": [
         0,
@@ -455,7 +455,7 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "topReferrers": [
         {
@@ -468,8 +468,8 @@
         {
           "path": "/shlokkokk/claude-pinger",
           "title": "Overview",
-          "count": 7,
-          "uniques": 1
+          "count": 8,
+          "uniques": 2
         },
         {
           "path": "/shlokkokk/claude-pinger/blob/main/README.md",
@@ -704,7 +704,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -763,8 +763,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 1,
       "viewTrend": [
         0,
@@ -783,14 +783,7 @@
         0
       ],
       "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/opsec-hardening-suite",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -831,8 +824,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 6,
-      "uniqueVisitors14d": 6,
+      "trafficViews14d": 10,
+      "uniqueVisitors14d": 10,
       "trafficClones14d": 1,
       "viewTrend": [
         0,
@@ -848,13 +841,13 @@
         0,
         0,
         0,
-        0
+        4
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 3,
-          "uniques": 3
+          "count": 5,
+          "uniques": 5
         },
         {
           "referrer": "Bing",
@@ -871,8 +864,20 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 6,
-          "uniques": 6
+          "count": 8,
+          "uniques": 8
+        },
+        {
+          "path": "/shlokkokk/ShellStack/graphs/contributors",
+          "title": "/graphs/contributors",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/ShellStack/pulls",
+          "title": "/pulls",
+          "count": 1,
+          "uniques": 1
         }
       ],
       "launchesCount": 1,
@@ -928,7 +933,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -966,7 +971,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 31,
+      "daysInactive": 32,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1051,7 +1056,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -1302,7 +1307,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1448,7 +1453,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1486,7 +1491,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 102,
+      "daysInactive": 103,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1753,7 +1758,7 @@
       },
       "trafficViews14d": 5,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 1,
+      "trafficClones14d": 0,
       "viewTrend": [
         0,
         0,
@@ -2017,7 +2022,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -2062,7 +2067,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 217,
+      "daysInactive": 218,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2188,7 +2193,7 @@
       "daysInactive": 259,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -2223,7 +2228,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
