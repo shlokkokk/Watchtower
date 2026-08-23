@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-23T08:20:52.061Z",
+  "timestamp": "2026-08-23T09:20:57.978Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 70,
-    "totalClones14d": 1517,
+    "totalViews14d": 69,
+    "totalClones14d": 1508,
     "followerCount": 19,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
@@ -16,7 +16,7 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 46,
+      "count": 49,
       "uniques": 21
     },
     "trendingCount": 0,
@@ -72,7 +72,7 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 46,
+      "count": 49,
       "uniques": 21
     },
     {
@@ -108,8 +108,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-23T07:27:36Z",
-      "updated_at": "2026-08-23T07:27:44Z",
+      "pushed_at": "2026-08-23T08:20:52Z",
+      "updated_at": "2026-08-23T08:21:47Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -346,9 +346,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 24,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 14,
       "viewTrend": [
         0,
         0,
@@ -365,39 +365,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/freshbeatbash",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/freshbeatbash/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/freshbeatbash/edit/main/README.md",
-          "title": "/edit/main/README.md",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/freshbeatbash/tree/main",
-          "title": "/tree/main",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -453,7 +422,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0
       ],
@@ -497,8 +466,8 @@
       "created_at": "2026-08-15T17:48:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 6,
-      "healthScore": 70,
+      "daysInactive": 7,
+      "healthScore": 60,
       "isTrending": false,
       "isDead": false,
       "isReadmeStale": false,
@@ -518,9 +487,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 14,
-      "uniqueVisitors14d": 5,
-      "trafficClones14d": 56,
+      "trafficViews14d": 18,
+      "uniqueVisitors14d": 6,
+      "trafficClones14d": 57,
       "viewTrend": [
         0,
         0,
@@ -535,21 +504,33 @@
         0,
         0,
         0,
-        0
+        4
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 14,
-          "uniques": 5
+          "count": 18,
+          "uniques": 6
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/cloudstream-ios",
           "title": "Overview",
-          "count": 8,
-          "uniques": 5
+          "count": 9,
+          "uniques": 6
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server",
+          "title": "/tree/main/server",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server/proxy",
+          "title": "/tree/main/server/proxy",
+          "count": 2,
+          "uniques": 2
         },
         {
           "path": "/shlokkokk/cloudstream-ios/blob/main/server/data/extensions_store.json",
@@ -560,18 +541,6 @@
         {
           "path": "/shlokkokk/cloudstream-ios/blob/main/server/providers/extensionManager.js",
           "title": "/blob/main/server/providers/extensionManager.js",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/cloudstream-ios/tree/main/server",
-          "title": "/tree/main/server",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/cloudstream-ios/tree/main/server/data",
-          "title": "/tree/main/server/data",
           "count": 1,
           "uniques": 1
         }
@@ -839,7 +808,7 @@
         4,
         4,
         4,
-        4,
+        1,
         1,
         1
       ],
