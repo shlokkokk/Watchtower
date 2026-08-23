@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-23T06:28:29.730Z",
+  "timestamp": "2026-08-23T07:27:35.455Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 2,
     "totalOpenIssues": 1,
-    "totalViews14d": 80,
-    "totalClones14d": 1508,
+    "totalViews14d": 70,
+    "totalClones14d": 1517,
     "followerCount": 19,
     "portfolioHealthAvg": 37,
     "velocityLeader": {
@@ -16,7 +16,7 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 53,
+      "count": 46,
       "uniques": 21
     },
     "trendingCount": 0,
@@ -72,13 +72,13 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 53,
+      "count": 46,
       "uniques": 21
     },
     {
       "name": "DuckDuckGo",
-      "count": 7,
-      "uniques": 6
+      "count": 6,
+      "uniques": 5
     },
     {
       "name": "Bing",
@@ -108,8 +108,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-23T05:22:40Z",
-      "updated_at": "2026-08-23T05:22:59Z",
+      "pushed_at": "2026-08-23T06:28:30Z",
+      "updated_at": "2026-08-23T06:28:47Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -136,7 +136,7 @@
       },
       "trafficViews14d": 3,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 1175,
+      "trafficClones14d": 1185,
       "viewTrend": [
         0,
         0,
@@ -220,9 +220,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 14,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 136,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 127,
       "viewTrend": [
         0,
         0,
@@ -242,16 +242,16 @@
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 14,
-          "uniques": 2
+          "count": 6,
+          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/shlokkokk",
           "title": "Overview",
-          "count": 11,
-          "uniques": 2
+          "count": 3,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/shlokkokk/blob/main/.github/workflows/generate-cards.yml",
@@ -440,7 +440,7 @@
       },
       "trafficViews14d": 9,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 23,
+      "trafficClones14d": 27,
       "viewTrend": [
         1,
         1,
@@ -455,7 +455,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "topReferrers": [
         {
@@ -618,7 +618,7 @@
       },
       "trafficViews14d": 5,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 27,
+      "trafficClones14d": 28,
       "viewTrend": [
         0,
         0,
@@ -704,7 +704,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -765,7 +765,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -803,7 +803,7 @@
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 28,
+      "daysInactive": 29,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -824,9 +824,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 10,
-      "uniqueVisitors14d": 10,
-      "trafficClones14d": 1,
+      "trafficViews14d": 11,
+      "uniqueVisitors14d": 11,
+      "trafficClones14d": 2,
       "viewTrend": [
         4,
         4,
@@ -841,13 +841,13 @@
         4,
         4,
         4,
-        4
+        1
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 5,
-          "uniques": 5
+          "count": 6,
+          "uniques": 6
         },
         {
           "referrer": "Bing",
@@ -864,8 +864,8 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 8,
-          "uniques": 8
+          "count": 9,
+          "uniques": 9
         },
         {
           "path": "/shlokkokk/ShellStack/graphs/contributors",
@@ -933,7 +933,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 10,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -1178,7 +1178,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1366,8 +1366,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 8,
-      "uniqueVisitors14d": 7,
+      "trafficViews14d": 7,
+      "uniqueVisitors14d": 6,
       "trafficClones14d": 3,
       "viewTrend": [
         0,
@@ -1388,8 +1388,8 @@
       "topReferrers": [
         {
           "referrer": "DuckDuckGo",
-          "count": 6,
-          "uniques": 5
+          "count": 5,
+          "uniques": 4
         },
         {
           "referrer": "ecosia.org",
@@ -1401,8 +1401,8 @@
         {
           "path": "/shlokkokk/ReconMaster",
           "title": "Overview",
-          "count": 7,
-          "uniques": 6
+          "count": 6,
+          "uniques": 5
         },
         {
           "path": "/shlokkokk/ReconMaster/tree/main",
@@ -1453,7 +1453,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1575,7 +1575,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1674,7 +1674,7 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 108,
+      "daysInactive": 109,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1756,8 +1756,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 3,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 2,
       "trafficClones14d": 0,
       "viewTrend": [
         0,
@@ -1786,8 +1786,8 @@
         {
           "path": "/shlokkokk/SwipeClean",
           "title": "Overview",
-          "count": 4,
-          "uniques": 3
+          "count": 2,
+          "uniques": 2
         },
         {
           "path": "/shlokkokk/SwipeClean/releases",
