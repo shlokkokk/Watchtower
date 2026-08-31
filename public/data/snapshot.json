@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-08-31T00:06:20.068Z",
+  "timestamp": "2026-08-31T06:30:18.036Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 97,
-    "totalClones14d": 1265,
+    "totalViews14d": 88,
+    "totalClones14d": 1191,
     "followerCount": 20,
     "portfolioHealthAvg": 35,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "shlokkokk",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 69,
-      "uniques": 21
+      "count": 60,
+      "uniques": 19
     },
     "trendingCount": 0,
     "deadCount": 25
@@ -72,8 +72,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 69,
-      "uniques": 21
+      "count": 60,
+      "uniques": 19
     },
     {
       "name": "chatgpt.com",
@@ -108,93 +108,6 @@
   ],
   "repos": [
     {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-08-30T22:17:18Z",
-      "updated_at": "2026-08-30T22:17:59Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-07-25",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 2,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 911,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 0,
-          "reactions": 2,
-          "comments": 0
-        }
-      ]
-    },
-    {
       "id": 1097707027,
       "name": "shlokkokk",
       "full_name": "shlokkokk/shlokkokk",
@@ -205,7 +118,7 @@
       "forks_count": 1,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-08-30T03:57:05Z",
+      "pushed_at": "2026-08-31T04:00:35Z",
       "updated_at": "2026-08-24T13:27:37Z",
       "created_at": "2025-11-16T17:24:43Z",
       "starVelocity24h": 0,
@@ -233,7 +146,7 @@
       },
       "trafficViews14d": 34,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 196,
+      "trafficClones14d": 199,
       "viewTrend": [
         0,
         0,
@@ -322,6 +235,93 @@
           "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
           "views": 0,
           "reactions": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-08-31T00:06:20Z",
+      "updated_at": "2026-08-31T00:06:49Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-07-25",
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 2,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 841,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4198717",
+          "date": "2026-07-21",
+          "repo": "Watchtower",
+          "platform": "Dev.to",
+          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
+          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
+          "views": 0,
+          "reactions": 2,
           "comments": 0
         }
       ]
@@ -519,7 +519,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 16,
+      "trafficClones14d": 17,
       "viewTrend": [
         0,
         0,
@@ -578,9 +578,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 14,
-      "uniqueVisitors14d": 4,
-      "trafficClones14d": 18,
+      "trafficViews14d": 5,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -600,38 +600,32 @@
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 14,
-          "uniques": 4
+          "count": 5,
+          "uniques": 2
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/cloudstream-ios",
           "title": "Overview",
-          "count": 5,
-          "uniques": 4
-        },
-        {
-          "path": "/shlokkokk/cloudstream-ios/tree/main/server",
-          "title": "/tree/main/server",
           "count": 2,
           "uniques": 2
         },
         {
-          "path": "/shlokkokk/cloudstream-ios/tree/main/server/proxy",
-          "title": "/tree/main/server/proxy",
-          "count": 2,
-          "uniques": 2
-        },
-        {
-          "path": "/shlokkokk/cloudstream-ios/blob/main/server/data/extensions_store.json",
-          "title": "/blob/main/server/data/extensions_store.json",
+          "path": "/shlokkokk/cloudstream-ios/blob/main/server/proxy/mediaProxy.js",
+          "title": "/blob/main/server/proxy/mediaProxy.js",
           "count": 1,
           "uniques": 1
         },
         {
-          "path": "/shlokkokk/cloudstream-ios/blob/main/server/providers/extensionManager.js",
-          "title": "/blob/main/server/providers/extensionManager.js",
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server",
+          "title": "/tree/main/server",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/cloudstream-ios/tree/main/server/proxy",
+          "title": "/tree/main/server/proxy",
           "count": 1,
           "uniques": 1
         }
@@ -678,7 +672,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 6,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -758,7 +752,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 7,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -836,7 +830,7 @@
         5,
         5,
         5,
-        5,
+        0,
         0,
         0,
         0,
@@ -1076,7 +1070,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1259,7 +1253,7 @@
       },
       "trafficViews14d": 3,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 3,
+      "trafficClones14d": 4,
       "viewTrend": [
         1,
         1,
@@ -1269,7 +1263,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1404,7 +1398,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1590,7 +1584,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1796,7 +1790,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -2326,7 +2320,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
