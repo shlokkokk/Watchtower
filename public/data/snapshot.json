@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-09-01T05:56:22.972Z",
+  "timestamp": "2026-09-01T10:58:33.091Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 32,
     "totalStars": 43,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 90,
-    "totalClones14d": 1194,
+    "totalViews14d": 86,
+    "totalClones14d": 1160,
     "followerCount": 20,
     "portfolioHealthAvg": 34,
     "velocityLeader": {
-      "name": "shlokkokk",
+      "name": "Watchtower",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 59,
-      "uniques": 18
+      "count": 54,
+      "uniques": 16
     },
     "trendingCount": 0,
-    "deadCount": 23
+    "deadCount": 24
   },
   "languageBreakdown": [
     {
@@ -72,8 +72,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 59,
-      "uniques": 18
+      "count": 54,
+      "uniques": 16
     },
     {
       "name": "chatgpt.com",
@@ -102,6 +102,93 @@
     }
   ],
   "repos": [
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-09-01T05:56:23Z",
+      "updated_at": "2026-09-01T06:03:45Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-07-25",
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 2,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 788,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Watchtower",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4198717",
+          "date": "2026-07-21",
+          "repo": "Watchtower",
+          "platform": "Dev.to",
+          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
+          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
+          "views": 0,
+          "reactions": 2,
+          "comments": 0
+        }
+      ]
+    },
     {
       "id": 1097707027,
       "name": "shlokkokk",
@@ -141,7 +228,7 @@
       },
       "trafficViews14d": 34,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 199,
+      "trafficClones14d": 207,
       "viewTrend": [
         0,
         0,
@@ -235,93 +322,6 @@
       ]
     },
     {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-09-01T00:16:31Z",
-      "updated_at": "2026-09-01T00:16:38Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-07-25",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 2,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 841,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Watchtower",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 0,
-          "reactions": 2,
-          "comments": 0
-        }
-      ]
-    },
-    {
       "id": 1084752097,
       "name": "Portfolio",
       "full_name": "shlokkokk/Portfolio",
@@ -337,7 +337,7 @@
       "created_at": "2025-10-28T05:33:29Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 7,
+      "daysInactive": 8,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -360,7 +360,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 11,
+      "trafficClones14d": 13,
       "viewTrend": [
         0,
         0,
@@ -411,7 +411,7 @@
       "created_at": "2026-08-14T09:49:24Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 7,
+      "daysInactive": 8,
       "healthScore": 60,
       "isTrending": false,
       "isDead": false,
@@ -432,9 +432,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 7,
+      "trafficViews14d": 4,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 24,
+      "trafficClones14d": 26,
       "viewTrend": [
         0,
         0,
@@ -454,7 +454,7 @@
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 6,
+          "count": 3,
           "uniques": 2
         }
       ],
@@ -462,14 +462,8 @@
         {
           "path": "/shlokkokk/claude-pinger",
           "title": "Overview",
-          "count": 6,
+          "count": 4,
           "uniques": 3
-        },
-        {
-          "path": "/shlokkokk/claude-pinger/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 1,
-          "uniques": 1
         }
       ],
       "launchesCount": 0,
@@ -552,7 +546,7 @@
       "created_at": "2026-08-15T17:48:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 15,
+      "daysInactive": 16,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -573,9 +567,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 7,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -595,16 +589,16 @@
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 5,
-          "uniques": 2
+          "count": 4,
+          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/cloudstream-ios",
           "title": "Overview",
-          "count": 2,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         },
         {
           "path": "/shlokkokk/cloudstream-ios/blob/main/server/proxy/mediaProxy.js",
@@ -667,7 +661,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 5,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -792,10 +786,10 @@
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 37,
+      "daysInactive": 38,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -814,13 +808,12 @@
         "redditComments": 0
       },
       "trafficViews14d": 16,
-      "uniqueVisitors14d": 12,
-      "trafficClones14d": 6,
+      "uniqueVisitors14d": 11,
+      "trafficClones14d": 5,
       "viewTrend": [
         5,
         5,
         5,
-        5,
         0,
         0,
         0,
@@ -830,13 +823,14 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 8,
-          "uniques": 7
+          "count": 7,
+          "uniques": 6
         }
       ],
       "popularPaths": [
@@ -844,7 +838,7 @@
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
           "count": 11,
-          "uniques": 9
+          "uniques": 8
         },
         {
           "path": "/shlokkokk/ShellStack/blob/4da18c20e158c817e6192067bc7465874fc1cb18/src/data/tools/vulnerability-analysis.ts",
@@ -924,7 +918,7 @@
       },
       "trafficViews14d": 5,
       "uniqueVisitors14d": 3,
-      "trafficClones14d": 9,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -975,7 +969,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 41,
+      "daysInactive": 42,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1182,7 +1176,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1248,7 +1242,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1358,7 +1352,7 @@
       "daysInactive": 109,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1383,7 +1377,6 @@
         1,
         1,
         1,
-        1,
         0,
         0,
         0,
@@ -1393,7 +1386,8 @@
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
       "topReferrers": [
         {
@@ -1490,7 +1484,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 112,
+      "daysInactive": 113,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1513,7 +1507,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1625,7 +1619,7 @@
       "created_at": "2025-11-11T22:03:51Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 117,
+      "daysInactive": 118,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1686,7 +1680,7 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 117,
+      "daysInactive": 118,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1709,7 +1703,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1750,7 +1744,7 @@
       "daysInactive": 133,
       "healthScore": 40,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1770,12 +1764,11 @@
       },
       "trafficViews14d": 4,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 0,
+      "trafficClones14d": 3,
       "viewTrend": [
         1,
         1,
         1,
-        1,
         0,
         0,
         0,
@@ -1785,7 +1778,8 @@
         3,
         3,
         3,
-        3
+        3,
+        0
       ],
       "topReferrers": [],
       "popularPaths": [
@@ -1850,7 +1844,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 1,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -2085,7 +2079,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 227,
+      "daysInactive": 228,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2312,12 +2306,12 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 2,
+      "trafficClones14d": 4,
       "viewTrend": [
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -2386,7 +2380,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
