@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-09-10T16:48:47.921Z",
+  "timestamp": "2026-09-10T19:24:22.232Z",
   "username": "shlokkokk",
   "summary": {
-    "totalRepos": 33,
+    "totalRepos": 34,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
     "totalViews14d": 55,
     "totalClones14d": 803,
     "followerCount": 21,
-    "portfolioHealthAvg": 35,
+    "portfolioHealthAvg": 36,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "dotnet-lab-project",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -64,6 +64,11 @@
       "percentage": 2.2
     },
     {
+      "language": "Kotlin",
+      "stars": 0,
+      "percentage": 0
+    },
+    {
       "language": "AutoHotkey",
       "stars": 0,
       "percentage": 0
@@ -93,6 +98,130 @@
   ],
   "repos": [
     {
+      "id": 1362531221,
+      "name": "dotnet-lab-project",
+      "full_name": "shlokkokk/dotnet-lab-project",
+      "html_url": "https://github.com/shlokkokk/dotnet-lab-project",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-09-10T19:23:27Z",
+      "updated_at": "2026-09-10T19:23:30Z",
+      "created_at": "2026-09-09T10:26:22Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 37,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/dotnet-lab-project",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/dotnet-lab-project/stargazers",
+          "title": "/stargazers",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
+      "id": 1364732431,
+      "name": "sideshift",
+      "full_name": "shlokkokk/sideshift",
+      "html_url": "https://github.com/shlokkokk/sideshift",
+      "description": "High-Performance Headless OAuth Interceptor & Companion for Rocket League Sideswipe",
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-09-10T18:31:37Z",
+      "updated_at": "2026-09-10T18:31:47Z",
+      "created_at": "2026-09-10T18:30:25Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 0,
+      "viewTrend": [
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -103,8 +232,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-09-10T12:34:33Z",
-      "updated_at": "2026-09-10T12:37:17Z",
+      "pushed_at": "2026-09-10T16:48:48Z",
+      "updated_at": "2026-09-10T16:48:52Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -226,7 +355,7 @@
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -280,81 +409,6 @@
           "comments": 0
         }
       ]
-    },
-    {
-      "id": 1362531221,
-      "name": "dotnet-lab-project",
-      "full_name": "shlokkokk/dotnet-lab-project",
-      "html_url": "https://github.com/shlokkokk/dotnet-lab-project",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-09-09T10:44:17Z",
-      "updated_at": "2026-09-09T14:05:51Z",
-      "created_at": "2026-09-09T10:26:22Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 1,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 37,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/dotnet-lab-project",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/dotnet-lab-project/stargazers",
-          "title": "/stargazers",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
     },
     {
       "id": 1334031924,
@@ -807,7 +861,7 @@
         1,
         1,
         1,
-        1,
+        4,
         4,
         4
       ],
@@ -874,7 +928,7 @@
       "created_at": "2026-06-07T07:44:36Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 47,
+      "daysInactive": 48,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1033,7 +1087,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1126,7 +1180,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 100,
+      "daysInactive": 101,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1187,7 +1241,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 100,
+      "daysInactive": 101,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1261,7 +1315,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 111,
+      "daysInactive": 112,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1401,7 +1455,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 1,
-      "daysInactive": 120,
+      "daysInactive": 121,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -2002,7 +2056,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 221,
+      "daysInactive": 222,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2265,16 +2319,16 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 287,
+      "daysInactive": 288,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
-        "daysToMilestone": 35,
-        "avgDailyStars": 0.14,
-        "formattedText": "~35 days to 10 stars"
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
       "crossPlatform": {
