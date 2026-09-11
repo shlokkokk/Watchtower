@@ -1,26 +1,26 @@
 {
-  "timestamp": "2026-09-11T10:21:38.292Z",
+  "timestamp": "2026-09-11T14:45:59.213Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 34,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 57,
-    "totalClones14d": 813,
+    "totalViews14d": 55,
+    "totalClones14d": 858,
     "followerCount": 21,
     "portfolioHealthAvg": 36,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "dotnet-lab-project",
       "velocity": 0
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 17,
-      "uniques": 16
+      "count": 15,
+      "uniques": 13
     },
     "trendingCount": 0,
-    "deadCount": 22
+    "deadCount": 23
   },
   "languageBreakdown": [
     {
@@ -77,8 +77,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 17,
-      "uniques": 16
+      "count": 15,
+      "uniques": 13
     },
     {
       "name": "yandex.ru",
@@ -103,6 +103,86 @@
   ],
   "repos": [
     {
+      "id": 1362531221,
+      "name": "dotnet-lab-project",
+      "full_name": "shlokkokk/dotnet-lab-project",
+      "html_url": "https://github.com/shlokkokk/dotnet-lab-project",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-09-11T11:15:42Z",
+      "updated_at": "2026-09-11T11:15:46Z",
+      "created_at": "2026-09-09T10:26:22Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 52,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 2
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/dotnet-lab-project",
+          "title": "Overview",
+          "count": 3,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/dotnet-lab-project/stargazers",
+          "title": "/stargazers",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -113,8 +193,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-09-11T05:29:50Z",
-      "updated_at": "2026-09-11T05:29:53Z",
+      "pushed_at": "2026-09-11T10:21:39Z",
+      "updated_at": "2026-09-11T10:21:43Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -142,7 +222,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 339,
+      "trafficClones14d": 370,
       "viewTrend": [
         0,
         0,
@@ -226,12 +306,11 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 160,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 162,
       "viewTrend": [
         2,
-        2,
         0,
         0,
         0,
@@ -243,15 +322,16 @@
         0,
         0,
         0,
-        0
+        0,
+        2
       ],
       "topReferrers": [],
       "popularPaths": [
         {
           "path": "/shlokkokk/shlokkokk",
           "title": "Overview",
-          "count": 2,
-          "uniques": 1
+          "count": 4,
+          "uniques": 2
         }
       ],
       "launchesCount": 3,
@@ -290,86 +370,6 @@
           "comments": 0
         }
       ]
-    },
-    {
-      "id": 1362531221,
-      "name": "dotnet-lab-project",
-      "full_name": "shlokkokk/dotnet-lab-project",
-      "html_url": "https://github.com/shlokkokk/dotnet-lab-project",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-09-10T19:35:41Z",
-      "updated_at": "2026-09-10T19:35:45Z",
-      "created_at": "2026-09-09T10:26:22Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 37,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/dotnet-lab-project",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/dotnet-lab-project/stargazers",
-          "title": "/stargazers",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
     },
     {
       "id": 1364732431,
@@ -415,6 +415,7 @@
         0,
         0,
         0,
+        2,
         2,
         2
       ],
@@ -469,7 +470,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 25,
+      "trafficClones14d": 24,
       "viewTrend": [
         0,
         0,
@@ -575,7 +576,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 20,
+      "daysInactive": 21,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -710,7 +711,7 @@
       "created_at": "2026-08-15T07:01:10Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 26,
+      "daysInactive": 27,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -784,7 +785,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 46,
+      "daysInactive": 47,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -807,7 +808,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 10,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -866,9 +867,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 24,
-      "uniqueVisitors14d": 16,
-      "trafficClones14d": 16,
+      "trafficViews14d": 21,
+      "uniqueVisitors14d": 15,
+      "trafficClones14d": 13,
       "viewTrend": [
         1,
         1,
@@ -876,38 +877,38 @@
         1,
         1,
         1,
-        1,
         4,
         4,
         4,
         4,
         4,
         4,
-        4
+        4,
+        2
       ],
       "topReferrers": [
         {
           "referrer": "github.com",
-          "count": 9,
-          "uniques": 8
+          "count": 8,
+          "uniques": 7
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 20,
-          "uniques": 15
-        },
-        {
-          "path": "/shlokkokk/ShellStack/blob/main/public/social-preview.svg",
-          "title": "/blob/main/public/social-preview.svg",
-          "count": 2,
-          "uniques": 2
+          "count": 18,
+          "uniques": 14
         },
         {
           "path": "/shlokkokk/ShellStack/blob/main/README.md",
           "title": "/blob/main/README.md",
+          "count": 1,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/ShellStack/blob/main/public/social-preview.svg",
+          "title": "/blob/main/public/social-preview.svg",
           "count": 1,
           "uniques": 1
         },
@@ -1009,7 +1010,7 @@
       "created_at": "2026-03-01T11:10:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 51,
+      "daysInactive": 52,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1074,7 +1075,7 @@
       "daysInactive": 57,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1102,14 +1103,14 @@
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         1,
         1,
         1,
-        1
+        1,
+        0
       ],
       "topReferrers": [],
       "popularPaths": [
@@ -1139,7 +1140,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 79,
+      "daysInactive": 80,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1282,9 +1283,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 8,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -1301,21 +1302,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Oculus",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -1417,9 +1405,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 3,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 10,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 11,
       "viewTrend": [
         0,
         0,
@@ -1441,19 +1429,14 @@
           "referrer": "Google",
           "count": 1,
           "uniques": 1
-        },
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/ReconMaster",
           "title": "Overview",
-          "count": 3,
-          "uniques": 3
+          "count": 2,
+          "uniques": 2
         }
       ],
       "launchesCount": 0,
@@ -1536,7 +1519,7 @@
       "created_at": "2026-04-27T12:58:16Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 122,
+      "daysInactive": 123,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1768,7 +1751,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 11,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -1842,7 +1825,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1897,7 +1880,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 167,
+      "daysInactive": 168,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1958,7 +1941,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 176,
+      "daysInactive": 177,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1982,7 +1965,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -2043,7 +2026,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 10,
+      "trafficClones14d": 11,
       "viewTrend": [
         0,
         0,
@@ -2104,7 +2087,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 6,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -2142,7 +2125,7 @@
       "created_at": "2025-11-23T05:10:07Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 237,
+      "daysInactive": 238,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2204,7 +2187,7 @@
       "created_at": "2025-12-18T11:30:18Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 266,
+      "daysInactive": 267,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2265,7 +2248,7 @@
       "created_at": "2025-11-10T01:06:50Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 279,
+      "daysInactive": 280,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2365,8 +2348,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 8,
-      "uniqueVisitors14d": 2,
+      "trafficViews14d": 7,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 6,
       "viewTrend": [
         0,
@@ -2389,24 +2372,19 @@
           "referrer": "yandex.ru",
           "count": 7,
           "uniques": 1
-        },
-        {
-          "referrer": "github.com",
-          "count": 1,
-          "uniques": 1
         }
       ],
       "popularPaths": [
         {
-          "path": "/shlokkokk/osint-academy",
-          "title": "Overview",
-          "count": 2,
-          "uniques": 2
-        },
-        {
           "path": "/shlokkokk/osint-academy/blob/main/dorking.html",
           "title": "/blob/main/dorking.html",
           "count": 2,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/osint-academy",
+          "title": "Overview",
+          "count": 1,
           "uniques": 1
         },
         {
