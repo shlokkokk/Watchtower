@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-13T13:01:27.418Z",
+  "timestamp": "2026-09-13T17:10:12.067Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 34,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 67,
-    "totalClones14d": 978,
+    "totalViews14d": 68,
+    "totalClones14d": 986,
     "followerCount": 21,
     "portfolioHealthAvg": 36,
     "velocityLeader": {
@@ -16,11 +16,11 @@
     },
     "topReferrerOverall": {
       "name": "github.com",
-      "count": 16,
-      "uniques": 14
+      "count": 17,
+      "uniques": 15
     },
     "trendingCount": 0,
-    "deadCount": 21
+    "deadCount": 20
   },
   "languageBreakdown": [
     {
@@ -77,8 +77,8 @@
   "topReferrers": [
     {
       "name": "github.com",
-      "count": 16,
-      "uniques": 14
+      "count": 17,
+      "uniques": 15
     },
     {
       "name": "yandex.ru",
@@ -118,8 +118,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-09-13T07:53:01Z",
-      "updated_at": "2026-09-13T07:53:06Z",
+      "pushed_at": "2026-09-13T13:01:28Z",
+      "updated_at": "2026-09-13T13:01:31Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -238,7 +238,7 @@
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -335,12 +335,12 @@
       },
       "trafficViews14d": 4,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 54,
+      "trafficClones14d": 59,
       "viewTrend": [
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -420,7 +420,6 @@
         2,
         2,
         2,
-        2,
         1,
         1,
         1,
@@ -429,6 +428,7 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ],
@@ -551,7 +551,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -589,7 +589,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 22,
+      "daysInactive": 23,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -724,7 +724,7 @@
       "created_at": "2026-08-15T07:01:10Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 28,
+      "daysInactive": 29,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -798,7 +798,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 48,
+      "daysInactive": 49,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -834,7 +834,7 @@
         0,
         0,
         0,
-        0,
+        3,
         3,
         3
       ],
@@ -900,7 +900,6 @@
         2,
         2,
         2,
-        2,
         0,
         0,
         0,
@@ -909,6 +908,7 @@
         0,
         0,
         0,
+        3,
         3,
         3
       ],
@@ -1160,7 +1160,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 81,
+      "daysInactive": 82,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1282,7 +1282,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 103,
+      "daysInactive": 104,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1305,7 +1305,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -1343,7 +1343,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 114,
+      "daysInactive": 115,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1796,7 +1796,7 @@
       "created_at": "2026-03-28T21:35:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0.5,
-      "daysInactive": 145,
+      "daysInactive": 146,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1832,7 +1832,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0
       ],
@@ -1892,7 +1892,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 169,
+      "daysInactive": 170,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1953,7 +1953,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 178,
+      "daysInactive": 179,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2015,7 +2015,7 @@
       "created_at": "2025-12-26T13:35:46Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 208,
+      "daysInactive": 209,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2174,7 +2174,7 @@
         0,
         0,
         0,
-        0,
+        5,
         5,
         5
       ],
@@ -2321,7 +2321,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -2372,7 +2372,7 @@
       "daysInactive": 290,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -2390,8 +2390,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 7,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 8,
+      "uniqueVisitors14d": 2,
       "trafficClones14d": 6,
       "viewTrend": [
         0,
@@ -2407,26 +2407,31 @@
         0,
         0,
         0,
-        0
+        1
       ],
       "topReferrers": [
         {
           "referrer": "yandex.ru",
           "count": 7,
           "uniques": 1
+        },
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
         }
       ],
       "popularPaths": [
         {
+          "path": "/shlokkokk/osint-academy",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        },
+        {
           "path": "/shlokkokk/osint-academy/blob/main/dorking.html",
           "title": "/blob/main/dorking.html",
           "count": 2,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/osint-academy",
-          "title": "Overview",
-          "count": 1,
           "uniques": 1
         },
         {
@@ -2490,7 +2495,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
