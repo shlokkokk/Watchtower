@@ -1,15 +1,15 @@
 {
-  "timestamp": "2026-10-03T12:54:57.612Z",
+  "timestamp": "2026-10-03T16:55:15.836Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 36,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 47,
-    "totalClones14d": 1084,
+    "totalViews14d": 44,
+    "totalClones14d": 1081,
     "followerCount": 22,
-    "portfolioHealthAvg": 34,
+    "portfolioHealthAvg": 33,
     "velocityLeader": {
       "name": "Watchtower",
       "velocity": 0
@@ -92,8 +92,8 @@
     },
     {
       "name": "Bing",
-      "count": 5,
-      "uniques": 5
+      "count": 4,
+      "uniques": 4
     },
     {
       "name": "devpost.com",
@@ -123,8 +123,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-10-03T07:23:37Z",
-      "updated_at": "2026-10-03T07:23:41Z",
+      "pushed_at": "2026-10-03T12:54:58Z",
+      "updated_at": "2026-10-03T12:55:02Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -152,7 +152,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 576,
+      "trafficClones14d": 571,
       "viewTrend": [
         0,
         0,
@@ -326,7 +326,7 @@
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -372,8 +372,8 @@
       "created_at": "2026-08-14T09:49:24Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 6,
-      "healthScore": 70,
+      "daysInactive": 7,
+      "healthScore": 60,
       "isTrending": false,
       "isDead": false,
       "isReadmeStale": false,
@@ -530,7 +530,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -665,7 +665,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 9,
+      "trafficClones14d": 11,
       "viewTrend": [
         0,
         0,
@@ -703,7 +703,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 42,
+      "daysInactive": 43,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -800,7 +800,7 @@
         0,
         0,
         0,
-        0,
+        4,
         4,
         4
       ],
@@ -850,7 +850,7 @@
       "created_at": "2026-08-15T07:01:10Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 48,
+      "daysInactive": 49,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -930,7 +930,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 68,
+      "daysInactive": 69,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1023,7 +1023,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1296,7 +1296,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 101,
+      "daysInactive": 102,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1568,7 +1568,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1841,12 +1841,12 @@
         0,
         0,
         0,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0
       ],
@@ -1939,7 +1939,7 @@
       "created_at": "2026-03-28T21:35:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0.5,
-      "daysInactive": 165,
+      "daysInactive": 166,
       "healthScore": 40,
       "isTrending": false,
       "isDead": false,
@@ -1967,15 +1967,15 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
         1
       ],
@@ -2019,7 +2019,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 189,
+      "daysInactive": 190,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2080,7 +2080,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 198,
+      "daysInactive": 199,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2142,7 +2142,7 @@
       "created_at": "2025-12-26T13:35:46Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 228,
+      "daysInactive": 229,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2165,7 +2165,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -2286,8 +2286,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 7,
       "viewTrend": [
         0,
@@ -2306,14 +2306,7 @@
         0
       ],
       "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/discord-AskMeBot/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -2415,8 +2408,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 4,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 2,
       "trafficClones14d": 4,
       "viewTrend": [
         0,
@@ -2437,16 +2430,16 @@
       "topReferrers": [
         {
           "referrer": "Bing",
-          "count": 2,
-          "uniques": 2
+          "count": 1,
+          "uniques": 1
         }
       ],
       "popularPaths": [
         {
           "path": "/shlokkokk/open-ports-scanner",
           "title": "Overview",
-          "count": 4,
-          "uniques": 4
+          "count": 2,
+          "uniques": 2
         },
         {
           "path": "/shlokkokk/open-ports-scanner/blob/main/scanner.py",
