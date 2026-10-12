@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-12T01:58:20.872Z",
+  "timestamp": "2026-10-12T08:43:08.987Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 36,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 43,
-    "totalClones14d": 1224,
+    "totalViews14d": 46,
+    "totalClones14d": 1213,
     "followerCount": 22,
     "portfolioHealthAvg": 32,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "shlokkokk",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -20,7 +20,7 @@
       "uniques": 5
     },
     "trendingCount": 0,
-    "deadCount": 30
+    "deadCount": 28
   },
   "languageBreakdown": [
     {
@@ -92,8 +92,8 @@
     },
     {
       "name": "Bing",
-      "count": 4,
-      "uniques": 4
+      "count": 5,
+      "uniques": 5
     },
     {
       "name": "github.com",
@@ -118,6 +118,102 @@
   ],
   "repos": [
     {
+      "id": 1097707027,
+      "name": "shlokkokk",
+      "full_name": "shlokkokk/shlokkokk",
+      "html_url": "https://github.com/shlokkokk/shlokkokk",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-10-12T04:37:09Z",
+      "updated_at": "2026-08-24T13:27:37Z",
+      "created_at": "2025-11-16T17:24:43Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 1,
+      "daysInactive": 0,
+      "healthScore": 85,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-08-24",
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 8,
+        "devtoComments": 9,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 144,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 3,
+      "launches": [
+        {
+          "id": "devto-4172798",
+          "date": "2026-07-18",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
+          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
+          "views": 0,
+          "reactions": 7,
+          "comments": 9
+        },
+        {
+          "id": "devto-4236375",
+          "date": "2026-07-28",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I kept losing scan chains to timeouts and copy-paste errors, so I built a recon-to-exploitation orchestrator instead of another scanner",
+          "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
+          "views": 0,
+          "reactions": 1,
+          "comments": 0
+        },
+        {
+          "id": "devto-4418986",
+          "date": "2026-08-17",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "How I Automated Claude’s 5-Hour Usage Window with Cloudflare Workers & Puppeteer",
+          "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
+          "views": 0,
+          "reactions": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -128,8 +224,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-10-11T23:20:54Z",
-      "updated_at": "2026-10-11T23:20:58Z",
+      "pushed_at": "2026-10-12T01:58:21Z",
+      "updated_at": "2026-10-12T01:58:25Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -192,102 +288,6 @@
       ]
     },
     {
-      "id": 1097707027,
-      "name": "shlokkokk",
-      "full_name": "shlokkokk/shlokkokk",
-      "html_url": "https://github.com/shlokkokk/shlokkokk",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-10-11T04:20:55Z",
-      "updated_at": "2026-08-24T13:27:37Z",
-      "created_at": "2025-11-16T17:24:43Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 1,
-      "daysInactive": 0,
-      "healthScore": 85,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-08-24",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 8,
-        "devtoComments": 9,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 158,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [],
-      "popularPaths": [],
-      "launchesCount": 3,
-      "launches": [
-        {
-          "id": "devto-4172798",
-          "date": "2026-07-18",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
-          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
-          "views": 0,
-          "reactions": 7,
-          "comments": 9
-        },
-        {
-          "id": "devto-4236375",
-          "date": "2026-07-28",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "I kept losing scan chains to timeouts and copy-paste errors, so I built a recon-to-exploitation orchestrator instead of another scanner",
-          "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
-          "views": 0,
-          "reactions": 1,
-          "comments": 0
-        },
-        {
-          "id": "devto-4418986",
-          "date": "2026-08-17",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "How I Automated Claude’s 5-Hour Usage Window with Cloudflare Workers & Puppeteer",
-          "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
-          "views": 0,
-          "reactions": 0,
-          "comments": 0
-        }
-      ]
-    },
-    {
       "id": 1334031924,
       "name": "claude-pinger",
       "full_name": "shlokkokk/claude-pinger",
@@ -326,7 +326,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 213,
+      "trafficClones14d": 211,
       "viewTrend": [
         0,
         0,
@@ -451,7 +451,7 @@
       "created_at": "2026-09-22T05:07:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 18,
+      "daysInactive": 19,
       "healthScore": 50,
       "isTrending": false,
       "isDead": false,
@@ -474,7 +474,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 14,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -596,7 +596,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -845,7 +845,7 @@
       "daysInactive": 57,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -863,8 +863,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 5,
       "viewTrend": [
         0,
@@ -880,10 +880,23 @@
         0,
         0,
         0,
-        0
+        1
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "Bing",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/window-fx",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -926,12 +939,12 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 2,
+      "trafficClones14d": 1,
       "viewTrend": [
         1,
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -977,10 +990,10 @@
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 78,
+      "daysInactive": 79,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -998,14 +1011,13 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
-      "uniqueVisitors14d": 2,
-      "trafficClones14d": 6,
+      "trafficViews14d": 6,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 4,
       "viewTrend": [
         1,
         1,
         1,
-        1,
         0,
         0,
         0,
@@ -1015,7 +1027,8 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [
         {
@@ -1028,8 +1041,8 @@
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 4,
-          "uniques": 2
+          "count": 5,
+          "uniques": 3
         },
         {
           "path": "/shlokkokk/ShellStack/issues",
@@ -1091,7 +1104,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 5,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -1166,7 +1179,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 11,
       "viewTrend": [
         0,
         0,
@@ -1288,7 +1301,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 3,
       "viewTrend": [
         0,
         0,
@@ -1451,7 +1464,7 @@
       "daysInactive": 143,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1469,9 +1482,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 3,
+      "trafficClones14d": 2,
       "viewTrend": [
         0,
         0,
@@ -1486,10 +1499,23 @@
         0,
         0,
         0,
-        0
+        3
       ],
       "topReferrers": [],
-      "popularPaths": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/VitaLink",
+          "title": "Overview",
+          "count": 2,
+          "uniques": 2
+        },
+        {
+          "path": "/shlokkokk/VitaLink/blob/main/concept (1).md",
+          "title": "/blob/main/concept (1).md",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -1532,7 +1558,7 @@
       },
       "trafficViews14d": 4,
       "uniqueVisitors14d": 4,
-      "trafficClones14d": 3,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -1616,7 +1642,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1657,7 +1683,7 @@
       "daysInactive": 153,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": false,
+      "isDead": true,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1677,12 +1703,11 @@
       },
       "trafficViews14d": 11,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 5,
+      "trafficClones14d": 7,
       "viewTrend": [
         6,
         6,
         6,
-        6,
         1,
         1,
         1,
@@ -1692,7 +1717,8 @@
         4,
         4,
         4,
-        4
+        4,
+        0
       ],
       "topReferrers": [
         {
@@ -1813,7 +1839,7 @@
       "created_at": "2025-11-11T22:03:51Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 158,
+      "daysInactive": 159,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1841,11 +1867,11 @@
         0,
         0,
         0,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
         0,
         0,
         0,
@@ -1887,7 +1913,7 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 158,
+      "daysInactive": 159,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1910,7 +1936,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1969,8 +1995,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 7,
-      "uniqueVisitors14d": 6,
+      "trafficViews14d": 5,
+      "uniqueVisitors14d": 5,
       "trafficClones14d": 6,
       "viewTrend": [
         0,
@@ -1999,14 +2025,8 @@
         {
           "path": "/shlokkokk/SwipeClean",
           "title": "Overview",
-          "count": 5,
-          "uniques": 5
-        },
-        {
-          "path": "/shlokkokk/SwipeClean/blob/main",
-          "title": "/blob/main",
-          "count": 1,
-          "uniques": 1
+          "count": 4,
+          "uniques": 4
         },
         {
           "path": "/shlokkokk/SwipeClean/releases",
@@ -2132,7 +2152,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 2,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -2193,7 +2213,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -2390,7 +2410,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 3,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -2573,7 +2593,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
