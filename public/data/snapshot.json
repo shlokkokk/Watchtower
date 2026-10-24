@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-10-24T11:46:12.494Z",
+  "timestamp": "2026-10-24T15:10:03.315Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 36,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 22,
-    "totalClones14d": 1332,
+    "totalViews14d": 20,
+    "totalClones14d": 1317,
     "followerCount": 24,
     "portfolioHealthAvg": 30,
     "velocityLeader": {
@@ -96,17 +96,17 @@
       "uniques": 2
     },
     {
-      "name": "devpost.com",
-      "count": 2,
-      "uniques": 1
-    },
-    {
       "name": "Google",
       "count": 1,
       "uniques": 1
     },
     {
       "name": "copilot.microsoft.com",
+      "count": 1,
+      "uniques": 1
+    },
+    {
+      "name": "devpost.com",
       "count": 1,
       "uniques": 1
     }
@@ -123,8 +123,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-10-24T06:44:16Z",
-      "updated_at": "2026-10-24T06:44:19Z",
+      "pushed_at": "2026-10-24T11:46:13Z",
+      "updated_at": "2026-10-24T11:46:16Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -152,7 +152,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 617,
+      "trafficClones14d": 620,
       "viewTrend": [
         0,
         0,
@@ -226,7 +226,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 148,
+      "trafficClones14d": 140,
       "viewTrend": [
         0,
         0,
@@ -321,7 +321,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 330,
+      "trafficClones14d": 321,
       "viewTrend": [
         0,
         0,
@@ -677,7 +677,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 63,
+      "daysInactive": 64,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -799,7 +799,7 @@
       "created_at": "2026-08-15T07:01:10Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 69,
+      "daysInactive": 70,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -873,7 +873,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 89,
+      "daysInactive": 90,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1111,7 +1111,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 14,
+      "trafficClones14d": 12,
       "viewTrend": [
         0,
         0,
@@ -1223,7 +1223,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 122,
+      "daysInactive": 123,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1246,7 +1246,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 6,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -1571,7 +1571,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -1630,7 +1630,7 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 5,
+      "trafficViews14d": 4,
       "uniqueVisitors14d": 1,
       "trafficClones14d": 7,
       "viewTrend": [
@@ -1652,7 +1652,7 @@
       "topReferrers": [
         {
           "referrer": "devpost.com",
-          "count": 2,
+          "count": 1,
           "uniques": 1
         }
       ],
@@ -1660,7 +1660,7 @@
         {
           "path": "/shlokkokk/kavach",
           "title": "Overview",
-          "count": 2,
+          "count": 1,
           "uniques": 1
         },
         {
@@ -1783,9 +1783,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 5,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -1803,14 +1803,7 @@
         0
       ],
       "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/cyberGuard",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -1952,7 +1945,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 210,
+      "daysInactive": 211,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2013,7 +2006,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 219,
+      "daysInactive": 220,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2098,7 +2091,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 9,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -2159,7 +2152,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -2259,7 +2252,7 @@
       "created_at": "2025-12-18T11:30:18Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 309,
+      "daysInactive": 310,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2282,7 +2275,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 4,
       "viewTrend": [
         0,
         0,
@@ -2320,7 +2313,7 @@
       "created_at": "2025-11-10T01:06:50Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 322,
+      "daysInactive": 323,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
