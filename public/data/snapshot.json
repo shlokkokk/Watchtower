@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-10-25T13:01:51.298Z",
+  "timestamp": "2026-10-25T17:20:33.413Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 36,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 17,
-    "totalClones14d": 1361,
+    "totalViews14d": 18,
+    "totalClones14d": 1360,
     "followerCount": 24,
     "portfolioHealthAvg": 30,
     "velocityLeader": {
@@ -20,7 +20,7 @@
       "uniques": 2
     },
     "trendingCount": 0,
-    "deadCount": 31
+    "deadCount": 30
   },
   "languageBreakdown": [
     {
@@ -106,6 +106,11 @@
       "uniques": 1
     },
     {
+      "name": "vuink.com",
+      "count": 1,
+      "uniques": 1
+    },
+    {
       "name": "copilot.microsoft.com",
       "count": 1,
       "uniques": 1
@@ -123,8 +128,8 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-10-25T07:59:10Z",
-      "updated_at": "2026-10-25T07:59:14Z",
+      "pushed_at": "2026-10-25T13:01:52Z",
+      "updated_at": "2026-10-25T13:01:55Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
@@ -321,7 +326,7 @@
       },
       "trafficViews14d": 1,
       "uniqueVisitors14d": 1,
-      "trafficClones14d": 321,
+      "trafficClones14d": 318,
       "viewTrend": [
         0,
         0,
@@ -456,7 +461,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 9,
       "viewTrend": [
         0,
         0,
@@ -639,7 +644,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 9,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -677,7 +682,7 @@
       "created_at": "2026-07-28T19:04:11Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 64,
+      "daysInactive": 65,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -774,7 +779,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -812,7 +817,7 @@
       "created_at": "2026-08-15T07:01:10Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 70,
+      "daysInactive": 71,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -886,7 +891,7 @@
       "created_at": "2026-07-26T13:25:12Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 90,
+      "daysInactive": 91,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -963,7 +968,7 @@
       "daysInactive": 92,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -981,9 +986,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 3,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 7,
+      "trafficViews14d": 4,
+      "uniqueVisitors14d": 4,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -998,15 +1003,21 @@
         0,
         0,
         0,
-        0
+        1
       ],
-      "topReferrers": [],
+      "topReferrers": [
+        {
+          "referrer": "vuink.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "popularPaths": [
         {
           "path": "/shlokkokk/ShellStack",
           "title": "Overview",
-          "count": 3,
-          "uniques": 3
+          "count": 4,
+          "uniques": 4
         }
       ],
       "launchesCount": 1,
@@ -1236,7 +1247,7 @@
       "created_at": "2026-06-23T13:26:44Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 123,
+      "daysInactive": 124,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1358,7 +1369,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 145,
+      "daysInactive": 146,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1419,7 +1430,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 156,
+      "daysInactive": 157,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1828,7 +1839,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 11,
+      "trafficClones14d": 12,
       "viewTrend": [
         0,
         0,
@@ -1866,7 +1877,7 @@
       "created_at": "2026-03-28T21:35:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0.5,
-      "daysInactive": 187,
+      "daysInactive": 188,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1927,7 +1938,7 @@
       "created_at": "2026-03-27T13:00:15Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 211,
+      "daysInactive": 212,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1988,7 +1999,7 @@
       "created_at": "2026-01-02T20:49:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 220,
+      "daysInactive": 221,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2050,7 +2061,7 @@
       "created_at": "2025-12-26T13:35:46Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 250,
+      "daysInactive": 251,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2356,7 +2367,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 332,
+      "daysInactive": 333,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2379,7 +2390,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
