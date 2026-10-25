@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-25T02:36:59.185Z",
+  "timestamp": "2026-10-25T07:59:09.693Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 36,
     "totalStars": 45,
     "totalForks": 3,
     "totalOpenIssues": 1,
-    "totalViews14d": 20,
-    "totalClones14d": 1317,
+    "totalViews14d": 17,
+    "totalClones14d": 1361,
     "followerCount": 24,
     "portfolioHealthAvg": 30,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "shlokkokk",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -20,7 +20,7 @@
       "uniques": 2
     },
     "trendingCount": 0,
-    "deadCount": 32
+    "deadCount": 31
   },
   "languageBreakdown": [
     {
@@ -101,91 +101,17 @@
       "uniques": 1
     },
     {
-      "name": "copilot.microsoft.com",
+      "name": "github.com",
       "count": 1,
       "uniques": 1
     },
     {
-      "name": "devpost.com",
+      "name": "copilot.microsoft.com",
       "count": 1,
       "uniques": 1
     }
   ],
   "repos": [
-    {
-      "id": 1306769567,
-      "name": "Watchtower",
-      "full_name": "shlokkokk/Watchtower",
-      "html_url": "https://github.com/shlokkokk/Watchtower",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-10-24T23:54:32Z",
-      "updated_at": "2026-10-24T23:54:36Z",
-      "created_at": "2026-07-20T15:49:54Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-07-25",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 2,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 620,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [],
-      "popularPaths": [],
-      "launchesCount": 1,
-      "launches": [
-        {
-          "id": "devto-4198717",
-          "date": "2026-07-21",
-          "repo": "Watchtower",
-          "platform": "Dev.to",
-          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
-          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
-          "views": 0,
-          "reactions": 2,
-          "comments": 0
-        }
-      ]
-    },
     {
       "id": 1097707027,
       "name": "shlokkokk",
@@ -197,7 +123,7 @@
       "forks_count": 1,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-10-24T03:31:08Z",
+      "pushed_at": "2026-10-25T03:27:41Z",
       "updated_at": "2026-08-24T13:27:37Z",
       "created_at": "2025-11-16T17:24:43Z",
       "starVelocity24h": 0,
@@ -226,7 +152,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 140,
+      "trafficClones14d": 146,
       "viewTrend": [
         0,
         0,
@@ -278,6 +204,80 @@
           "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
           "views": 0,
           "reactions": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "id": 1306769567,
+      "name": "Watchtower",
+      "full_name": "shlokkokk/Watchtower",
+      "html_url": "https://github.com/shlokkokk/Watchtower",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-10-25T02:37:00Z",
+      "updated_at": "2026-10-25T02:37:03Z",
+      "created_at": "2026-07-20T15:49:54Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-07-25",
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 2,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
+      "trafficClones14d": 659,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [],
+      "launchesCount": 1,
+      "launches": [
+        {
+          "id": "devto-4198717",
+          "date": "2026-07-21",
+          "repo": "Watchtower",
+          "platform": "Dev.to",
+          "title": "Building Watchtower: An Autonomous Portfolio Intelligence System with Real-Time Cross-Platform Telemetry",
+          "url": "https://dev.to/shlokkokk/building-watchtower-an-autonomous-portfolio-intelligence-system-with-real-time-cross-platform-1685",
+          "views": 0,
+          "reactions": 2,
           "comments": 0
         }
       ]
@@ -395,7 +395,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -433,7 +433,7 @@
       "created_at": "2026-09-22T05:07:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 31,
+      "daysInactive": 32,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -517,7 +517,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -578,7 +578,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 9,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -741,7 +741,7 @@
       "daysInactive": 69,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -759,9 +759,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 0,
-      "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -776,10 +776,23 @@
         0,
         0,
         0,
-        0
+        1
       ],
-      "topReferrers": [],
-      "popularPaths": [],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/cloudstream-ios",
+          "title": "Overview",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
       "launchesCount": 0,
       "launches": []
     },
@@ -822,7 +835,7 @@
       },
       "trafficViews14d": 2,
       "uniqueVisitors14d": 2,
-      "trafficClones14d": 5,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -947,7 +960,7 @@
       "created_at": "2026-04-05T12:09:20Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 91,
+      "daysInactive": 92,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1049,7 +1062,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 11,
+      "trafficClones14d": 10,
       "viewTrend": [
         0,
         0,
@@ -1630,8 +1643,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 4,
-      "uniqueVisitors14d": 1,
+      "trafficViews14d": 0,
+      "uniqueVisitors14d": 0,
       "trafficClones14d": 7,
       "viewTrend": [
         0,
@@ -1649,39 +1662,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "devpost.com",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/kavach",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/kavach/blob/main/audio-service/analyzer.py",
-          "title": "/blob/main/audio-service/analyzer.py",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/kavach/commits",
-          "title": "/commits",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/kavach/tree/main/audio-service",
-          "title": "/tree/main/audio-service",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
+      "popularPaths": [],
       "launchesCount": 0,
       "launches": []
     },
@@ -1762,7 +1744,7 @@
       "created_at": "2025-11-11T22:03:51Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 171,
+      "daysInactive": 172,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1785,7 +1767,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 7,
+      "trafficClones14d": 6,
       "viewTrend": [
         0,
         0,
@@ -1823,7 +1805,7 @@
       "created_at": "2025-12-22T14:08:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 171,
+      "daysInactive": 172,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2091,7 +2073,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 8,
+      "trafficClones14d": 7,
       "viewTrend": [
         0,
         0,
@@ -2275,7 +2257,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 4,
+      "trafficClones14d": 5,
       "viewTrend": [
         0,
         0,
@@ -2336,7 +2318,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 9,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
