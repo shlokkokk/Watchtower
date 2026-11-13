@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-12T20:35:40.847Z",
+  "timestamp": "2026-11-13T01:36:20.572Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 37,
@@ -11,7 +11,7 @@
     "followerCount": 23,
     "portfolioHealthAvg": 31,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "CurioCut",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -113,6 +113,102 @@
   ],
   "repos": [
     {
+      "id": 1451145772,
+      "name": "CurioCut",
+      "full_name": "shlokkokk/CurioCut",
+      "html_url": "https://github.com/shlokkokk/CurioCut",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-12T23:12:35Z",
+      "updated_at": "2026-11-12T12:01:51Z",
+      "created_at": "2026-11-09T09:05:50Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 54,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 630,
+      "viewTrend": [
+        0,
+        0,
+        50,
+        50,
+        50,
+        50,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/CurioCut/actions",
+          "title": "/actions",
+          "count": 13,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/runs/42608550042/job/129130643490",
+          "title": "/actions/runs/42608550042/job/129130643490",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/runs/42623167285/job/129180154991",
+          "title": "/actions/runs/42623167285/job/129180154991",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/workflows/daily-shorts.yml",
+          "title": "/actions/workflows/daily-shorts.yml",
+          "count": 4,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -123,7 +219,7 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-11-12T12:02:57Z",
+      "pushed_at": "2026-11-12T20:35:41Z",
       "updated_at": "2026-11-12T13:03:00Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
@@ -222,101 +318,6 @@
           "comments": 0
         }
       ]
-    },
-    {
-      "id": 1451145772,
-      "name": "CurioCut",
-      "full_name": "shlokkokk/CurioCut",
-      "html_url": "https://github.com/shlokkokk/CurioCut",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": 0,
-      "open_issues_count": 0,
-      "pushed_at": "2026-11-12T11:06:00Z",
-      "updated_at": "2026-11-12T12:01:51Z",
-      "created_at": "2026-11-09T09:05:50Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 0,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 54,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 630,
-      "viewTrend": [
-        0,
-        0,
-        50,
-        50,
-        50,
-        50,
-        4,
-        4,
-        4,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 3,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/CurioCut/actions",
-          "title": "/actions",
-          "count": 13,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/runs/42608550042/job/129130643490",
-          "title": "/actions/runs/42608550042/job/129130643490",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/runs/42623167285/job/129180154991",
-          "title": "/actions/runs/42623167285/job/129180154991",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/workflows/daily-shorts.yml",
-          "title": "/actions/workflows/daily-shorts.yml",
-          "count": 4,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
     },
     {
       "id": 1097707027,
@@ -456,7 +457,7 @@
       "trafficClones14d": 86,
       "viewTrend": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -790,10 +791,10 @@
         0,
         0,
         0,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
         0,
         0,
         0,
@@ -926,7 +927,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1058,7 +1059,7 @@
       "trafficClones14d": 3,
       "viewTrend": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1142,7 +1143,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1357,7 +1358,6 @@
         0,
         0,
         0,
-        0,
         5,
         5,
         5,
@@ -1365,6 +1365,7 @@
         0,
         0,
         0,
+        1,
         1,
         1
       ],
@@ -1853,7 +1854,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 189,
+      "daysInactive": 190,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2062,7 +2063,7 @@
       "trafficClones14d": 7,
       "viewTrend": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -2410,14 +2411,14 @@
         0,
         0,
         0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         0,
         0
       ],
@@ -2536,10 +2537,10 @@
       "trafficClones14d": 3,
       "viewTrend": [
         0,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
         0,
         0,
         0,
@@ -2657,7 +2658,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 363,
+      "daysInactive": 364,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2683,7 +2684,7 @@
       "trafficClones14d": 4,
       "viewTrend": [
         1,
-        1,
+        0,
         0,
         0,
         0,
