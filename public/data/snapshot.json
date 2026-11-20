@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19T17:52:39.302Z",
+  "timestamp": "2026-11-20T00:07:15.290Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 37,
@@ -11,7 +11,7 @@
     "followerCount": 24,
     "portfolioHealthAvg": 32,
     "velocityLeader": {
-      "name": "Watchtower",
+      "name": "shlokkokk",
       "velocity": 0
     },
     "topReferrerOverall": {
@@ -123,6 +123,275 @@
   ],
   "repos": [
     {
+      "id": 1097707027,
+      "name": "shlokkokk",
+      "full_name": "shlokkokk/shlokkokk",
+      "html_url": "https://github.com/shlokkokk/shlokkokk",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 1,
+      "forks_count": 1,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-19T22:04:02Z",
+      "updated_at": "2026-08-24T13:27:37Z",
+      "created_at": "2025-11-16T17:24:43Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 1,
+      "daysInactive": 0,
+      "healthScore": 85,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 8,
+        "devtoComments": 9,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 182,
+      "viewTrend": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/shlokkokk/blob/main/assets/dark.svg",
+          "title": "/blob/main/assets/dark.svg",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 3,
+      "launches": [
+        {
+          "id": "devto-4172798",
+          "date": "2026-07-18",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
+          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
+          "views": 0,
+          "reactions": 7,
+          "comments": 9
+        },
+        {
+          "id": "devto-4236375",
+          "date": "2026-07-28",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "I kept losing scan chains to timeouts and copy-paste errors, so I built a recon-to-exploitation orchestrator instead of another scanner",
+          "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
+          "views": 0,
+          "reactions": 1,
+          "comments": 0
+        },
+        {
+          "id": "devto-4418986",
+          "date": "2026-08-17",
+          "repo": "shlokkokk",
+          "platform": "Dev.to",
+          "title": "How I Automated Claude’s 5-Hour Usage Window with Cloudflare Workers & Puppeteer",
+          "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
+          "views": 0,
+          "reactions": 0,
+          "comments": 0
+        }
+      ]
+    },
+    {
+      "id": 1084752097,
+      "name": "Portfolio",
+      "full_name": "shlokkokk/Portfolio",
+      "html_url": "https://github.com/shlokkokk/Portfolio",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 1,
+      "forks_count": 0,
+      "watchers_count": 1,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-19T22:03:50Z",
+      "updated_at": "2026-08-24T10:16:45Z",
+      "created_at": "2025-10-28T05:33:29Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": true,
+      "readmeLastUpdated": "2026-07-26",
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 15,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/Portfolio/blob/main/README.md",
+          "title": "/blob/main/README.md",
+          "count": 1,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
+      "id": 1451145772,
+      "name": "CurioCut",
+      "full_name": "shlokkokk/CurioCut",
+      "html_url": "https://github.com/shlokkokk/CurioCut",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "watchers_count": 0,
+      "open_issues_count": 0,
+      "pushed_at": "2026-11-19T21:44:30Z",
+      "updated_at": "2026-11-12T12:01:51Z",
+      "created_at": "2026-11-09T09:05:50Z",
+      "starVelocity24h": 0,
+      "forkToStarRatio": 0,
+      "daysInactive": 0,
+      "healthScore": 70,
+      "isTrending": false,
+      "isDead": false,
+      "isReadmeStale": false,
+      "milestoneProjection": {
+        "nextMilestone": 10,
+        "daysToMilestone": null,
+        "avgDailyStars": 0,
+        "formattedText": "Steady pace"
+      },
+      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
+      "crossPlatform": {
+        "devtoViews": 0,
+        "devtoReactions": 0,
+        "devtoComments": 0,
+        "hnPoints": 0,
+        "hnComments": 0,
+        "redditPoints": 0,
+        "redditComments": 0
+      },
+      "trafficViews14d": 54,
+      "uniqueVisitors14d": 1,
+      "trafficClones14d": 1258,
+      "viewTrend": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "topReferrers": [
+        {
+          "referrer": "github.com",
+          "count": 3,
+          "uniques": 1
+        }
+      ],
+      "popularPaths": [
+        {
+          "path": "/shlokkokk/CurioCut/actions",
+          "title": "/actions",
+          "count": 13,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut",
+          "title": "Overview",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/runs/42608550042/job/129130643490",
+          "title": "/actions/runs/42608550042/job/129130643490",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/runs/42623167285/job/129180154991",
+          "title": "/actions/runs/42623167285/job/129180154991",
+          "count": 4,
+          "uniques": 1
+        },
+        {
+          "path": "/shlokkokk/CurioCut/actions/workflows/daily-shorts.yml",
+          "title": "/actions/workflows/daily-shorts.yml",
+          "count": 4,
+          "uniques": 1
+        }
+      ],
+      "launchesCount": 0,
+      "launches": []
+    },
+    {
       "id": 1306769567,
       "name": "Watchtower",
       "full_name": "shlokkokk/Watchtower",
@@ -133,7 +402,7 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-11-19T08:15:06Z",
+      "pushed_at": "2026-11-19T17:52:40Z",
       "updated_at": "2026-11-12T13:03:00Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
@@ -234,275 +503,6 @@
       ]
     },
     {
-      "id": 1097707027,
-      "name": "shlokkokk",
-      "full_name": "shlokkokk/shlokkokk",
-      "html_url": "https://github.com/shlokkokk/shlokkokk",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 1,
-      "forks_count": 1,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-11-19T06:09:54Z",
-      "updated_at": "2026-08-24T13:27:37Z",
-      "created_at": "2025-11-16T17:24:43Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 1,
-      "daysInactive": 0,
-      "healthScore": 85,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Status stable. Keep monitoring traffic and user engagement.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 8,
-        "devtoComments": 9,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 182,
-      "viewTrend": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/shlokkokk/blob/main/assets/dark.svg",
-          "title": "/blob/main/assets/dark.svg",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 3,
-      "launches": [
-        {
-          "id": "devto-4172798",
-          "date": "2026-07-18",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "I was tired of studying security tools from static cheatsheets, so I built ShellStack",
-          "url": "https://dev.to/shlokkokk/i-was-tired-of-studying-security-tools-from-static-cheatsheets-so-i-built-shellstack-46d6",
-          "views": 0,
-          "reactions": 7,
-          "comments": 9
-        },
-        {
-          "id": "devto-4236375",
-          "date": "2026-07-28",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "I kept losing scan chains to timeouts and copy-paste errors, so I built a recon-to-exploitation orchestrator instead of another scanner",
-          "url": "https://dev.to/shlokkokk/i-kept-losing-scan-chains-to-timeouts-and-copy-paste-errors-so-i-built-a-recon-to-exploitation-1jof",
-          "views": 0,
-          "reactions": 1,
-          "comments": 0
-        },
-        {
-          "id": "devto-4418986",
-          "date": "2026-08-17",
-          "repo": "shlokkokk",
-          "platform": "Dev.to",
-          "title": "How I Automated Claude’s 5-Hour Usage Window with Cloudflare Workers & Puppeteer",
-          "url": "https://dev.to/shlokkokk/how-i-automated-claudes-5-hour-usage-window-with-cloudflare-workers-puppeteer-550m",
-          "views": 0,
-          "reactions": 0,
-          "comments": 0
-        }
-      ]
-    },
-    {
-      "id": 1451145772,
-      "name": "CurioCut",
-      "full_name": "shlokkokk/CurioCut",
-      "html_url": "https://github.com/shlokkokk/CurioCut",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "forks_count": 0,
-      "watchers_count": 0,
-      "open_issues_count": 0,
-      "pushed_at": "2026-11-18T10:50:07Z",
-      "updated_at": "2026-11-12T12:01:51Z",
-      "created_at": "2026-11-09T09:05:50Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 1,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": false,
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Receiving traffic but no stars. Consider reviewing the repository description and Topics to improve conversion.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 54,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 1258,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [
-        {
-          "referrer": "github.com",
-          "count": 3,
-          "uniques": 1
-        }
-      ],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/CurioCut/actions",
-          "title": "/actions",
-          "count": 13,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut",
-          "title": "Overview",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/runs/42608550042/job/129130643490",
-          "title": "/actions/runs/42608550042/job/129130643490",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/runs/42623167285/job/129180154991",
-          "title": "/actions/runs/42623167285/job/129180154991",
-          "count": 4,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/CurioCut/actions/workflows/daily-shorts.yml",
-          "title": "/actions/workflows/daily-shorts.yml",
-          "count": 4,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
-    },
-    {
-      "id": 1084752097,
-      "name": "Portfolio",
-      "full_name": "shlokkokk/Portfolio",
-      "html_url": "https://github.com/shlokkokk/Portfolio",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 1,
-      "forks_count": 0,
-      "watchers_count": 1,
-      "open_issues_count": 0,
-      "pushed_at": "2026-11-14T22:03:32Z",
-      "updated_at": "2026-08-24T10:16:45Z",
-      "created_at": "2025-10-28T05:33:29Z",
-      "starVelocity24h": 0,
-      "forkToStarRatio": 0,
-      "daysInactive": 4,
-      "healthScore": 70,
-      "isTrending": false,
-      "isDead": false,
-      "isReadmeStale": true,
-      "readmeLastUpdated": "2026-07-26",
-      "milestoneProjection": {
-        "nextMilestone": 10,
-        "daysToMilestone": null,
-        "avgDailyStars": 0,
-        "formattedText": "Steady pace"
-      },
-      "recommendation": "Code has been updated but README hasn't been touched in over 30 days. Recommend updating documentation.",
-      "crossPlatform": {
-        "devtoViews": 0,
-        "devtoReactions": 0,
-        "devtoComments": 0,
-        "hnPoints": 0,
-        "hnComments": 0,
-        "redditPoints": 0,
-        "redditComments": 0
-      },
-      "trafficViews14d": 1,
-      "uniqueVisitors14d": 1,
-      "trafficClones14d": 15,
-      "viewTrend": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "topReferrers": [],
-      "popularPaths": [
-        {
-          "path": "/shlokkokk/Portfolio/blob/main/README.md",
-          "title": "/blob/main/README.md",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
-      "launchesCount": 0,
-      "launches": []
-    },
-    {
       "id": 1334031924,
       "name": "claude-pinger",
       "full_name": "shlokkokk/claude-pinger",
@@ -554,7 +554,7 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0
       ],
@@ -775,7 +775,7 @@
       "created_at": "2026-09-10T18:30:25Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 69,
+      "daysInactive": 70,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1001,7 +1001,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1080,7 +1080,7 @@
         0,
         0,
         0,
-        0,
+        2,
         2,
         2
       ],
@@ -1213,7 +1213,7 @@
       "created_at": "2026-06-07T07:44:36Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 117,
+      "daysInactive": 118,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1243,7 +1243,7 @@
         2,
         2,
         2,
-        2,
+        0,
         0,
         0,
         0,
@@ -1343,7 +1343,7 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 126,
+      "daysInactive": 127,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -1379,7 +1379,7 @@
         0,
         0,
         0,
-        0,
+        2,
         2,
         2
       ],
@@ -1506,7 +1506,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 170,
+      "daysInactive": 171,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1689,7 +1689,7 @@
       "created_at": "2025-11-29T07:27:01Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 188,
+      "daysInactive": 189,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1879,7 +1879,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 196,
+      "daysInactive": 197,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2092,7 +2092,6 @@
         2,
         2,
         2,
-        2,
         0,
         0,
         0,
@@ -2100,6 +2099,7 @@
         0,
         0,
         0,
+        3,
         3
       ],
       "topReferrers": [],
@@ -2247,7 +2247,7 @@
         4,
         4,
         4,
-        4,
+        0,
         0,
         0,
         0,
@@ -2631,7 +2631,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 28,
-        "avgDailyStars": 0.15,
+        "avgDailyStars": 0.14,
         "formattedText": "~28 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2684,7 +2684,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 370,
+      "daysInactive": 371,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
