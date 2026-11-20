@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-11-20T16:40:04.701Z",
+  "timestamp": "2026-11-20T22:54:00.808Z",
   "username": "shlokkokk",
   "summary": {
     "totalRepos": 37,
     "totalStars": 46,
     "totalForks": 4,
     "totalOpenIssues": 1,
-    "totalViews14d": 108,
-    "totalClones14d": 2187,
+    "totalViews14d": 107,
+    "totalClones14d": 2184,
     "followerCount": 24,
     "portfolioHealthAvg": 32,
     "velocityLeader": {
@@ -20,7 +20,7 @@
       "uniques": 3
     },
     "trendingCount": 0,
-    "deadCount": 30
+    "deadCount": 29
   },
   "languageBreakdown": [
     {
@@ -96,14 +96,14 @@
       "uniques": 4
     },
     {
-      "name": "Bing",
-      "count": 3,
-      "uniques": 3
-    },
-    {
       "name": "web.telegram.org",
       "count": 3,
       "uniques": 1
+    },
+    {
+      "name": "Bing",
+      "count": 2,
+      "uniques": 2
     },
     {
       "name": "DuckDuckGo",
@@ -112,11 +112,6 @@
     },
     {
       "name": "yandex.ru",
-      "count": 1,
-      "uniques": 1
-    },
-    {
-      "name": "aocr.org",
       "count": 1,
       "uniques": 1
     }
@@ -133,7 +128,7 @@
       "forks_count": 0,
       "watchers_count": 1,
       "open_issues_count": 0,
-      "pushed_at": "2026-11-20T07:57:11Z",
+      "pushed_at": "2026-11-20T16:40:05Z",
       "updated_at": "2026-11-12T13:03:00Z",
       "created_at": "2026-07-20T15:49:54Z",
       "starVelocity24h": 0,
@@ -239,7 +234,7 @@
       "viewTrend": [
         1,
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -314,7 +309,7 @@
       "created_at": "2025-10-28T05:33:29Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 0,
+      "daysInactive": 1,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -383,7 +378,7 @@
       "created_at": "2026-11-09T09:05:50Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 0,
+      "daysInactive": 1,
       "healthScore": 70,
       "isTrending": false,
       "isDead": false,
@@ -514,10 +509,10 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
         1,
-        0,
-        0,
-        0,
         1,
         1
       ],
@@ -738,7 +733,7 @@
       "created_at": "2026-09-10T18:30:25Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 70,
+      "daysInactive": 71,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -961,10 +956,10 @@
         0,
         0,
         0,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
         0,
         0
       ],
@@ -1040,10 +1035,10 @@
         0,
         0,
         0,
+        2,
+        2,
+        2,
         0,
-        2,
-        2,
-        2,
         0,
         0
       ],
@@ -1170,10 +1165,10 @@
       "created_at": "2026-06-07T07:44:36Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 118,
+      "daysInactive": 119,
       "healthScore": 25,
       "isTrending": false,
-      "isDead": true,
+      "isDead": false,
       "isReadmeStale": false,
       "milestoneProjection": {
         "nextMilestone": 10,
@@ -1191,13 +1186,12 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
+      "trafficViews14d": 3,
+      "uniqueVisitors14d": 3,
       "trafficClones14d": 12,
       "viewTrend": [
         2,
         2,
-        2,
         0,
         0,
         0,
@@ -1208,15 +1202,16 @@
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "topReferrers": [],
       "popularPaths": [
         {
           "path": "/shlokkokk/Chronicle",
           "title": "Overview",
-          "count": 2,
-          "uniques": 2
+          "count": 3,
+          "uniques": 3
         }
       ],
       "launchesCount": 0,
@@ -1300,7 +1295,7 @@
       "created_at": "2026-07-13T12:07:42Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 127,
+      "daysInactive": 128,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1333,10 +1328,10 @@
         0,
         0,
         0,
+        2,
+        2,
+        2,
         0,
-        2,
-        2,
-        2,
         0,
         0
       ],
@@ -1463,7 +1458,7 @@
       "created_at": "2026-06-01T17:25:14Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 171,
+      "daysInactive": 172,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1524,7 +1519,7 @@
       "created_at": "2026-05-14T19:38:05Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 171,
+      "daysInactive": 172,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1585,7 +1580,7 @@
       "created_at": "2026-05-21T17:01:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 182,
+      "daysInactive": 183,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1646,7 +1641,7 @@
       "created_at": "2025-11-29T07:27:01Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 189,
+      "daysInactive": 190,
       "healthScore": 25,
       "isTrending": false,
       "isDead": false,
@@ -1682,7 +1677,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -1714,7 +1709,7 @@
       "created_at": "2026-05-09T10:53:33Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 1,
-      "daysInactive": 191,
+      "daysInactive": 192,
       "healthScore": 40,
       "isTrending": false,
       "isDead": true,
@@ -1836,7 +1831,7 @@
       "created_at": "2026-05-04T09:00:02Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 197,
+      "daysInactive": 198,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -1981,7 +1976,7 @@
       },
       "trafficViews14d": 0,
       "uniqueVisitors14d": 0,
-      "trafficClones14d": 16,
+      "trafficClones14d": 14,
       "viewTrend": [
         0,
         0,
@@ -2046,7 +2041,6 @@
       "viewTrend": [
         2,
         2,
-        2,
         0,
         0,
         0,
@@ -2056,6 +2050,7 @@
         0,
         3,
         3,
+        0,
         0,
         0
       ],
@@ -2182,7 +2177,7 @@
       "viewTrend": [
         4,
         4,
-        4,
+        0,
         0,
         0,
         0,
@@ -2284,7 +2279,7 @@
       "created_at": "2026-01-31T17:37:35Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 292,
+      "daysInactive": 293,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2496,9 +2491,9 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 3,
-      "uniqueVisitors14d": 3,
-      "trafficClones14d": 9,
+      "trafficViews14d": 2,
+      "uniqueVisitors14d": 2,
+      "trafficClones14d": 8,
       "viewTrend": [
         0,
         0,
@@ -2515,20 +2510,8 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "Bing",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
       "popularPaths": [
-        {
-          "path": "/shlokkokk/open-ports-scanner",
-          "title": "Overview",
-          "count": 1,
-          "uniques": 1
-        },
         {
           "path": "/shlokkokk/open-ports-scanner/blob/main/README.md",
           "title": "/blob/main/README.md",
@@ -2561,7 +2544,7 @@
       "created_at": "2025-11-26T16:40:08Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 358,
+      "daysInactive": 359,
       "healthScore": 30,
       "isTrending": false,
       "isDead": false,
@@ -2569,7 +2552,7 @@
       "milestoneProjection": {
         "nextMilestone": 10,
         "daysToMilestone": 28,
-        "avgDailyStars": 0.14,
+        "avgDailyStars": 0.15,
         "formattedText": "~28 days to 10 stars"
       },
       "recommendation": "Repository is inactive for 30+ days. Consider archiving or scheduling a maintenance run.",
@@ -2597,7 +2580,7 @@
         0,
         0,
         0,
-        0,
+        1,
         1,
         1
       ],
@@ -2635,7 +2618,7 @@
       "created_at": "2025-11-13T19:57:45Z",
       "starVelocity24h": 0,
       "forkToStarRatio": 0,
-      "daysInactive": 371,
+      "daysInactive": 372,
       "healthScore": 25,
       "isTrending": false,
       "isDead": true,
@@ -2656,8 +2639,8 @@
         "redditPoints": 0,
         "redditComments": 0
       },
-      "trafficViews14d": 2,
-      "uniqueVisitors14d": 2,
+      "trafficViews14d": 1,
+      "uniqueVisitors14d": 1,
       "trafficClones14d": 8,
       "viewTrend": [
         0,
@@ -2675,23 +2658,11 @@
         0,
         0
       ],
-      "topReferrers": [
-        {
-          "referrer": "aocr.org",
-          "count": 1,
-          "uniques": 1
-        }
-      ],
+      "topReferrers": [],
       "popularPaths": [
         {
           "path": "/shlokkokk/keylogger/blob/main/README.md",
           "title": "/blob/main/README.md",
-          "count": 1,
-          "uniques": 1
-        },
-        {
-          "path": "/shlokkokk/keylogger/commit/eb05448e7dbb80d6e42ecadfbfb29293aa7638cf",
-          "title": "/commit/eb05448e7dbb80d6e42ecadfbfb29293aa7638cf",
           "count": 1,
           "uniques": 1
         }
